@@ -1,1 +1,0 @@
-pg_restore -h localhost -p 5432 -U postgres -d qualstra your_dump_file.dump
