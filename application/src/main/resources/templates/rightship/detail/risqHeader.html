@@ -1,0 +1,28 @@
+<div th:fragment="header(checklist)">
+	
+<table style="margin-top:10px;border:solid black 2px;width:100%">
+<tr style="height: 100px;">
+<td colspan="2" style="width: 20%;">
+<div  th:if="${logo != null}">
+<img th:src="${logo.getLocation()}" style="width: 130px; height: 120px;"/>
+</div></td>
+<td colspan="2" style="width: 50%;border: none;">
+<table style="border:none; width:100%">
+<tr style="border:none;height: 50px;">
+<td style="border:none;font-size:20px;;text-align: center;">
+<b>Bravo Marine PVT LTD</b><br/>
+</td>
+</tr>
+<tr style="border:none;height: 50px;">
+<td style="border:none;font-size:14px;text-align: center;">
+<b>Rightship Report</b><br/>
+</td>
+</tr>
+</table>
+</td>
+<td colspan="2" style="width: 30%;">	
+</td>
+</tr>
+</table>
+<br/>
+</div>

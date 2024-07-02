@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{task-ld/layout}">
+<!--/* Create */-->
+<div layout:fragment="content">
+    <div id="task-details">
+        <h2 th:text="${task.title}">Task Details</h2>
+        <div th:text="${task.text}">Text</div>
+    </div>
+</div>
+</body>
+</html>

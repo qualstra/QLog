@@ -1,0 +1,13 @@
+<div th:fragment="checkList(checklist)">
+
+<div th:replace="deflt/fragments/CasHeader :: header(${checklist})"></div>
+<div style="text-align:center">
+<div><h3><b><u>DP FIELD ARRIVAL CHECKLIST - BRIDGE</u></b></h3></div>
+<div>(To be filled in prior to Entering 500 meter zone)</div>
+</div>
+<div style="margin-top:10px">
+
+<div th:replace="test/detail/field_arrival/field_arrival :: section(${checklist.getSections().get(0)})"></div>
+</div>
+
+</div>

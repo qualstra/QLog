@@ -1,0 +1,22 @@
+<div th:fragment="section(sec)">
+
+		<div style="page-break-before:always">&nbsp;</div>		
+		<div style="text-align:center"><b><u>Checklist Detail</u></b></div>								
+<b><u><span style="color:black;" th:text="${sec.getName()}"></span></u></b>
+	<table style="width: 100%;">
+	<tr>
+<th style="color:black;text-align:center">SR NO</th>
+<th style="color:black;text-align:center;width:300px">CERTIFICATES</th>
+<th style="color:black;text-align:center">ANSWER Y/N/NA</th>
+<th style="color:black;text-align:center;width:300px">REMARKS</th>
+<th style="color:black;text-align:center;width:200px">PHOTO</th>
+</tr>
+		
+		<th:block th:each="question,iterator : ${sec.getQuestions()}">
+			<th:block
+				th:replace="deflt/detail/question.__${question.getMasterUUID()}__ :: parentQuestion(${question},${iterator.index})"></th:block>
+		</th:block>
+
+	</table>
+
+</div>

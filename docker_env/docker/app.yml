@@ -1,0 +1,50 @@
+version: '3.7'
+networks:
+  default:
+    external:
+      name: infra
+services:
+    ui:
+        image: 'q2ui'
+        container_name: ui
+        volumes:
+            - 'ui_data:/ui'
+        ports:
+            - '${UI_PORT}:${UI_PORT}'
+        environment:
+            - EUREKA_HOST=${EUREKA_HOST}
+            - EUREKA_PORT=${EUREKA_PORT}
+    APP:
+        image: 'vijayjeyam/qualstra2'
+        container_name: APP
+        volumes:
+            - 'ui_data:/APP'
+        ports:
+            - '${APP_PORT}:${APP_PORT}'
+        environment:
+            - EUREKA_HOST=${EUREKA_HOST}
+            - EUREKA_PORT=${EUREKA_PORT}
+            - APP_PORT=${APP_PORT}
+            - QUALSTRA_DBHOST=${QUALSTRA_DBHOST}
+
+    attribute:
+        image: 'infra/attrservice'
+        container_name: attribute
+        volumes:
+            - 'attribute_data:/attribute'
+        environment:
+            - EUREKA_HOST=${EUREKA_HOST}
+            - EUREKA_PORT=${EUREKA_PORT}
+            - MONGO_HOST=${MONGO_HOST}
+            - MONGO_PORT=${MONGO_PORT}
+
+
+volumes:
+    ui_data:
+        driver: local
+    APP_data:
+        driver: local
+    attribute_data:
+        driver: local
+
+

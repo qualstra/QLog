@@ -1,0 +1,86 @@
+<div th:fragment="section(sec)">
+   <body>
+      <table cellspacing="0">
+         <tr>
+            <td bgcolor="#CCCCCC">
+               <p class="s1"><b><u>3. CREW PARTICULARS</u></b></p>
+            </td>
+         </tr>
+      </table>
+      <br/>
+      <table cellspacing="0">
+      <col style="width: 38%;"/>
+        <col style="width: 2%;"/>
+        <col style="width: 60%;"/>
+         <tr>
+            <td>
+               <p class="s3">Nationality of Master and Ch/Engr</p>
+            </td>
+            <td>
+               <center>:</center>
+            </td>
+            <td>
+               <p class="s3"><span th:text="${sec.getQuestions().get(0).getAnswerAttrib('remark')}"></span></p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p class="s3">Number and Nationality of Officers</p>
+            </td>
+            <td>
+               <center>:</center>
+            </td>
+            <td>
+               <p class="s3"><span th:text="${sec.getQuestions().get(1).getAnswerAttrib('remark')}"></span></p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p class="s3">Number and Nationality of Crew</p>
+            </td>
+            <td>
+               <center>:</center>
+            </td>
+            <td>
+               <p class="s3"><span th:text="${sec.getQuestions().get(2).getAnswerAttrib('remark')}"></span></p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p class="s3">Minimum safe manning Crew</p>
+            </td>
+            <td>
+               <center>:</center>
+            </td>
+            <td>
+               <p class="s3"><span th:text="${sec.getQuestions().get(3).getAnswerAttrib('remark')}"></span></p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p class="s3">Master</p>
+            </td>
+            <td>
+               <center>:</center>
+            </td>
+            <td>
+               <p class="s3"><span th:text="${sec.getQuestions().get(4).getAnswerAttrib('remark')}"></span></p>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p class="s3">Ch/Engineer</p>
+            </td>
+            <td>
+               <center>:</center>
+            </td>
+            <td>
+               <p class="s3"><span th:text="${sec.getQuestions().get(5).getAnswerAttrib('remark')}"></span></p>
+            </td>
+         </tr>
+      </table>
+      
+      <br/>
+      <br/>
+   </body>
+</div>

@@ -1,0 +1,52 @@
+<div th:fragment="section(sec)">
+<table style="width:100%">
+<tr>
+<td style="width:23%"><span style="color: black;font-weight: bold" th:text="${sec.getName()}"></span></td>
+<td colspan="4"></td>
+</tr>
+
+<tr>
+<td  style="width:23%"><span
+							th:text="${sec.getQuestions().get(0).questionText}"></span></td>
+<td>
+<th:block th:replace="test/detail/dp_attachment.html :: attach(${sec.getQuestions().get(0).getAttachments()})"></th:block>
+</td>
+<td>
+<th:block th:replace="test/detail/dp_attachment.html :: attach(${sec.getQuestions().get(0).getAttachments()})"></th:block>
+</td>
+<td>
+<th:block th:replace="test/detail/dp_attachment.html :: attach(${sec.getQuestions().get(0).getAttachments()})"></th:block>
+</td>
+<td>
+<th:block th:replace="test/detail/dp_attachment.html :: attach(${sec.getQuestions().get(0).getAttachments()})"></th:block>
+</td>
+</tr>
+
+<tr>
+<td  style="width:23%"><span
+							th:text="${sec.getQuestions().get(1).questionText}"></span></td>
+<td>
+<th:block th:replace="test/detail/dp_attachment.html :: attach(${sec.getQuestions().get(1).getAttachments()})"></th:block>
+</td>
+<td>
+<th:block th:replace="test/detail/dp_attachment.html :: attach(${sec.getQuestions().get(1).getAttachments()})"></th:block>
+</td>
+<td>
+<th:block th:replace="test/detail/dp_attachment.html :: attach(${sec.getQuestions().get(1).getAttachments()})"></th:block>
+</td>
+<td>
+<th:block th:replace="test/detail/dp_attachment.html :: attach(${sec.getQuestions().get(1).getAttachments()})"></th:block>
+</td>
+</tr>
+
+<tr>
+<td  style="width:23%"><span th:text="${sec.getQuestions().get(2).questionText}"></span></td>
+<td><span th:text="${#strings.replace(sec.getQuestions().get(2).getAnswerAttrib('answer'),'T','  ')}"></span></td>
+<td><span th:text="${#strings.replace(sec.getQuestions().get(2).getAnswerAttrib('answer'),'T','  ')}"></span></td>
+<td><span th:text="${#strings.replace(sec.getQuestions().get(2).getAnswerAttrib('answer'),'T','  ')}"></span></td>
+<td><span th:text="${#strings.replace(sec.getQuestions().get(2).getAnswerAttrib('answer'),'T','  ')}"></span></td>
+</tr>
+
+
+</table>
+</div>

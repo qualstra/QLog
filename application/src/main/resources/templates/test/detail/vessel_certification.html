@@ -1,0 +1,273 @@
+
+<div th:fragment="certification(checklist)">
+
+<div style="border:solid; padding-left:10px">
+
+<div>
+<span><b>2.VESSEL CERTIFICATION</b></span>
+</div>
+
+<div>
+
+ <span>
+ Classed By / On: 
+ 
+ <input th:value="${helper.getAttrValue('ClsBy')}" style="border: 2px solid black;color:black;width:150px;height:20px;margin-left:90px;font-size:9px" type="text"/>
+ </span>
+ 
+ <span style="margin-left:53.5px">
+ Notation: 
+ 
+ <input  th:value="${helper.getAttrValue('Nota')}" style="border: 2px solid black;color:black;width:182px;height:20px ;margin-left:2.7px;font-size:9px" type="text"/>
+ </span>
+ </div>
+ 
+ <div>
+
+ <span style="margin-left:151.8px">
+ 
+ 
+ <input style="border: 2px solid black;color:black;width:150px;height:20px;margin-left:51.8px;font-size:9px" type="text"/>
+ </span>
+ 
+ <span style="margin-left:57px">
+ Validity: 
+ 
+ <input th:value="${helper.getAttrValue('val')}" style="border: 2px solid black;color:black;width:182px;height:20px; margin-left:2px;font-size:9px" type="text"/>
+ </span>
+ </div>
+ 
+ <div>
+
+ <span>
+ Last Dry-dock On / At: 
+ 
+ <input th:value="${helper.getAttrValue('Ldd_OnAt')}" style="border: 2px solid black;color:black;width:150px;height:20px;margin-left:50px;font-size:9px" type="text"/>
+ </span>
+ 
+ <span style="margin-left:56.5px">
+ O/S List: 
+ 
+ <input th:value="${helper.getAttrValue('OS')}" style="border: 2px solid black;color:black;width:182px;height:20px;margin-left:1.5px;font-size:9px" type="text"/>
+ </span>
+ </div>
+ 
+ 
+ <div>
+
+ <span>
+ Registry Issued By / On: 
+ 
+ <input th:value="${helper.getAttrValue('RI_ByOn')}" style="border: 2px solid black;color:black;width:150px;height:20px;margin-left:41px;font-size:9px" type="text"/>
+ </span>
+ 
+ <span style="margin-left:59px">
+ Validity: 
+ 
+ <input th:value="${helper.getAttrValue('RI_ByOn_Val')}" style="border: 2px solid black;color:black;width:182px;height:20px;margin-left:0.5px;font-size:9px" type="text"/>
+ </span>
+ </div>
+ 
+ <div>
+
+ <span>
+ Tonnague Issued By / On: 
+ 
+ <input th:value="${helper.getAttrValue('Ton_ByOn')}" style="border: 2px solid black;color:black;width:150px;height:20px;margin-left:31px;font-size:9px" type="text"/>
+ </span>
+ 
+ <span style="margin-left:59px">
+ Validity: 
+ 
+ <input th:value="${helper.getAttrValue('Ton_ByOn_Val')}" style="border: 2px solid black;color:black;width:182px;height:20px;margin-left:0.5px;font-size:9px" type="text"/>
+ </span>
+ </div>
+ 
+ <div>
+
+ <span>
+ Load line Issued By / On: 
+ 
+ <input th:value="${helper.getAttrValue('LL_ByOn')}" style="border: 2px solid black;color:black;width:150px;height:20px;margin-left:34px;font-size:9px" type="text"/>
+ </span>
+ 
+ <span style="margin-left:59px">
+ Validity: 
+ 
+ <input th:value="${helper.getAttrValue('LL_ByOn_Val')}" style="border: 2px solid black;color:black;width:182px;height:20px;margin-left:0.5px;font-size:9px" type="text"/>
+ </span>
+ </div>
+ 
+ <div>
+
+ <span>
+ <input style="border: 2px solid black;color:black;width:150px;height:20px;margin-left:203px" type="text"/>
+ </span>
+ </div>
+ 
+ <div>
+
+ <span>
+ Safety Construction By / On: 
+ 
+ <input th:value="${helper.getAttrValue('SC_ByOn')}" style="border: 2px solid black;color:black;width:150px;height:20px;margin-left:12.5px;font-size:9px" type="text"/>
+ </span>
+ 
+ <span style="margin-left:59px">
+ Validity: 
+ 
+ <input th:value="${helper.getAttrValue('SC_ByOnVal')}" style="border: 2px solid black;color:black;width:182px;height:20px;margin-left:0.5px;font-size:9px" type="text"/>
+ </span>
+ </div>
+ 
+ 
+<div>
+
+ <span>
+ <input style="border: 2px solid black;color:black;width:150px;height:20px;margin-left:203px;font-size:9px" type="text"/>
+ </span>
+ </div>
+ 
+ <div>
+
+ <span>
+ Safety Equipment By / On: 
+ 
+ <input th:value="${helper.getAttrValue('SE_ByOn')}" style="border: 2px solid black;color:black;width:150px;height:20px;margin-left:24.7px;font-size:9px" type="text"/>
+ </span>
+ 
+ <span style="margin-left:59px">
+ Validity: 
+ 
+ <input th:value="${helper.getAttrValue('SE_ByOn_Val')}" style="border: 2px solid black;color:black;width:182px;height:20px;margin-left:0.5px;font-size:9px" type="text"/>
+ </span>
+ </div>
+ 
+ <div>
+
+ <span>
+ <input style="border: 2px solid black;color:black;width:150px;height:20px;margin-left:203px;font-size:9px" type="text"/>
+ </span>
+ </div>
+ 
+ <div>
+
+ <span>
+ Safety Radio By / On: 
+ 
+ <input th:value="${helper.getAttrValue('SR_ByOn')}" style="border: 2px solid black;color:black;width:150px;height:20px;margin-left:56.9px;font-size:9px" type="text"/>
+ </span>
+ 
+ <span style="margin-left:59px">
+ Validity: 
+ 
+ <input th:value="${helper.getAttrValue('SR_ByOn_Val')}" style="border: 2px solid black;color:black;width:182px;height:20px;margin-left:0.5px;font-size:9px" type="text"/>
+ </span>
+ </div>
+ 
+ <div>
+
+ <span>
+ <input style="border: 2px solid black;color:black;width:150px;height:20px;margin-left:203px" type="text"/>
+ </span>
+ </div>
+ 
+ <div>
+
+ <span>
+ Radio License By / On: 
+ 
+ <input th:value="${helper.getAttrValue('RL_ByOn')}" style="border: 2px solid black;color:black;width:150px;height:20px;margin-left:48px;font-size:9px" type="text"/>
+ </span>
+ 
+ <span style="margin-left:59px">
+ Validity: 
+ 
+ <input th:value="${helper.getAttrValue('RL_ByOn_Val')}" style="border: 2px solid black;color:black;width:182px;height:20px;margin-left:0.5px;font-size:9px" type="text"/>
+ </span>
+ </div>
+ 
+ <div>
+
+ <span>
+ IOPP Issued By / On: 
+ 
+ <input th:value="${helper.getAttrValue('IOP_ByOn')}" style="border: 2px solid black;color:black;width:150px;height:20px;margin-left:60.5px;font-size:9px" type="text"/>
+ </span>
+ 
+ <span style="margin-left:59px">
+ Validity: 
+ 
+ <input th:value="${helper.getAttrValue('IOP_ByOn_Val')}" style="border: 2px solid black;color:black;width:182px;height:20px;margin-left:0.5px;font-size:9px" type="text"/>
+ </span>
+ </div>
+ 
+ <div>
+
+ <span>
+ <input style="border: 2px solid black;color:black;width:150px;height:20px;margin-left:203px" type="text"/>
+ </span>
+ </div>
+ 
+ <div>
+
+ <span>
+ SSCE Certificate BY / On: 
+ 
+ <input th:value="${helper.getAttrValue('SSC_ByOn')}" style="border: 2px solid black;color:black;width:150px;height:20px;margin-left:27px;font-size:9px" type="text"/>
+ </span>
+ 
+ <span style="margin-left:59px">
+ Validity: 
+ 
+ <input th:value="${helper.getAttrValue('SSC_ByOn_Val')}" style="border: 2px solid black;color:black;width:182px;height:20px;margin-left:0px;font-size:9px" type="text"/>
+ </span>
+ </div>
+ 
+ <div>
+
+ <span>
+ SMC BY / On: 
+ 
+ <input th:value="${helper.getAttrValue('SMC_ByOn')}" style="border: 2px solid black;color:black;width:150px;height:20px;margin-left:103px;font-size:9px" type="text"/>
+ </span>
+ 
+ <span style="margin-left:59px">
+ Validity: 
+ 
+ <input th:value="${helper.getAttrValue('SMC_ByOn_Val')}" style="border: 2px solid black;color:black;width:182px;height:20px;margin-left:0px;font-size:9px" type="text"/>
+ </span>
+ </div>
+ 
+ <div>
+
+ <span>
+ Safety Manning By / On: 
+ 
+ <input th:value="${helper.getAttrValue('SMan_ByOn')}" style="border: 2px solid black;color:black;width:150px;height:20px;margin-left:37.5px;font-size:9px" type="text"/>
+ </span>
+ 
+ <span style="margin-left:53.5px">
+ Crew list: 
+ 
+ <input style="border: 2px solid black;color:black;width:182px;height:20px;margin-left:0px;font-size:9px" type="text"/>
+ </span>
+ </div>
+ 
+ <div>
+
+ <span>
+ Stability Book appr. By / On: 
+ 
+ <input th:value="${helper.getAttrValue('SBA_ByOn')}" style="border: 2px solid black;color:black;width:150px;height:20px;margin-left:10.5px;font-size:9px" type="text"/>
+ </span>
+ 
+ <span style="margin-left:59px">
+  
+ 
+ <input style="border: 2px solid black;color:black;width:182px;height:20px;margin-left:9.3%;font-size:9px" type="text"/>
+ </span>
+ </div>
+ <div style="margin-top:10px"></div>
+</div>
+</div>

@@ -1,0 +1,370 @@
+<div th:fragment="section(sec)">
+<table style="width:100%">
+<tr>
+<td  style="width:23%"><span th:text="${sec.getQuestions().get(0).questionText}"></span></td>
+<td><span th:text="${#strings.replace(sec.getQuestions().get(0).getAnswerAttrib('answer'),'T','  ')}"></span></td>
+<td><span th:text="${#strings.replace(sec.getQuestions().get(0).getAnswerAttrib('answer'),'T','  ')}"></span></td>
+<td><span th:text="${#strings.replace(sec.getQuestions().get(0).getAnswerAttrib('answer'),'T','  ')}"></span></td>
+<td><span th:text="${#strings.replace(sec.getQuestions().get(0).getAnswerAttrib('answer'),'T','  ')}"></span></td>
+</tr>
+<tr>
+<td  style="width:23%"><span th:text="${sec.getQuestions().get(1).questionText}"></span></td>
+<td><span th:text="${sec.getQuestions().get(1).getAnswerAttrib('remark')}"></span></td>
+<td><span th:text="${sec.getQuestions().get(1).getAnswerAttrib('remark')}"></span></td>
+<td><span th:text="${sec.getQuestions().get(1).getAnswerAttrib('remark')}"></span></td>
+<td><span th:text="${sec.getQuestions().get(1).getAnswerAttrib('remark')}"></span></td>
+</tr>
+<tr>
+<td  style="width:23%"><span>Hdg:</span></td>
+<td>0000 - 0600</td>
+<td>0600 - 1200</td>
+<td>1200 - 1800</td>
+<td>1800 - 233.330</td>
+</tr>
+<tr>
+<td  style="width:23%"><span th:text="${sec.getQuestions().get(2).questionText}"></span></td>
+<td>
+<table class="fixed" style="width:100%">
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+     <col width="25%" />
+    <tr>
+        <td><span th:text="${sec.getQuestions().get(2).getChildQuestions().get(0).questionText}"></span></td>
+        <td><span th:text="${sec.getQuestions().get(2).getChildQuestions().get(0).getAnswerAttrib('answer')}"></span></td>
+        <td><span th:text="${sec.getQuestions().get(2).getChildQuestions().get(1).questionText}"></span></td>
+        <td><span th:text="${sec.getQuestions().get(2).getChildQuestions().get(1).getAnswerAttrib('answer')}"></span></td>
+    </tr>
+</table>
+
+</td>
+<td>
+
+<table class="fixed" style="width:100%">
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+     <col width="25%" />
+    <tr>
+        <td><span th:text="${sec.getQuestions().get(2).getChildQuestions().get(0).questionText}"></span></td>
+        <td><span th:text="${sec.getQuestions().get(2).getChildQuestions().get(0).getAnswerAttrib('answer')}"></span></td>
+        <td><span th:text="${sec.getQuestions().get(2).getChildQuestions().get(1).questionText}"></span></td>
+        <td><span th:text="${sec.getQuestions().get(2).getChildQuestions().get(1).getAnswerAttrib('answer')}"></span></td>
+    </tr>
+</table>
+</td>
+<td>
+
+<table class="fixed" style="width:100%">
+   <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+     <col width="25%" />
+    <tr>
+        <td><span th:text="${sec.getQuestions().get(2).getChildQuestions().get(0).questionText}"></span></td>
+        <td><span th:text="${sec.getQuestions().get(2).getChildQuestions().get(0).getAnswerAttrib('answer')}"></span></td>
+        <td><span th:text="${sec.getQuestions().get(2).getChildQuestions().get(1).questionText}"></span></td>
+        <td><span th:text="${sec.getQuestions().get(2).getChildQuestions().get(1).getAnswerAttrib('answer')}"></span></td>
+    </tr>
+</table>
+</td>
+<td>
+<table class="fixed" style="width:100%">
+   <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+     <col width="25%" />
+    <tr>
+         <td><span th:text="${sec.getQuestions().get(2).getChildQuestions().get(0).questionText}"></span></td>
+        <td><span th:text="${sec.getQuestions().get(2).getChildQuestions().get(0).getAnswerAttrib('answer')}"></span></td>
+        <td><span th:text="${sec.getQuestions().get(2).getChildQuestions().get(1).questionText}"></span></td>
+        <td><span th:text="${sec.getQuestions().get(2).getChildQuestions().get(1).getAnswerAttrib('answer')}"></span></td>
+    </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td  style="width:23%"><span th:text="${sec.getQuestions().get(3).questionText}"></span></td>
+<td>
+<table class="fixed" style="width:100%">
+   <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+     <col width="25%" />
+    <tr>
+        <td><span th:text="${sec.getQuestions().get(3).getChildQuestions().get(0).questionText}"></span></td>
+        <td><span th:text="${sec.getQuestions().get(3).getChildQuestions().get(0).getAnswerAttrib('answer')}"></span></td>
+        <td><span th:text="${sec.getQuestions().get(3).getChildQuestions().get(1).questionText}"></span></td>
+        <td><span th:text="${sec.getQuestions().get(3).getChildQuestions().get(1).getAnswerAttrib('answer')}"></span></td>    
+    </tr>
+</table>
+</td>
+<td>
+<table class="fixed" style="width:100%">
+   <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+     <col width="25%" />
+    <tr>
+        <td><span th:text="${sec.getQuestions().get(3).getChildQuestions().get(0).questionText}"></span></td>
+        <td><span th:text="${sec.getQuestions().get(3).getChildQuestions().get(0).getAnswerAttrib('answer')}"></span></td>
+        <td><span th:text="${sec.getQuestions().get(3).getChildQuestions().get(1).questionText}"></span></td>
+        <td><span th:text="${sec.getQuestions().get(3).getChildQuestions().get(1).getAnswerAttrib('answer')}"></span></td>
+    </tr>
+</table>
+</td>
+<td>
+<table class="fixed" style="width:100%">
+   <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+     <col width="25%" />
+    <tr>
+        <td><span th:text="${sec.getQuestions().get(3).getChildQuestions().get(0).questionText}"></span></td>
+        <td><span th:text="${sec.getQuestions().get(3).getChildQuestions().get(0).getAnswerAttrib('answer')}"></span></td>
+        <td><span th:text="${sec.getQuestions().get(3).getChildQuestions().get(1).questionText}"></span></td>
+        <td><span th:text="${sec.getQuestions().get(3).getChildQuestions().get(1).getAnswerAttrib('answer')}"></span></td>
+    </tr>
+</table>
+</td>
+<td>
+<table class="fixed" style="width:100%">
+   <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+     <col width="25%" />
+    <tr>
+        <td><span th:text="${sec.getQuestions().get(3).getChildQuestions().get(0).questionText}"></span></td>
+        <td><span th:text="${sec.getQuestions().get(3).getChildQuestions().get(0).getAnswerAttrib('answer')}"></span></td>
+        <td><span th:text="${sec.getQuestions().get(3).getChildQuestions().get(1).questionText}"></span></td>
+        <td><span th:text="${sec.getQuestions().get(3).getChildQuestions().get(1).getAnswerAttrib('answer')}"></span></td>
+    </tr>
+</table>
+</td>
+</tr>
+
+
+<tr>
+<td  style="width:23%"><span th:text="${sec.getQuestions().get(4).questionText}"></span></td>
+<td>
+<table class="fixed" style="width:100%">
+    <tr>
+        <td><span th:text="${sec.getQuestions().get(4).getAnswerAttrib('answer')}"></span></td>
+    </tr>
+</table>
+</td>
+<td>
+<table class="fixed" style="width:100%">
+    <tr>
+        <td><span th:text="${sec.getQuestions().get(4).getAnswerAttrib('answer')}"></span></td>
+    </tr>
+</table>
+</td>
+<td>
+<table class="fixed" style="width:100%">
+    <tr>
+        <td><span th:text="${sec.getQuestions().get(4).getAnswerAttrib('answer')}"></span></td>
+    </tr>
+</table>
+</td>
+<td>
+<table class="fixed" style="width:100%">
+    <tr>
+         <td><span th:text="${sec.getQuestions().get(4).getAnswerAttrib('answer')}"></span></td>
+    </tr>
+</table>
+</td>
+</tr>
+
+
+
+<tr>
+<td  style="width:23%"><span th:text="${sec.getQuestions().get(5).questionText}"></span></td>
+<td>
+
+<table class="fixed" style="width:100%">
+   <col width="33.33%" />
+    <col width="33.33%" />
+    <col width="33.33%" />
+     
+    <tr>
+        <td>CC01-<span th:text="${sec.getQuestions().get(5).getChildQuestions().get(0).getAnswerAttrib('answer')}"></span></td>
+        <td>CC02-<span th:text="${sec.getQuestions().get(5).getChildQuestions().get(1).getAnswerAttrib('answer')}"></span></td>
+        <td>CC03-<span th:text="${sec.getQuestions().get(5).getChildQuestions().get(2).getAnswerAttrib('answer')}"></span></td>
+        
+    </tr>
+</table>
+
+</td>
+<td>
+
+<table class="fixed" style="width:100%">
+   <col width="33.33%" />
+    <col width="33.33%" />
+    <col width="33.33%" />
+     
+    <tr>
+        <td>CC01-<span th:text="${sec.getQuestions().get(5).getChildQuestions().get(0).getAnswerAttrib('answer')}"></span></td>
+        <td>CC02-<span th:text="${sec.getQuestions().get(5).getChildQuestions().get(1).getAnswerAttrib('answer')}"></span></td>
+        <td>CC03-<span th:text="${sec.getQuestions().get(5).getChildQuestions().get(2).getAnswerAttrib('answer')}"></span></td>
+        
+    </tr>
+</table>
+
+</td>
+<td>
+
+<table class="fixed" style="width:100%">
+   <col width="33.33%" />
+    <col width="33.33%" />
+    <col width="33.33%" />
+     
+    <tr>
+        <td>CC01-<span th:text="${sec.getQuestions().get(5).getChildQuestions().get(0).getAnswerAttrib('answer')}"></span></td>
+        <td>CC02-<span th:text="${sec.getQuestions().get(5).getChildQuestions().get(1).getAnswerAttrib('answer')}"></span></td>
+        <td>CC03-<span th:text="${sec.getQuestions().get(5).getChildQuestions().get(2).getAnswerAttrib('answer')}"></span></td>
+        
+    </tr>
+</table>
+
+</td>
+<td>
+
+<table class="fixed" style="width:100%">
+   <col width="33.33%" />
+    <col width="33.33%" />
+    <col width="33.33%" />
+     
+    <tr>
+        <td>CC01-<span th:text="${sec.getQuestions().get(5).getChildQuestions().get(0).getAnswerAttrib('answer')}"></span></td>
+        <td>CC02-<span th:text="${sec.getQuestions().get(5).getChildQuestions().get(1).getAnswerAttrib('answer')}"></span></td>
+        <td>CC03-<span th:text="${sec.getQuestions().get(5).getChildQuestions().get(2).getAnswerAttrib('answer')}"></span></td>
+        
+    </tr>
+</table>
+
+</td>
+</tr>
+<tr>
+<td  style="width:23%"><span th:text="${sec.getQuestions().get(6).questionText}"></span></td>
+<td>
+<table class="fixed" style="width:100%">
+   <col width="33.33%" />
+    <col width="33.33%" />
+    <col width="33.33%" />
+     
+    <tr>
+        <td>CC01-<span th:text="${sec.getQuestions().get(6).getChildQuestions().get(0).getAnswerAttrib('answer')}"></span></td>
+        <td>CC02-<span th:text="${sec.getQuestions().get(6).getChildQuestions().get(1).getAnswerAttrib('answer')}"></span></td>
+        <td>CC03-<span th:text="${sec.getQuestions().get(6).getChildQuestions().get(2).getAnswerAttrib('answer')}"></span></td>
+        
+    </tr>
+</table>
+</td>
+<td>
+<table class="fixed" style="width:100%">
+   <col width="33.33%" />
+    <col width="33.33%" />
+    <col width="33.33%" />
+     
+    <tr>
+         <td>CC01-<span th:text="${sec.getQuestions().get(6).getChildQuestions().get(0).getAnswerAttrib('answer')}"></span></td>
+        <td>CC02-<span th:text="${sec.getQuestions().get(6).getChildQuestions().get(1).getAnswerAttrib('answer')}"></span></td>
+        <td>CC03-<span th:text="${sec.getQuestions().get(6).getChildQuestions().get(2).getAnswerAttrib('answer')}"></span></td>
+        
+    </tr>
+</table>
+</td>
+<td>
+<table class="fixed" style="width:100%">
+   <col width="33.33%" />
+    <col width="33.33%" />
+    <col width="33.33%" />
+     
+    <tr>
+         <td>CC01-<span th:text="${sec.getQuestions().get(6).getChildQuestions().get(0).getAnswerAttrib('answer')}"></span></td>
+        <td>CC02-<span th:text="${sec.getQuestions().get(6).getChildQuestions().get(1).getAnswerAttrib('answer')}"></span></td>
+        <td>CC03-<span th:text="${sec.getQuestions().get(6).getChildQuestions().get(2).getAnswerAttrib('answer')}"></span></td>
+        
+    </tr>
+</table>
+</td>
+<td>
+<table class="fixed" style="width:100%">
+   <col width="33.33%" />
+    <col width="33.33%" />
+    <col width="33.33%" />
+     
+    <tr>
+        <td>CC01-<span th:text="${sec.getQuestions().get(6).getChildQuestions().get(0).getAnswerAttrib('answer')}"></span></td>
+        <td>CC02-<span th:text="${sec.getQuestions().get(6).getChildQuestions().get(1).getAnswerAttrib('answer')}"></span></td>
+        <td>CC03-<span th:text="${sec.getQuestions().get(6).getChildQuestions().get(2).getAnswerAttrib('answer')}"></span></td>
+        
+    </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td  style="width:23%"><span th:text="${sec.getQuestions().get(7).questionText}"></span></td>
+<td>
+<table class="fixed" style="width:100%">
+   <col width="33.33%" />
+    <col width="33.33%" />
+    <col width="33.33%" />
+     
+    <tr>
+        <td>CC01-<span th:text="${sec.getQuestions().get(7).getChildQuestions().get(0).getAnswerAttrib('answer')}"></span></td>
+        <td>CC02-<span th:text="${sec.getQuestions().get(7).getChildQuestions().get(1).getAnswerAttrib('answer')}"></span></td>
+        <td>CC03-<span th:text="${sec.getQuestions().get(7).getChildQuestions().get(2).getAnswerAttrib('answer')}"></span></td>
+        
+    </tr>
+</table>
+</td>
+<td>
+<table class="fixed" style="width:100%">
+   <col width="33.33%" />
+    <col width="33.33%" />
+    <col width="33.33%" />
+     
+    <tr>
+        <td>CC01-<span th:text="${sec.getQuestions().get(7).getChildQuestions().get(0).getAnswerAttrib('answer')}"></span></td>
+        <td>CC02-<span th:text="${sec.getQuestions().get(7).getChildQuestions().get(1).getAnswerAttrib('answer')}"></span></td>
+        <td>CC03-<span th:text="${sec.getQuestions().get(7).getChildQuestions().get(2).getAnswerAttrib('answer')}"></span></td>
+        
+    </tr>
+</table>
+</td>
+<td>
+<table class="fixed" style="width:100%">
+   <col width="33.33%" />
+    <col width="33.33%" />
+    <col width="33.33%" />
+     
+    <tr>
+        <td>CC01-<span th:text="${sec.getQuestions().get(7).getChildQuestions().get(0).getAnswerAttrib('answer')}"></span></td>
+        <td>CC02-<span th:text="${sec.getQuestions().get(7).getChildQuestions().get(1).getAnswerAttrib('answer')}"></span></td>
+        <td>CC03-<span th:text="${sec.getQuestions().get(7).getChildQuestions().get(2).getAnswerAttrib('answer')}"></span></td>
+        
+    </tr>
+</table>
+</td>
+<td>
+<table class="fixed" style="width:100%">
+   <col width="33.33%" />
+    <col width="33.33%" />
+    <col width="33.33%" />
+     
+    <tr>
+        <td>CC01-<span th:text="${sec.getQuestions().get(7).getChildQuestions().get(0).getAnswerAttrib('answer')}"></span></td>
+        <td>CC02-<span th:text="${sec.getQuestions().get(7).getChildQuestions().get(1).getAnswerAttrib('answer')}"></span></td>
+        <td>CC03-<span th:text="${sec.getQuestions().get(7).getChildQuestions().get(2).getAnswerAttrib('answer')}"></span></td>
+        
+    </tr>
+</table>
+</td>
+</tr>
+
+
+
+</table>
+</div>

@@ -1,0 +1,157 @@
+<div th:fragment="section(sec)">
+   <body>
+      <table cellspacing="0">
+      <tr>
+         <td bgcolor="#CCCCCC">
+         <p class="s1"><b><u>2. INSPECTION LOCATION</u></b></p>
+         </td>
+      </tr>
+      </table>
+      <br/>
+      <table cellspacing="0">
+      <col style="width: 38%;"/>
+        <col style="width: 2%;"/>
+        <col style="width: 30%;"/>
+        <col style="width: 30%;"/>
+      <tr>
+         <td>
+            <p class="s2"><span th:text="${sec.getQuestions().get(0).questionText}"></span></p>
+         </td>
+         <td>
+            <center>:</center>
+         </td>
+         <td  colspan="2">
+         <p class="s2"><span th:text="${sec.getQuestions().get(0).getAnswerAttrib('answer')}"></span></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p class="s2"><span th:text="${sec.getQuestions().get(1).questionText}"></span></p>
+         </td>
+         <td>
+            <center>:</center>
+         </td>
+         <td colspan="2">
+         <p class="s2"><span th:text="${sec.getQuestions().get(1).getAnswerAttrib('remark')}"></span></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p class="s2">Date (s) of this Inspection</p>
+         </td>
+         <td>
+            <center>:</center>
+         </td>
+         <td>
+            <p class="s2">From:<span th:text="${sec.getQuestions().get(2).getAnswerAttrib('answer')}"></span></p>
+         </td>
+         <td>
+            <p class="s2">To:<span th:text="${sec.getQuestions().get(3).getAnswerAttrib('answer')}"></span></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p class="s2">Duration of this Inspection O/B</p>
+         </td>
+         <td>
+            <center>:</center>
+         </td>
+         <td colspan="2">
+         <p class="s2"><span th:text="${sec.getQuestions().get(4).getAnswerAttrib('remark')}"></span></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p class="s2">Place of this Inspection</p>
+         </td>
+         <td>
+            <center>:</center>
+         </td>
+         <td colspan="2">
+         <p class="s3"><span th:text="${sec.getQuestions().get(5).getAnswerAttrib('remark')}"></span></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p class="s2">Location</p>
+         </td>
+         <td>
+            <center>:</center>
+         </td>
+         <td colspan="2">
+         <p class="s2"><span th:text="${sec.getQuestions().get(6).getAnswerAttrib('remark')}"></span></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p class="s2">Alongside by</p>
+         </td>
+         <td>
+            <center>:</center>
+         </td>
+         <td colspan="2">
+         <p class="s2"><span th:text="${sec.getQuestions().get(7).getAnswerAttrib('remark')}"></span></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p class="s2">Draft FWD/AFT</p>
+         </td>
+         <td>
+            <center>:</center>
+         </td>
+         <td>
+            <p class="s2"><span th:text="${sec.getQuestions().get(8).getAnswerAttrib('remark')}"></span></p>
+         </td>
+         <td>
+            <p class="s2"><span th:text="${sec.getQuestions().get(9).getAnswerAttrib('remark')}"></span></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p class="s2">Last Port of Call</p>
+         </td>
+         <td>
+            <center>:</center>
+         </td>
+         <td colspan="2">
+         <p class="s2"><span th:text="${sec.getQuestions().get(10).getAnswerAttrib('remark')}"></span></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p class="s2">Inspector Names:</p>
+         </td>
+         <td>
+            <center>:</center>
+         </td>
+         <td colspan="2">
+         <p class="s3"><span th:text="${sec.getQuestions().get(11).getAnswerAttrib('remark')}"></span></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p class="s2">Any other parties Inspected</p>
+         </td>
+         <td>
+            <center>:</center>
+         </td>
+         <td colspan="2">
+         <p class="s3"><span th:text="${sec.getQuestions().get(12).getAnswerAttrib('remark')}"></span></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p class="s2">Operations at the time of inspection</p>
+            
+         </td>
+         <td>
+            <center>:</center>
+         </td>
+         <td colspan="2">
+         <p class="s2"><span th:text="${sec.getQuestions().get(13).getAnswerAttrib('remark')}"></span></p>
+         </td>
+      </tr>
+      </table>
+   </body>
+</div>

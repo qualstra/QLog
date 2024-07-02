@@ -1,0 +1,2159 @@
+<div th:fragment="section(sec)">
+
+<table style="width:100%;margin-top:10px">
+<tr>
+<th style="color:black;text-align:center">SR NO</th>
+<th style="color:black;text-align:center;width:300px">Hull CERTIFICATES</th>
+<th style="color:black;text-align:center">ANSWER Y/N/NA</th>
+<th style="color:black;text-align:center;width:300px">REMARKS</th>
+<th style="color:black;text-align:center;width:200px">PHOTO</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>
+<span th:text="${sec.getQuestions().get(0).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(0).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(0).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(0).getAttachments()})"></th:block>
+</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>
+<span th:text="${sec.getQuestions().get(1).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(1).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(1).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(1).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>3</td>
+<td>
+<span th:text="${sec.getQuestions().get(2).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(2).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(2).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(2).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>4</td>
+<td>
+<span th:text="${sec.getQuestions().get(3).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(3).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(3).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(3).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>5</td>
+<td>
+<span th:text="${sec.getQuestions().get(4).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(4).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(4).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(4).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>6</td>
+<td>
+<span th:text="${sec.getQuestions().get(5).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(5).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(5).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(5).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>7</td>
+<td>
+<span th:text="${sec.getQuestions().get(6).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(6).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(6).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(6).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>8</td>
+<td>
+<span th:text="${sec.getQuestions().get(7).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(7).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(7).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(7).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>9</td>
+<td>
+<span th:text="${sec.getQuestions().get(8).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(8).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(8).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(8).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>10</td>
+<td>
+<span th:text="${sec.getQuestions().get(9).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(9).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(9).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(9).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>11</td>
+<td>
+<span th:text="${sec.getQuestions().get(10).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(10).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(10).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(10).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>12</td>
+<td>
+<span th:text="${sec.getQuestions().get(11).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(11).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(11).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(11).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>13</td>
+<td>
+<span th:text="${sec.getQuestions().get(12).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(12).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(12).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(12).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>14</td>
+<td>
+<span th:text="${sec.getQuestions().get(13).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(13).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(13).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(13).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>15</td>
+<td>
+<span th:text="${sec.getQuestions().get(14).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(14).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(14).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(14).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>16</td>
+<td>
+<span th:text="${sec.getQuestions().get(15).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(15).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(15).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(15).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>17</td>
+<td>
+<span th:text="${sec.getQuestions().get(16).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(16).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(16).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(16).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>18</td>
+<td>
+<span th:text="${sec.getQuestions().get(17).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(17).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(17).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(17).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>19</td>
+<td>
+<span th:text="${sec.getQuestions().get(18).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(18).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(18).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(18).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>20</td>
+<td>
+<span th:text="${sec.getQuestions().get(19).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(19).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(19).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(19).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>21</td>
+<td>
+<span th:text="${sec.getQuestions().get(20).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(20).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(20).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(20).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>22</td>
+<td>
+<span th:text="${sec.getQuestions().get(21).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(21).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(21).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(21).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>23</td>
+<td>
+<span th:text="${sec.getQuestions().get(22).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(22).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(22).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(22).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>24</td>
+<td>
+<span th:text="${sec.getQuestions().get(23).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(23).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(23).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(23).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>25</td>
+<td>
+<span th:text="${sec.getQuestions().get(24).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(24).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(24).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(24).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>26</td>
+<td>
+<span th:text="${sec.getQuestions().get(25).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(25).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(25).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(25).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>27</td>
+<td>
+<span th:text="${sec.getQuestions().get(26).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(26).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(26).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(26).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>28</td>
+<td>
+<span th:text="${sec.getQuestions().get(27).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(27).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(27).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(27).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>29</td>
+<td>
+<span th:text="${sec.getQuestions().get(28).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(28).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(28).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(28).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>30</td>
+<td>
+<span th:text="${sec.getQuestions().get(29).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(29).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(29).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(29).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>31</td>
+<td>
+<span th:text="${sec.getQuestions().get(30).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(30).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(30).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(30).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>32</td>
+<td>
+<span th:text="${sec.getQuestions().get(31).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(31).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(31).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(31).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>33</td>
+<td>
+<span th:text="${sec.getQuestions().get(32).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(32).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(32).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(32).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>34</td>
+<td>
+<span th:text="${sec.getQuestions().get(33).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(33).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(33).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(33).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>35</td>
+<td>
+<span th:text="${sec.getQuestions().get(34).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(34).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(34).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(34).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>36</td>
+<td>
+<span th:text="${sec.getQuestions().get(35).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(35).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(35).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(35).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>37</td>
+<td>
+<span th:text="${sec.getQuestions().get(36).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(36).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(36).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(36).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>38</td>
+<td>
+<span th:text="${sec.getQuestions().get(37).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(37).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(37).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(37).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>39</td>
+<td>
+<span th:text="${sec.getQuestions().get(38).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(38).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(38).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(38).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>40</td>
+<td>
+<span th:text="${sec.getQuestions().get(39).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(39).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(39).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(39).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>41</td>
+<td>
+<span th:text="${sec.getQuestions().get(40).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(40).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(40).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(40).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>42</td>
+<td>
+<span th:text="${sec.getQuestions().get(41).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(41).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(41).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(41).getAttachments()})"></th:block>
+</td>
+</tr>
+
+<tr>
+<td>43</td>
+<td>
+<span th:text="${sec.getQuestions().get(42).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(42).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(42).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(42).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>44</td>
+<td>
+<span th:text="${sec.getQuestions().get(43).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(43).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(43).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(43).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>45</td>
+<td>
+<span th:text="${sec.getQuestions().get(44).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(44).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(44).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(44).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>46</td>
+<td>
+<span th:text="${sec.getQuestions().get(45).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(45).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(45).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(45).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>47</td>
+<td>
+<span th:text="${sec.getQuestions().get(46).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(46).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(46).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(46).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>48</td>
+<td>
+<span th:text="${sec.getQuestions().get(47).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(47).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(47).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(47).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>49</td>
+<td>
+<span th:text="${sec.getQuestions().get(48).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(48).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(48).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(48).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>50</td>
+<td>
+<span th:text="${sec.getQuestions().get(49).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(49).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(49).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(49).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>51</td>
+<td>
+<span th:text="${sec.getQuestions().get(50).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(50).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(50).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(50).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>52</td>
+<td>
+<span th:text="${sec.getQuestions().get(51).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(51).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(51).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(51).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>53</td>
+<td>
+<span th:text="${sec.getQuestions().get(52).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(52).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(52).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(52).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>54</td>
+<td>
+<span th:text="${sec.getQuestions().get(53).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(53).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(53).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(53).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>55</td>
+<td>
+<span th:text="${sec.getQuestions().get(54).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(54).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(54).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(54).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>56</td>
+<td>
+<span th:text="${sec.getQuestions().get(55).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(55).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(55).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(55).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>57</td>
+<td>
+<span th:text="${sec.getQuestions().get(56).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(56).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(56).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(56).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>58</td>
+<td>
+<span th:text="${sec.getQuestions().get(57).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(57).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(57).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(57).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>59</td>
+<td>
+<span th:text="${sec.getQuestions().get(58).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(58).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(58).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(58).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>60</td>
+<td>
+<span th:text="${sec.getQuestions().get(59).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(59).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(59).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(59).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>61</td>
+<td>
+<span th:text="${sec.getQuestions().get(60).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(60).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(60).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(60).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>62</td>
+<td>
+<span th:text="${sec.getQuestions().get(61).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(61).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(61).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(61).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>63</td>
+<td>
+<span th:text="${sec.getQuestions().get(62).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(62).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(62).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(62).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>64</td>
+<td>
+<span th:text="${sec.getQuestions().get(63).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(63).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(63).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(63).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>65</td>
+<td>
+<span th:text="${sec.getQuestions().get(64).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(64).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(64).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(64).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>66</td>
+<td>
+<span th:text="${sec.getQuestions().get(65).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(65).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(65).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(65).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>67</td>
+<td>
+<span th:text="${sec.getQuestions().get(66).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(66).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(66).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(66).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>68</td>
+<td>
+<span th:text="${sec.getQuestions().get(67).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(67).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(67).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(67).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>69</td>
+<td>
+<span th:text="${sec.getQuestions().get(68).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(68).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(68).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(68).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>70</td>
+<td>
+<span th:text="${sec.getQuestions().get(69).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(69).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(69).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(69).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>71</td>
+<td>
+<span th:text="${sec.getQuestions().get(70).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(70).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(70).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(70).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>72</td>
+<td>
+<span th:text="${sec.getQuestions().get(71).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(71).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(71).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(71).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>73</td>
+<td>
+<span th:text="${sec.getQuestions().get(72).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(72).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(72).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(72).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>74</td>
+<td>
+<span th:text="${sec.getQuestions().get(73).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(73).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(73).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(73).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>75</td>
+<td>
+<span th:text="${sec.getQuestions().get(74).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(74).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(74).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(74).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>76</td>
+<td>
+<span th:text="${sec.getQuestions().get(75).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(75).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(75).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(75).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>77</td>
+<td>
+<span th:text="${sec.getQuestions().get(76).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(76).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(76).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(76).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>78</td>
+<td>
+<span th:text="${sec.getQuestions().get(77).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(77).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(77).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(77).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>79</td>
+<td>
+<span th:text="${sec.getQuestions().get(78).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(78).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(78).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(78).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>80</td>
+<td>
+<span th:text="${sec.getQuestions().get(79).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(79).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(79).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(79).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>81</td>
+<td>
+<span th:text="${sec.getQuestions().get(80).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(80).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(80).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(80).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>82</td>
+<td>
+<span th:text="${sec.getQuestions().get(81).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(81).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(81).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(81).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>83</td>
+<td>
+<span th:text="${sec.getQuestions().get(82).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(82).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(82).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(82).getAttachments()})"></th:block>
+</td>
+</tr>
+
+<tr>
+<td>84</td>
+<td>
+<span th:text="${sec.getQuestions().get(83).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(83).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(83).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(83).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>85</td>
+<td>
+<span th:text="${sec.getQuestions().get(84).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(84).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(84).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(84).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>86</td>
+<td>
+<span th:text="${sec.getQuestions().get(85).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(85).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(85).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(85).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>87</td>
+<td>
+<span th:text="${sec.getQuestions().get(86).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(86).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(86).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(86).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>88</td>
+<td>
+<span th:text="${sec.getQuestions().get(87).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(87).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(87).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(87).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>89</td>
+<td>
+<span th:text="${sec.getQuestions().get(88).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(88).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(88).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(88).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>90</td>
+<td>
+<span th:text="${sec.getQuestions().get(89).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(89).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(89).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(89).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>91</td>
+<td>
+<span th:text="${sec.getQuestions().get(90).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(90).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(90).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(90).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>92</td>
+<td>
+<span th:text="${sec.getQuestions().get(91).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(91).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(91).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(91).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>93</td>
+<td>
+<span th:text="${sec.getQuestions().get(92).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(92).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(92).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(92).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>94</td>
+<td>
+<span th:text="${sec.getQuestions().get(93).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(93).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(93).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(93).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>95</td>
+<td>
+<span th:text="${sec.getQuestions().get(94).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(94).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(94).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(94).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>96</td>
+<td>
+<span th:text="${sec.getQuestions().get(95).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(95).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(95).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(95).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>97</td>
+<td>
+<span th:text="${sec.getQuestions().get(96).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(96).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(96).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(96).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>98</td>
+<td>
+<span th:text="${sec.getQuestions().get(97).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(97).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(97).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(97).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>99</td>
+<td>
+<span th:text="${sec.getQuestions().get(98).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(98).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(98).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(98).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>100</td>
+<td>
+<span th:text="${sec.getQuestions().get(99).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(99).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(99).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(99).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>101</td>
+<td>
+<span th:text="${sec.getQuestions().get(100).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(100).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(100).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(100).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>102</td>
+<td>
+<span th:text="${sec.getQuestions().get(101).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(101).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(101).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(101).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>103</td>
+<td>
+<span th:text="${sec.getQuestions().get(102).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(102).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(102).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(102).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+<tr>
+<td>104</td>
+<td>
+<span th:text="${sec.getQuestions().get(103).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(103).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(103).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(103).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>105</td>
+<td>
+<span th:text="${sec.getQuestions().get(104).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(104).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(104).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(104).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>106</td>
+<td>
+<span th:text="${sec.getQuestions().get(105).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(105).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(105).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(105).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>107</td>
+<td>
+<span th:text="${sec.getQuestions().get(106).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(106).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(106).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(106).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>108</td>
+<td>
+<span th:text="${sec.getQuestions().get(107).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(107).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(107).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(107).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>109</td>
+<td>
+<span th:text="${sec.getQuestions().get(108).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(108).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(108).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(108).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>110</td>
+<td>
+<span th:text="${sec.getQuestions().get(109).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(109).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(109).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(109).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>111</td>
+<td>
+<span th:text="${sec.getQuestions().get(110).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(110).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(110).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(110).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>112</td>
+<td>
+<span th:text="${sec.getQuestions().get(111).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(111).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(111).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(111).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>113</td>
+<td>
+<span th:text="${sec.getQuestions().get(112).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(112).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(112).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(112).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>114</td>
+<td>
+<span th:text="${sec.getQuestions().get(113).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(113).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(113).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(113).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>115</td>
+<td>
+<span th:text="${sec.getQuestions().get(114).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(114).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(114).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(114).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>116</td>
+<td>
+<span th:text="${sec.getQuestions().get(115).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(115).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(115).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(115).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>117</td>
+<td>
+<span th:text="${sec.getQuestions().get(116).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(116).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(116).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(116).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>118</td>
+<td>
+<span th:text="${sec.getQuestions().get(117).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(117).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(117).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(117).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>119</td>
+<td>
+<span th:text="${sec.getQuestions().get(118).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(118).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(118).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(118).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+<tr>
+<td>120</td>
+<td>
+<span th:text="${sec.getQuestions().get(119).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(119).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(119).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(119).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>121</td>
+<td>
+<span th:text="${sec.getQuestions().get(120).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(120).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(120).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(120).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>122</td>
+<td>
+<span th:text="${sec.getQuestions().get(121).questionText}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(121).getAnswerAttrib('answer')}"></span>
+</td>
+<td>
+<span th:text="${sec.getQuestions().get(121).getAnswerAttrib('remark')}"></span>
+</td>
+<td>
+<th:block th:replace="test/detail/defattachments.html :: attach(${sec.getQuestions().get(121).getAttachments()})"></th:block>
+</td>
+</tr>
+
+
+
+
+
+
+</table>
+</div>

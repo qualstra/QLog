@@ -1,0 +1,33 @@
+
+<th:block th:fragment="attach(attachments)">
+	<table style="border-width: 0px;border-style:none">
+<div style="text-align:'center'">
+
+		<th:block th:each="attachmentSplit : ${helper.split(attachments,3)}">
+		
+			<tr> 
+				<th:block th:each="attachment : ${attachmentSplit}">
+					<td style="margin-left:10%;border-style:none">
+					
+					<img th:src="${attachment.getLocation()}"
+						style="width: 200px; height: 150px" />
+						<br/>
+						<span th:text="${attachment.getDesc()}"></span>
+						<!--<br/>
+						<span th:text="${helper.getFormatedDatetime(attachment.auditTrail.createdDate)}"></span> -->
+						</td>
+				
+			
+			
+				</th:block>
+			</tr>
+			
+		</th:block>
+		</div>
+	</table>
+
+</th:block>
+
+
+
+

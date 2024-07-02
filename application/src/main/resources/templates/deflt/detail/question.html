@@ -1,0 +1,44 @@
+
+<th:block th:fragment="parentQuestion(que,index)">
+
+	<tr>
+	<td><span th:text="${index+1}"></span></td>
+		<td>
+			<span th:text="${que.getQuestionText()}"></span></td>
+			<td><span
+			th:text="${que.getAnswerAttrib('answer')}"></span></td>
+		<td><span
+			th:text="${que.getAnswerAttrib('remark')}"></span></td>
+			<td><th:block
+				th:each="attachment : ${que.getAttachments()}">
+				<img th:src="${attachment.getLocation()}"
+					style="height: 80px;width: 80px" />
+					<br/>
+						<span th:text="${helper.getFormatedDatetime(attachment.auditTrail.createdDate)}"></span>
+			</th:block></td>
+	</tr>
+
+	
+	<th:block th:each="question : ${que.getChildQuestions()}">
+		<tr>
+		<td><span th:text="${index+1}"></span></td>
+			<td style="padding-left: 20px;"><span
+				th:text="${question.getQuestionText()}"></span></td>
+				<td><span
+				th:text="${question.getAnswerAttrib('answer')}"></span></td>
+			<td><span
+				th:text="${question.getAnswerAttrib('remark')}"></span></td>
+		
+		<td><th:block
+					th:each="attachment : ${question.getAttachments()}">
+					<img th:src="${attachment.getLocation()}"
+						style="width: 80px; height: 80px" />
+						<br/>
+						<span th:text="${helper.getFormatedDatetime(attachment.auditTrail.createdDate)}"></span>
+				</th:block></td>
+		
+		</tr>
+		
+
+	</th:block>
+</th:block>

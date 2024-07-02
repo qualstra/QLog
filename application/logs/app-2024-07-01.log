@@ -1,0 +1,793 @@
+2024-07-01 09:52:26 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2024-07-01 09:52:26 [main] INFO  com.enoch.EnochApplication - The following profiles are active: qualstra
+2024-07-01 09:52:27 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-01 09:52:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 327ms. Found 33 JPA repository interfaces.
+2024-07-01 09:52:28 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=cef64cea-4bd3-3ef0-aa68-b53b1ee9f140
+2024-07-01 09:52:28 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.enoch.service.client.AttributeClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-01 09:52:28 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@d3e3085' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-01 09:52:28 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-01 09:52:29 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2024-07-01 09:52:29 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-07-01 09:52:29 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-01 09:52:29 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-07-01 09:52:29 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-01 09:52:29 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2400 ms
+2024-07-01 09:52:29 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-01 09:52:29 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.23.Final
+2024-07-01 09:52:29 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-07-01 09:52:29 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-01 09:52:30 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-01 09:52:30 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-07-01 09:52:30 [main] WARN  o.h.b.i.InFlightMetadataCollectorImpl - HHH000069: Duplicate generator name gen
+2024-07-01 09:52:30 [main] WARN  o.h.b.i.InFlightMetadataCollectorImpl - HHH000069: Duplicate generator name gen
+2024-07-01 09:52:31 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-07-01 09:52:31 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-01 09:52:32 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-01 09:52:34 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3220ffb, org.springframework.security.web.context.SecurityContextPersistenceFilter@14f8fdae, org.springframework.security.web.header.HeaderWriterFilter@500d4de8, org.springframework.security.web.authentication.logout.LogoutFilter@755c29b0, com.enoch.config.jwt.JwtRequestFilter@603a34e5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3533b614, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1da40ae8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@53791a39, org.springframework.security.web.session.SessionManagementFilter@5c519da4, org.springframework.security.web.access.ExceptionTranslationFilter@3c55e9d4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@70b67841]
+2024-07-01 09:52:34 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2024-07-01 09:52:34 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-07-01 09:52:34 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2024-07-01 09:52:34 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-07-01 09:52:34 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2024-07-01 09:52:34 [main] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-07-01 09:52:34 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2024-07-01 09:52:34 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2024-07-01 09:52:34 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-07-01 09:52:34 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-07-01 09:52:34 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2024-07-01 09:52:34 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3e691e44
+2024-07-01 09:52:35 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2024-07-01 09:52:35 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses Jersey
+2024-07-01 09:52:35 [main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2024-07-01 09:52:35 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2024-07-01 09:52:35 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2024-07-01 09:52:36 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2024-07-01 09:52:36 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2024-07-01 09:52:36 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2024-07-01 09:52:36 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2024-07-01 09:52:36 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 09:52:36 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2024-07-01 09:52:36 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2024-07-01 09:52:36 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2024-07-01 09:52:36 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2024-07-01 09:52:36 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2024-07-01 09:52:36 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2024-07-01 09:52:36 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2024-07-01 09:52:36 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2024-07-01 09:52:36 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2024-07-01 09:52:36 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-07-01 09:52:36 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1719807756564 with initial instances count: 1
+2024-07-01 09:52:36 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application APP with eureka with status UP
+2024-07-01 09:52:36 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1719807756574, current=UP, previous=STARTING]
+2024-07-01 09:52:36 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-07-01 09:52:36 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090: registering service...
+2024-07-01 09:52:36 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2024-07-01 09:52:36 [SimpleAsyncTaskExecutor-23] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9090
+2024-07-01 09:52:36 [main] INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2024-07-01 09:52:36 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-07-01 09:52:36 [main] INFO  com.enoch.EnochApplication - Started EnochApplication in 10.626 seconds (JVM running for 11.249)
+2024-07-01 09:52:36 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090 - registration status: 204
+2024-07-01 09:52:53 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-01 09:52:53 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-01 09:52:53 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 21 ms
+2024-07-01 09:52:53 [http-nio-9090-exec-1] WARN  c.enoch.config.jwt.JwtRequestFilter - JWT Token does not begin with Bearer String
+2024-07-01 09:53:06 [http-nio-9090-exec-4] WARN  c.enoch.config.jwt.JwtRequestFilter - JWT Token does not begin with Bearer String
+2024-07-01 09:53:11 [http-nio-9090-exec-5] WARN  c.enoch.config.jwt.JwtRequestFilter - JWT Token does not begin with Bearer String
+2024-07-01 09:53:17 [http-nio-9090-exec-7] WARN  c.enoch.config.jwt.JwtRequestFilter - JWT Token does not begin with Bearer String
+2024-07-01 09:53:34 [http-nio-9090-exec-8] WARN  c.enoch.config.jwt.JwtRequestFilter - JWT Token does not begin with Bearer String
+2024-07-01 09:53:53 [http-nio-9090-exec-1] WARN  c.enoch.config.jwt.JwtRequestFilter - JWT Token does not begin with Bearer String
+2024-07-01 09:54:08 [http-nio-9090-exec-4] WARN  c.enoch.config.jwt.JwtRequestFilter - JWT Token does not begin with Bearer String
+2024-07-01 09:54:16 [http-nio-9090-exec-6] WARN  c.enoch.config.jwt.JwtRequestFilter - JWT Token does not begin with Bearer String
+2024-07-01 09:54:36 [http-nio-9090-exec-8] WARN  c.enoch.config.jwt.JwtRequestFilter - JWT Token does not begin with Bearer String
+2024-07-01 09:54:39 [http-nio-9090-exec-10] WARN  c.enoch.config.jwt.JwtRequestFilter - JWT Token does not begin with Bearer String
+2024-07-01 11:58:46 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2024-07-01 11:58:47 [main] INFO  com.enoch.EnochApplication - The following profiles are active: qualstra
+2024-07-01 11:58:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-01 11:58:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 337ms. Found 33 JPA repository interfaces.
+2024-07-01 11:58:48 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=62b8d51c-0d0b-3af3-98de-34273ffcc7f1
+2024-07-01 11:58:48 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.enoch.service.client.AttributeClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-01 11:58:48 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@79ba0a6f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-01 11:58:48 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-01 11:58:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2024-07-01 11:58:49 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-07-01 11:58:49 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-01 11:58:49 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-07-01 11:58:49 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-01 11:58:49 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1965 ms
+2024-07-01 11:58:49 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-01 11:58:49 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.23.Final
+2024-07-01 11:58:49 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-07-01 11:58:49 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-01 11:58:49 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-01 11:58:50 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-07-01 11:58:50 [main] WARN  o.h.b.i.InFlightMetadataCollectorImpl - HHH000069: Duplicate generator name gen
+2024-07-01 11:58:50 [main] WARN  o.h.b.i.InFlightMetadataCollectorImpl - HHH000069: Duplicate generator name gen
+2024-07-01 11:58:51 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-07-01 11:58:51 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-01 11:58:52 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-01 11:58:53 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@724a80d2, org.springframework.security.web.context.SecurityContextPersistenceFilter@65a03c19, org.springframework.security.web.header.HeaderWriterFilter@1b914e36, org.springframework.security.web.authentication.logout.LogoutFilter@6dd8ac29, com.enoch.config.jwt.JwtRequestFilter@ccea4be, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4fe87cb9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4c954b79, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5ce34685, org.springframework.security.web.session.SessionManagementFilter@64cbc28e, org.springframework.security.web.access.ExceptionTranslationFilter@53ec379a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@121fe002]
+2024-07-01 11:58:54 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2024-07-01 11:58:54 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-07-01 11:58:54 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2024-07-01 11:58:54 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-07-01 11:58:54 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2024-07-01 11:58:54 [main] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-07-01 11:58:54 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2024-07-01 11:58:54 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2024-07-01 11:58:54 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-07-01 11:58:54 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-07-01 11:58:54 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2024-07-01 11:58:54 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1355d2a0
+2024-07-01 11:58:54 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2024-07-01 11:58:55 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses Jersey
+2024-07-01 11:58:55 [main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2024-07-01 11:58:55 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2024-07-01 11:58:55 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2024-07-01 11:58:55 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2024-07-01 11:58:55 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2024-07-01 11:58:55 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2024-07-01 11:58:55 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2024-07-01 11:58:55 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 11:58:55 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2024-07-01 11:58:55 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2024-07-01 11:58:55 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2024-07-01 11:58:55 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2024-07-01 11:58:55 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2024-07-01 11:58:55 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2024-07-01 11:58:55 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2024-07-01 11:58:56 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2024-07-01 11:58:56 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2024-07-01 11:58:56 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-07-01 11:58:56 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1719815336077 with initial instances count: 1
+2024-07-01 11:58:56 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application APP with eureka with status UP
+2024-07-01 11:58:56 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1719815336086, current=UP, previous=STARTING]
+2024-07-01 11:58:56 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090: registering service...
+2024-07-01 11:58:56 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-07-01 11:58:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2024-07-01 11:58:56 [SimpleAsyncTaskExecutor-24] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9090
+2024-07-01 11:58:56 [main] INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2024-07-01 11:58:56 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-07-01 11:58:56 [main] INFO  com.enoch.EnochApplication - Started EnochApplication in 9.939 seconds (JVM running for 10.725)
+2024-07-01 11:58:56 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090 - registration status: 204
+2024-07-01 11:59:06 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-01 11:59:06 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-01 11:59:06 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+2024-07-01 11:59:06 [http-nio-9090-exec-1] WARN  c.enoch.config.jwt.JwtRequestFilter - JWT Token does not begin with Bearer String
+2024-07-01 12:03:55 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 12:06:42 [RMI TCP Connection(11)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2024-07-01 12:06:42 [SimpleAsyncTaskExecutor-106] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application APP with eureka with status DOWN
+2024-07-01 12:06:42 [SimpleAsyncTaskExecutor-106] ERROR c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1719815802096, current=DOWN, previous=UP]
+2024-07-01 12:06:42 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090: registering service...
+2024-07-01 12:06:42 [RMI TCP Connection(11)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-07-01 12:06:42 [RMI TCP Connection(11)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-9090"]
+2024-07-01 12:06:42 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090 - registration status: 204
+2024-07-01 12:06:42 [RMI TCP Connection(11)-127.0.0.1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-07-01 12:06:42 [RMI TCP Connection(11)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-07-01 12:06:42 [RMI TCP Connection(11)-127.0.0.1] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2024-07-01 12:06:42 [RMI TCP Connection(11)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-9090"]
+2024-07-01 12:06:42 [RMI TCP Connection(11)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-9090"]
+2024-07-01 12:06:42 [RMI TCP Connection(11)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2024-07-01 12:06:42 [RMI TCP Connection(11)-127.0.0.1] INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2024-07-01 12:06:42 [RMI TCP Connection(11)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-07-01 12:06:42 [RMI TCP Connection(11)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-07-01 12:06:42 [RMI TCP Connection(11)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-07-01 12:06:42 [RMI TCP Connection(11)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-01 12:06:42 [RMI TCP Connection(11)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-01 12:06:42 [RMI TCP Connection(11)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-01 12:06:42 [RMI TCP Connection(11)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2024-07-01 12:06:45 [RMI TCP Connection(11)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2024-07-01 12:06:45 [RMI TCP Connection(11)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090 - deregister  status: 200
+2024-07-01 12:06:45 [RMI TCP Connection(11)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2024-07-01 12:06:47 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2024-07-01 12:06:47 [main] INFO  com.enoch.EnochApplication - The following profiles are active: qualstra
+2024-07-01 12:06:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-01 12:06:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 317ms. Found 33 JPA repository interfaces.
+2024-07-01 12:06:49 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=62b8d51c-0d0b-3af3-98de-34273ffcc7f1
+2024-07-01 12:06:49 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.enoch.service.client.AttributeClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-01 12:06:49 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@79ba0a6f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-01 12:06:49 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-01 12:06:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2024-07-01 12:06:49 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-07-01 12:06:49 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-01 12:06:49 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-07-01 12:06:49 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-01 12:06:49 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1948 ms
+2024-07-01 12:06:50 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-01 12:06:50 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.23.Final
+2024-07-01 12:06:50 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-07-01 12:06:50 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-01 12:06:50 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-01 12:06:50 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-07-01 12:06:50 [main] WARN  o.h.b.i.InFlightMetadataCollectorImpl - HHH000069: Duplicate generator name gen
+2024-07-01 12:06:50 [main] WARN  o.h.b.i.InFlightMetadataCollectorImpl - HHH000069: Duplicate generator name gen
+2024-07-01 12:06:51 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-07-01 12:06:51 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-01 12:06:52 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-01 12:06:54 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ce7ec5f, org.springframework.security.web.context.SecurityContextPersistenceFilter@67c020c8, org.springframework.security.web.header.HeaderWriterFilter@3a9a12a1, org.springframework.security.web.authentication.logout.LogoutFilter@5f6dd89c, com.enoch.config.jwt.JwtRequestFilter@1eb207c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a370c7c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ca3a203, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65bc50c9, org.springframework.security.web.session.SessionManagementFilter@2c6ed95a, org.springframework.security.web.access.ExceptionTranslationFilter@29422e61, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2a3251ad]
+2024-07-01 12:06:55 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2024-07-01 12:06:55 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-07-01 12:06:55 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2024-07-01 12:06:55 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-07-01 12:06:55 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2024-07-01 12:06:55 [main] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-07-01 12:06:55 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2024-07-01 12:06:55 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2024-07-01 12:06:55 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-07-01 12:06:55 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-07-01 12:06:55 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2024-07-01 12:06:55 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@456d03cd
+2024-07-01 12:06:55 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2024-07-01 12:06:55 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses Jersey
+2024-07-01 12:06:56 [main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2024-07-01 12:06:56 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2024-07-01 12:06:56 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2024-07-01 12:06:56 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2024-07-01 12:06:56 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2024-07-01 12:06:56 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2024-07-01 12:06:56 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2024-07-01 12:06:56 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 12:06:56 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2024-07-01 12:06:56 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2024-07-01 12:06:56 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2024-07-01 12:06:56 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2024-07-01 12:06:56 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2024-07-01 12:06:56 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2024-07-01 12:06:56 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2024-07-01 12:06:56 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2024-07-01 12:06:56 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2024-07-01 12:06:56 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-07-01 12:06:56 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1719815816866 with initial instances count: 2
+2024-07-01 12:06:56 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application APP with eureka with status UP
+2024-07-01 12:06:56 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1719815816873, current=UP, previous=STARTING]
+2024-07-01 12:06:56 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-07-01 12:06:56 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090: registering service...
+2024-07-01 12:06:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2024-07-01 12:06:56 [SimpleAsyncTaskExecutor-24] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9090
+2024-07-01 12:06:56 [main] INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2024-07-01 12:06:56 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-07-01 12:06:56 [main] INFO  com.enoch.EnochApplication - Started EnochApplication in 10.058 seconds (JVM running for 10.746)
+2024-07-01 12:06:56 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090 - registration status: 204
+2024-07-01 12:07:18 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-01 12:07:18 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-01 12:07:18 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+2024-07-01 12:07:35 [http-nio-9090-exec-5] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /rs/answer/
+2024-07-01 12:07:39 [http-nio-9090-exec-6] WARN  c.enoch.config.jwt.JwtRequestFilter - JWT Token does not begin with Bearer String
+2024-07-01 12:10:00 [http-nio-9090-exec-2] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /rs/answer/
+2024-07-01 12:11:06 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2024-07-01 12:11:06 [SimpleAsyncTaskExecutor-124] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application APP with eureka with status DOWN
+2024-07-01 12:11:06 [SimpleAsyncTaskExecutor-124] ERROR c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1719816066831, current=DOWN, previous=UP]
+2024-07-01 12:11:06 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090: registering service...
+2024-07-01 12:11:06 [RMI TCP Connection(9)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-07-01 12:11:06 [RMI TCP Connection(9)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-9090"]
+2024-07-01 12:11:06 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090 - registration status: 204
+2024-07-01 12:11:06 [RMI TCP Connection(9)-127.0.0.1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-07-01 12:11:06 [RMI TCP Connection(9)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-07-01 12:11:06 [RMI TCP Connection(9)-127.0.0.1] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2024-07-01 12:11:06 [RMI TCP Connection(9)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-9090"]
+2024-07-01 12:11:06 [RMI TCP Connection(9)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-9090"]
+2024-07-01 12:11:06 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2024-07-01 12:11:06 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2024-07-01 12:11:06 [RMI TCP Connection(9)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-07-01 12:11:06 [RMI TCP Connection(9)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-07-01 12:11:06 [RMI TCP Connection(9)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-07-01 12:11:07 [RMI TCP Connection(9)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-01 12:11:07 [RMI TCP Connection(9)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-01 12:11:07 [RMI TCP Connection(9)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-01 12:11:07 [RMI TCP Connection(9)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2024-07-01 12:11:10 [RMI TCP Connection(9)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2024-07-01 12:11:10 [RMI TCP Connection(9)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090 - deregister  status: 200
+2024-07-01 12:11:10 [RMI TCP Connection(9)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2024-07-01 12:11:11 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2024-07-01 12:11:12 [main] INFO  com.enoch.EnochApplication - The following profiles are active: qualstra
+2024-07-01 12:11:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-01 12:11:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 329ms. Found 33 JPA repository interfaces.
+2024-07-01 12:11:13 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=62b8d51c-0d0b-3af3-98de-34273ffcc7f1
+2024-07-01 12:11:13 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.enoch.service.client.AttributeClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-01 12:11:13 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4f820f42' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-01 12:11:14 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-01 12:11:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2024-07-01 12:11:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-07-01 12:11:14 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-01 12:11:14 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-07-01 12:11:14 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-01 12:11:14 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1891 ms
+2024-07-01 12:11:14 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-01 12:11:14 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.23.Final
+2024-07-01 12:11:14 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-07-01 12:11:14 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-01 12:11:15 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-01 12:11:15 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-07-01 12:11:15 [main] WARN  o.h.b.i.InFlightMetadataCollectorImpl - HHH000069: Duplicate generator name gen
+2024-07-01 12:11:15 [main] WARN  o.h.b.i.InFlightMetadataCollectorImpl - HHH000069: Duplicate generator name gen
+2024-07-01 12:11:16 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-07-01 12:11:16 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-01 12:11:17 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-01 12:11:18 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d16bb07, org.springframework.security.web.context.SecurityContextPersistenceFilter@2cbc0224, org.springframework.security.web.header.HeaderWriterFilter@75392381, org.springframework.security.web.authentication.logout.LogoutFilter@5f455d91, com.enoch.config.jwt.JwtRequestFilter@ae85aad, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53d3d604, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5aa0e9c6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@233bfc46, org.springframework.security.web.session.SessionManagementFilter@6e21b6f8, org.springframework.security.web.access.ExceptionTranslationFilter@67c020c8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@50cb64d5]
+2024-07-01 12:11:19 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2024-07-01 12:11:19 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-07-01 12:11:19 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2024-07-01 12:11:19 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-07-01 12:11:19 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2024-07-01 12:11:19 [main] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-07-01 12:11:19 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2024-07-01 12:11:19 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2024-07-01 12:11:19 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-07-01 12:11:19 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-07-01 12:11:19 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2024-07-01 12:11:19 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@70420c70
+2024-07-01 12:11:19 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2024-07-01 12:11:20 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses Jersey
+2024-07-01 12:11:20 [main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2024-07-01 12:11:20 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2024-07-01 12:11:20 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2024-07-01 12:11:20 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2024-07-01 12:11:20 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2024-07-01 12:11:20 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2024-07-01 12:11:20 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2024-07-01 12:11:20 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 12:11:20 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2024-07-01 12:11:20 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2024-07-01 12:11:20 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2024-07-01 12:11:20 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2024-07-01 12:11:20 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2024-07-01 12:11:20 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2024-07-01 12:11:20 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2024-07-01 12:11:21 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2024-07-01 12:11:21 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2024-07-01 12:11:21 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-07-01 12:11:21 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1719816081050 with initial instances count: 2
+2024-07-01 12:11:21 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application APP with eureka with status UP
+2024-07-01 12:11:21 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1719816081057, current=UP, previous=STARTING]
+2024-07-01 12:11:21 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-07-01 12:11:21 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090: registering service...
+2024-07-01 12:11:21 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2024-07-01 12:11:21 [SimpleAsyncTaskExecutor-24] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9090
+2024-07-01 12:11:21 [main] INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2024-07-01 12:11:21 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-07-01 12:11:21 [main] INFO  com.enoch.EnochApplication - Started EnochApplication in 9.572 seconds (JVM running for 10.25)
+2024-07-01 12:11:21 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090 - registration status: 204
+2024-07-01 12:11:30 [http-nio-9090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-01 12:11:30 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-01 12:11:30 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+2024-07-01 12:15:11 [RMI TCP Connection(7)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2024-07-01 12:15:11 [SimpleAsyncTaskExecutor-92] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application APP with eureka with status DOWN
+2024-07-01 12:15:11 [SimpleAsyncTaskExecutor-92] ERROR c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1719816311428, current=DOWN, previous=UP]
+2024-07-01 12:15:11 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090: registering service...
+2024-07-01 12:15:11 [RMI TCP Connection(7)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-07-01 12:15:11 [RMI TCP Connection(7)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-9090"]
+2024-07-01 12:15:11 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090 - registration status: 204
+2024-07-01 12:15:11 [RMI TCP Connection(7)-127.0.0.1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-07-01 12:15:11 [RMI TCP Connection(7)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-07-01 12:15:11 [RMI TCP Connection(7)-127.0.0.1] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2024-07-01 12:15:11 [RMI TCP Connection(7)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-9090"]
+2024-07-01 12:15:11 [RMI TCP Connection(7)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-9090"]
+2024-07-01 12:15:11 [RMI TCP Connection(7)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2024-07-01 12:15:11 [RMI TCP Connection(7)-127.0.0.1] INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2024-07-01 12:15:11 [RMI TCP Connection(7)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-07-01 12:15:11 [RMI TCP Connection(7)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-07-01 12:15:11 [RMI TCP Connection(7)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-07-01 12:15:11 [RMI TCP Connection(7)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-01 12:15:11 [RMI TCP Connection(7)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-01 12:15:11 [RMI TCP Connection(7)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-01 12:15:11 [RMI TCP Connection(7)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2024-07-01 12:15:14 [RMI TCP Connection(7)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2024-07-01 12:15:14 [RMI TCP Connection(7)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090 - deregister  status: 200
+2024-07-01 12:15:14 [RMI TCP Connection(7)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2024-07-01 12:15:23 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2024-07-01 12:15:23 [main] INFO  com.enoch.EnochApplication - The following profiles are active: qualstra
+2024-07-01 12:15:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-01 12:15:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 314ms. Found 33 JPA repository interfaces.
+2024-07-01 12:15:25 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=62b8d51c-0d0b-3af3-98de-34273ffcc7f1
+2024-07-01 12:15:25 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.enoch.service.client.AttributeClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-01 12:15:25 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4b325930' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-01 12:15:25 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-01 12:15:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2024-07-01 12:15:25 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-07-01 12:15:25 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-01 12:15:25 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-07-01 12:15:25 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-01 12:15:25 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1899 ms
+2024-07-01 12:15:25 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-01 12:15:26 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.23.Final
+2024-07-01 12:15:26 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-07-01 12:15:26 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-01 12:15:26 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-01 12:15:26 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-07-01 12:15:26 [main] WARN  o.h.b.i.InFlightMetadataCollectorImpl - HHH000069: Duplicate generator name gen
+2024-07-01 12:15:26 [main] WARN  o.h.b.i.InFlightMetadataCollectorImpl - HHH000069: Duplicate generator name gen
+2024-07-01 12:15:27 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-07-01 12:15:27 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-01 12:15:28 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-01 12:15:30 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@eb65fc8, org.springframework.security.web.context.SecurityContextPersistenceFilter@6517bc6b, org.springframework.security.web.header.HeaderWriterFilter@6e21b6f8, org.springframework.security.web.authentication.logout.LogoutFilter@4fe87cb9, com.enoch.config.jwt.JwtRequestFilter@6b44121e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@57dd4bc9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b914e36, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5cd5e1b6, org.springframework.security.web.session.SessionManagementFilter@14144cc9, org.springframework.security.web.access.ExceptionTranslationFilter@6d0d5147, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@233bfc46]
+2024-07-01 12:15:30 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2024-07-01 12:15:30 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-07-01 12:15:30 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2024-07-01 12:15:30 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-07-01 12:15:31 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2024-07-01 12:15:31 [main] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-07-01 12:15:31 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2024-07-01 12:15:31 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2024-07-01 12:15:31 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-07-01 12:15:31 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-07-01 12:15:31 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2024-07-01 12:15:31 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@62c732d2
+2024-07-01 12:15:31 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2024-07-01 12:15:31 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses Jersey
+2024-07-01 12:15:31 [main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2024-07-01 12:15:31 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2024-07-01 12:15:32 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2024-07-01 12:15:32 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2024-07-01 12:15:32 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2024-07-01 12:15:32 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2024-07-01 12:15:32 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2024-07-01 12:15:32 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 12:15:32 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2024-07-01 12:15:32 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2024-07-01 12:15:32 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2024-07-01 12:15:32 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2024-07-01 12:15:32 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2024-07-01 12:15:32 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2024-07-01 12:15:32 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2024-07-01 12:15:32 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2024-07-01 12:15:32 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2024-07-01 12:15:32 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-07-01 12:15:32 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1719816332640 with initial instances count: 1
+2024-07-01 12:15:32 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application APP with eureka with status UP
+2024-07-01 12:15:32 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1719816332647, current=UP, previous=STARTING]
+2024-07-01 12:15:32 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-07-01 12:15:32 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090: registering service...
+2024-07-01 12:15:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2024-07-01 12:15:32 [SimpleAsyncTaskExecutor-24] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9090
+2024-07-01 12:15:32 [main] INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2024-07-01 12:15:32 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-07-01 12:15:32 [main] INFO  com.enoch.EnochApplication - Started EnochApplication in 9.847 seconds (JVM running for 10.546)
+2024-07-01 12:15:32 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090 - registration status: 204
+2024-07-01 12:15:42 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-01 12:15:42 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-01 12:15:42 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+2024-07-01 12:16:09 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2024-07-01 12:16:09 [SimpleAsyncTaskExecutor-80] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application APP with eureka with status DOWN
+2024-07-01 12:16:09 [SimpleAsyncTaskExecutor-80] ERROR c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1719816369556, current=DOWN, previous=UP]
+2024-07-01 12:16:09 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090: registering service...
+2024-07-01 12:16:09 [RMI TCP Connection(3)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-07-01 12:16:09 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-9090"]
+2024-07-01 12:16:09 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090 - registration status: 204
+2024-07-01 12:16:09 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-07-01 12:16:09 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-07-01 12:16:09 [RMI TCP Connection(3)-127.0.0.1] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2024-07-01 12:16:09 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-9090"]
+2024-07-01 12:16:09 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-9090"]
+2024-07-01 12:16:09 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2024-07-01 12:16:09 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2024-07-01 12:16:09 [RMI TCP Connection(3)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-07-01 12:16:09 [RMI TCP Connection(3)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-07-01 12:16:09 [RMI TCP Connection(3)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-07-01 12:16:09 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-01 12:16:09 [RMI TCP Connection(3)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-01 12:16:09 [RMI TCP Connection(3)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-01 12:16:09 [RMI TCP Connection(3)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2024-07-01 12:16:12 [RMI TCP Connection(3)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2024-07-01 12:16:12 [RMI TCP Connection(3)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090 - deregister  status: 200
+2024-07-01 12:16:12 [RMI TCP Connection(3)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2024-07-01 12:16:14 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2024-07-01 12:16:15 [main] INFO  com.enoch.EnochApplication - The following profiles are active: qualstra
+2024-07-01 12:16:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-01 12:16:16 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 319ms. Found 33 JPA repository interfaces.
+2024-07-01 12:16:16 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=62b8d51c-0d0b-3af3-98de-34273ffcc7f1
+2024-07-01 12:16:16 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.enoch.service.client.AttributeClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-01 12:16:16 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@261de205' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-01 12:16:16 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-01 12:16:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2024-07-01 12:16:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-07-01 12:16:16 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-01 12:16:16 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-07-01 12:16:17 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-01 12:16:17 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1861 ms
+2024-07-01 12:16:17 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-01 12:16:17 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.23.Final
+2024-07-01 12:16:17 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-07-01 12:16:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-01 12:16:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-01 12:16:17 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-07-01 12:16:17 [main] WARN  o.h.b.i.InFlightMetadataCollectorImpl - HHH000069: Duplicate generator name gen
+2024-07-01 12:16:18 [main] WARN  o.h.b.i.InFlightMetadataCollectorImpl - HHH000069: Duplicate generator name gen
+2024-07-01 12:16:18 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-07-01 12:16:18 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-01 12:16:19 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-01 12:16:21 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7f794b0f, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b38d912, org.springframework.security.web.header.HeaderWriterFilter@2ca3a203, org.springframework.security.web.authentication.logout.LogoutFilter@c105912, com.enoch.config.jwt.JwtRequestFilter@6b44121e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f6dd89c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e11996e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@efe75a2, org.springframework.security.web.session.SessionManagementFilter@44eda25b, org.springframework.security.web.access.ExceptionTranslationFilter@4bd7e0b6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@54455c8d]
+2024-07-01 12:16:21 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2024-07-01 12:16:21 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-07-01 12:16:21 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2024-07-01 12:16:21 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-07-01 12:16:22 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2024-07-01 12:16:22 [main] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-07-01 12:16:22 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2024-07-01 12:16:22 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2024-07-01 12:16:22 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-07-01 12:16:22 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-07-01 12:16:22 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2024-07-01 12:16:22 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5dcc1495
+2024-07-01 12:16:22 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2024-07-01 12:16:22 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses Jersey
+2024-07-01 12:16:22 [main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2024-07-01 12:16:23 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2024-07-01 12:16:23 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2024-07-01 12:16:23 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2024-07-01 12:16:23 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2024-07-01 12:16:23 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2024-07-01 12:16:23 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2024-07-01 12:16:23 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 12:16:23 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2024-07-01 12:16:23 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2024-07-01 12:16:23 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2024-07-01 12:16:23 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2024-07-01 12:16:23 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2024-07-01 12:16:23 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2024-07-01 12:16:23 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2024-07-01 12:16:23 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2024-07-01 12:16:23 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2024-07-01 12:16:23 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-07-01 12:16:23 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1719816383670 with initial instances count: 2
+2024-07-01 12:16:23 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application APP with eureka with status UP
+2024-07-01 12:16:23 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1719816383677, current=UP, previous=STARTING]
+2024-07-01 12:16:23 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-07-01 12:16:23 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090: registering service...
+2024-07-01 12:16:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2024-07-01 12:16:23 [SimpleAsyncTaskExecutor-24] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9090
+2024-07-01 12:16:23 [main] INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2024-07-01 12:16:23 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-07-01 12:16:23 [main] INFO  com.enoch.EnochApplication - Started EnochApplication in 9.484 seconds (JVM running for 10.162)
+2024-07-01 12:16:23 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090 - registration status: 204
+2024-07-01 12:16:27 [http-nio-9090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-01 12:16:27 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-01 12:16:27 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+2024-07-01 12:17:11 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2024-07-01 12:17:11 [SimpleAsyncTaskExecutor-76] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application APP with eureka with status DOWN
+2024-07-01 12:17:11 [SimpleAsyncTaskExecutor-76] ERROR c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1719816431479, current=DOWN, previous=UP]
+2024-07-01 12:17:11 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090: registering service...
+2024-07-01 12:17:11 [RMI TCP Connection(3)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-07-01 12:17:11 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-9090"]
+2024-07-01 12:17:11 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090 - registration status: 204
+2024-07-01 12:17:11 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-07-01 12:17:11 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-07-01 12:17:11 [RMI TCP Connection(3)-127.0.0.1] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2024-07-01 12:17:11 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-9090"]
+2024-07-01 12:17:11 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-9090"]
+2024-07-01 12:17:11 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2024-07-01 12:17:11 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2024-07-01 12:17:11 [RMI TCP Connection(3)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-07-01 12:17:11 [RMI TCP Connection(3)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-07-01 12:17:11 [RMI TCP Connection(3)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-07-01 12:17:11 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-01 12:17:11 [RMI TCP Connection(3)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-01 12:17:11 [RMI TCP Connection(3)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-01 12:17:11 [RMI TCP Connection(3)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2024-07-01 12:17:14 [RMI TCP Connection(3)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2024-07-01 12:17:14 [RMI TCP Connection(3)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090 - deregister  status: 200
+2024-07-01 12:17:14 [RMI TCP Connection(3)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2024-07-01 12:17:16 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2024-07-01 12:17:17 [main] INFO  com.enoch.EnochApplication - The following profiles are active: qualstra
+2024-07-01 12:17:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-01 12:17:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 325ms. Found 33 JPA repository interfaces.
+2024-07-01 12:17:18 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=62b8d51c-0d0b-3af3-98de-34273ffcc7f1
+2024-07-01 12:17:18 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.enoch.service.client.AttributeClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-01 12:17:18 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@261de205' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-01 12:17:18 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-07-01 12:17:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2024-07-01 12:17:18 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2024-07-01 12:17:18 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-01 12:17:18 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2024-07-01 12:17:19 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-01 12:17:19 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1870 ms
+2024-07-01 12:17:19 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-01 12:17:19 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.23.Final
+2024-07-01 12:17:19 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-07-01 12:17:19 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-01 12:17:19 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-01 12:17:19 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-07-01 12:17:19 [main] WARN  o.h.b.i.InFlightMetadataCollectorImpl - HHH000069: Duplicate generator name gen
+2024-07-01 12:17:19 [main] WARN  o.h.b.i.InFlightMetadataCollectorImpl - HHH000069: Duplicate generator name gen
+2024-07-01 12:17:20 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-07-01 12:17:20 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-01 12:17:21 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-01 12:17:23 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@a49cdd6, org.springframework.security.web.context.SecurityContextPersistenceFilter@6ee34fe4, org.springframework.security.web.header.HeaderWriterFilter@1464a177, org.springframework.security.web.authentication.logout.LogoutFilter@4c954b79, com.enoch.config.jwt.JwtRequestFilter@1c3400df, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b914e36, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@44ad3c5e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@109a462e, org.springframework.security.web.session.SessionManagementFilter@6965c32, org.springframework.security.web.access.ExceptionTranslationFilter@4fc9e73d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@eb65fc8]
+2024-07-01 12:17:23 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2024-07-01 12:17:23 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-07-01 12:17:23 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2024-07-01 12:17:23 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-07-01 12:17:24 [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2024-07-01 12:17:24 [main] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-07-01 12:17:24 [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2024-07-01 12:17:24 [main] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2024-07-01 12:17:24 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-07-01 12:17:24 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-07-01 12:17:24 [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2024-07-01 12:17:24 [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7773d139
+2024-07-01 12:17:24 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2024-07-01 12:17:24 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses Jersey
+2024-07-01 12:17:24 [main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2024-07-01 12:17:24 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2024-07-01 12:17:24 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2024-07-01 12:17:25 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2024-07-01 12:17:25 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2024-07-01 12:17:25 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2024-07-01 12:17:25 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2024-07-01 12:17:25 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 12:17:25 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2024-07-01 12:17:25 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2024-07-01 12:17:25 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2024-07-01 12:17:25 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2024-07-01 12:17:25 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2024-07-01 12:17:25 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2024-07-01 12:17:25 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2024-07-01 12:17:25 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2024-07-01 12:17:25 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2024-07-01 12:17:25 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-07-01 12:17:25 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1719816445588 with initial instances count: 2
+2024-07-01 12:17:25 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application APP with eureka with status UP
+2024-07-01 12:17:25 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1719816445595, current=UP, previous=STARTING]
+2024-07-01 12:17:25 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2024-07-01 12:17:25 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090: registering service...
+2024-07-01 12:17:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2024-07-01 12:17:25 [SimpleAsyncTaskExecutor-24] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9090
+2024-07-01 12:17:25 [main] INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2024-07-01 12:17:25 [main] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-07-01 12:17:25 [main] INFO  com.enoch.EnochApplication - Started EnochApplication in 9.482 seconds (JVM running for 10.183)
+2024-07-01 12:17:25 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090 - registration status: 204
+2024-07-01 12:22:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 12:27:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 12:32:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 12:37:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 12:42:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 12:47:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 12:52:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 12:57:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 13:02:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 13:07:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 13:12:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 13:17:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 13:22:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 13:27:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 13:32:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 13:37:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 13:42:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 13:47:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 13:52:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 13:57:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 14:02:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 14:07:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 14:12:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 14:17:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 14:22:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 14:27:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 14:32:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 14:37:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 14:42:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 14:47:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 14:52:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 14:57:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 15:02:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 15:07:25 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2024-07-01 15:08:50 [RMI TCP Connection(175)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2024-07-01 15:08:50 [SimpleAsyncTaskExecutor-756] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application APP with eureka with status DOWN
+2024-07-01 15:08:50 [SimpleAsyncTaskExecutor-756] ERROR c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1719826730894, current=DOWN, previous=UP]
+2024-07-01 15:08:50 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090: registering service...
+2024-07-01 15:08:50 [RMI TCP Connection(175)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-07-01 15:08:50 [RMI TCP Connection(175)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-9090"]
+2024-07-01 15:08:50 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_APP/host.docker.internal:app:9090 - registration status: 204
+2024-07-01 15:08:51 [RMI TCP Connection(175)-127.0.0.1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-07-01 15:08:51 [RMI TCP Connection(175)-127.0.0.1] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2024-07-01 15:08:51 [RMI TCP Connection(175)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-9090"]
+2024-07-01 15:08:51 [RMI TCP Connection(175)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-9090"]
+2024-07-01 15:08:51 [RMI TCP Connection(175)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2024-07-01 15:08:51 [RMI TCP Connection(175)-127.0.0.1] INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2024-07-01 15:08:51 [RMI TCP Connection(175)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-07-01 15:08:51 [RMI TCP Connection(175)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-07-01 15:08:51 [RMI TCP Connection(175)-127.0.0.1] INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-07-01 15:08:51 [RMI TCP Connection(175)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-01 15:08:51 [RMI TCP Connection(175)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-07-01 15:08:51 [RMI TCP Connection(175)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-07-01 15:08:51 [RMI TCP Connection(175)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...

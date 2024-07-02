@@ -1,0 +1,51 @@
+<div th:fragment="communication(checklist)">
+
+<div style="border:solid; padding-left:10px;margin-top:10%">
+<div style="margin-top:10px">
+<span><b>5.COMMUNICATION EQUIPMENT</b></span>
+</div>
+
+<div style="margin-top:10px">
+<span>Call Sign</span>
+<input th:value="${helper.getAttrValue('CSign')}" style="border: 2px solid black;color:black;width:150px;height:20px;margin-left:15%;font-size:9px" type="text"/>
+<span style="margin-left:14.52%">MMSI No.</span>
+<input th:value="${helper.getAttrValue('MMSI')}" style="border: 2px solid black;color:black;width:170px;height:20px;margin-left:0px;font-size:9px" type="text"/>
+</div>
+
+<div>
+<Span>SSB/GMDSS</Span>
+<span style="margin-left:32px">Make</span>
+<input th:value="${helper.getAttrValue('SSB_Make')}" style="border: 2px solid black;color:black;width:70px;height:30px;font-size:9px" type="text"/>
+<span style="margin-left:2%">Type no.</span>
+<input th:value="${helper.getAttrValue('SSB_Type')}" style="border: 2px solid black;color:black;width:70px;height:30px;font-size:9px" type="text"/>
+<span style="font-size:11px;margin-left:30px">
+GMDSS A1+A2+A3
+<span style="font-size:16px;margin-left:5px">area:</span>
+
+</span>
+</div>
+
+<div>
+<Span>VHF</Span>
+<span style="margin-left:88px">Make</span>
+<input th:value="${helper.getAttrValue('VHF_Make')}" style="border: 2px solid black;color:black;width:70px;height:20px;font-size:9px" type="text"/>
+<span style="margin-left:2%">Type no.</span>
+<input th:value="${helper.getAttrValue('VHF_Type')}" style="border: 2px solid black;color:black;width:70px;height:20px;font-size:9px" type="text"/>
+<span style="margin-left:11.1%">Portable - Qty</span>
+<input th:value="${helper.getAttrValue('PQty')}" style="border: 2px solid black;color:black;width:100px;height:20px;font-size:9px" type="text"/>
+</div>
+
+
+<div>
+<Span>Inmarsat C</Span>
+<span style="margin-left:49.5px">Make</span>
+<input th:value="${helper.getAttrValue('InmarsatC_Make')}" style="border: 2px solid black;color:black;width:70px;height:20px;font-size:9px" type="text"/>
+<span style="margin-left:2%">Type no.</span>
+<input th:value="${helper.getAttrValue('InmarsatC_Type')}" style="border: 2px solid black;color:black;width:70px;height:20px;font-size:9px" type="text"/>
+<span style="margin-left:2.2%">GMDSS Portable - Qty</span>
+<input th:value="${helper.getAttrValue('GMDSS_PQty')}" style="border: 2px solid black;color:black;width:100px;height:20px;font-size:9px" type="text"/>
+</div>
+<div style="margin-top:20px">
+</div>
+</div>
+</div>

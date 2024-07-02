@@ -1,0 +1,40 @@
+<div th:fragment="checkList(checklist)">
+
+<div th:replace="deflt/fragments/CasHeader :: header(${checklist})"></div>
+<div style="text-align:center"><h3><b><u>Setting up Engine room switchboard and machinery 
+for DP operation</u></b></h3></div>
+<div style="text-align:center">Please attach vessel specific checklist for setting up engine room switchboard and machinery</div>
+<div style="text-align:center">systems for DP operations prepared by the vessel.</div>
+<div style="text-align:center">This checklist will be controlled by chief engineer of each vessel.</div>
+
+ <div style="text-align:center"><h3><b><u>DP ENGINE ROOM CHECKLIST</u></b></h3></div>
+<div th:replace="test/detail/engine_room/system_check :: section(${checklist.getSections().get(0)})"></div>
+<!-- <div th:replace="test/detail/engine_room/sea_water :: section(${checklist.getSections().get(1)})"></div> 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+ <div th:replace="test/detail/engine_room/fresh_water :: section(${checklist.getSections().get(2)})"></div> 
+<div th:replace="test/detail/engine_room/oil_system :: section(${checklist.getSections().get(3)})"></div>
+<div th:replace="test/detail/engine_room/power_generation :: section(${checklist.getSections().get(4)})"></div> 
+ <div th:replace="test/detail/engine_room/electrical_distribution :: section(${checklist.getSections().get(5)})"></div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+ <div th:replace="test/detail/engine_room/thrusters :: section(${checklist.getSections().get(6)})"></div>  -->
+</div>

@@ -1,0 +1,173 @@
+
+<div th:fragment="checkList(checklist)">
+
+	<div th:replace="rightship/detail/risqHeader :: header(${checklist})"></div>
+	<br></br> <img th:src="@{bravoship.jpg}" width="670" height="425"
+		alt="ship" /> <br /> <br />
+	<!-- for first page -->
+	<div style="height: 430px;"></div>
+	<body>
+		<div th:each="section, iterStat : ${checklist.getSections()}">
+			<br />
+			<br />
+			<div th:if="${iterStat.index >= 4}"><div style="page-break-before: always;"></div></div>
+			<table cellspacing="0">
+				<tr>
+					<td bgcolor="#CCCCCC" style="width: 80%;"><b><u><span
+								th:text="${iterStat.index+1}"></span>.<span
+								th:text="${section.name}"></span> :</u></b></td>
+				</tr>
+			</table>
+			<!-- for first 3 sections fixed space -->
+			<div th:if="${iterStat.index == 0}" style="height: 1010px;">
+
+				<div th:each="question, iterStat : ${section.getQuestions()}">
+					<p>
+						<b><u><span th:text="${question.questionText}"> </span></u></b>
+					</p>
+					<p>
+						<span th:text="${question.getAnswerAttrib('remark')}"> </span><span
+							th:text="${question.getAnswerAttrib('answer')}"> </span>
+					</p>
+				</div>
+			</div>
+			<div th:if="${iterStat.index == 1}" style="height: 460px;">
+
+				<div th:each="question, iterStat : ${section.getQuestions()}">
+					<p>
+						<b><u><span th:text="${question.questionText}"> </span></u></b>
+					</p>
+					<p>
+						<span th:text="${question.getAnswerAttrib('remark')}"> </span>
+					</p>
+				</div>
+			</div>
+			<div th:if="${iterStat.index == 2}" style="height: 1450px;">
+
+				<div th:each="question, iterStat : ${section.getQuestions()}">
+					<p>
+						<b><u><span th:text="${question.questionText}"> </span></u></b>
+					</p>
+					<p>
+						<span th:text="${question.getAnswerAttrib('remark')}"> </span>
+					</p>
+				</div>
+			</div>
+			<div th:if="${iterStat.index >= 3}">
+
+				<div th:each="question, iterStat : ${section.getQuestions()}">
+
+					<!-- if it is a String Question -->
+					<div th:if="${question.type.name().equals('String')}">
+
+						<b><u><span th:text="${question.questionText}"> </span></u></b> <span
+							th:text="${question.getAnswerAttrib('remark')}"> </span>
+
+					</div>
+
+					<!-- if it is a Date Question -->
+					<div th:if="${question.type.name().equals('Date')}">
+
+						<b><u><span th:text="${question.questionText}"> </span></u></b> <span
+							th:text="${question.getAnswerAttrib('remark')}"> </span>
+
+					</div>
+
+					<!-- if it is a Option Question -->
+					<div th:if="${question.type.name().equals('Option')}">
+						<br /> <br />
+						<table class="curved-table">
+							<tr>
+								<td style="line-height: normal; border-bottom: 0px solid white;">
+									<!-- <div style="height: 40px;"> --> <span
+									th:text="${iterStat.index+1}" />. <span
+									th:text="${question.questionText}" /><br /> <!-- </div> -->
+								</td>
+							</tr>
+							<tr>
+								<td
+									style="border-top: 0px solid white; border-bottom: 0px solid white">
+									<th:block
+										th:with="answer=${question.getAnswerAttrib('answer')}">
+										<!-- <span th:text="${answer}" /> -->
+										<th:block th:if="${answer.equals('Yes') }">
+											<img th:src="@{rightship/checkbox.png}" width="20"
+												height="auto" />
+											<span style="vertical-align: middle;"> Yes</span>
+											<img th:src="@{rightship/checkboxselected.png}" width="20"
+												height="auto" />
+											<span style="vertical-align: middle;"> No</span>
+											<img th:src="@{rightship/checkbox.png}" width="20"
+												height="auto" />
+											<span style="vertical-align: middle;"> NA</span>
+
+										</th:block>
+										<th:block th:if="${answer.equals('No') }">
+											<img th:src="@{rightship/checkboxselected.png}" width="20"
+												height="auto" />
+											<span style="vertical-align: middle;"> Yes</span>
+											<img th:src="@{rightship/checkbox.png}" width="20"
+												height="auto" />
+											<span style="vertical-align: middle;"> No</span>
+											<img th:src="@{rightship/checkbox.png}" width="20"
+												height="auto" />
+											<span style="vertical-align: middle;"> NA</span>
+										</th:block>
+
+										<th:block th:if="${answer.equals('NA') }">
+											<img th:src="@{rightship/checkbox.png}" width="20"
+												height="auto" />
+											<span style="vertical-align: middle;"> Yes</span>
+											<img th:src="@{rightship/checkbox.png}" width="20"
+												height="auto" />
+											<span style="vertical-align: middle;"> No</span>
+											<img th:src="@{rightship/checkboxselected.png}" width="20"
+												height="auto" />
+											<span style="vertical-align: middle;"> NA</span>
+										</th:block>
+									</th:block>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<!-- <div style="height: 200px;"> --> <!-- attachments come here, give index of sections which contain images -->
+									<br /> <th:block
+										th:replace="rightship/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+									<!-- </div> -->
+								</td>
+							</tr>
+							<tr>
+								<td style="border-top: 1px solid white;">
+									<!-- <div style="height: 58px;"> --> <b>Remarks: </b><span
+									th:text="${question.getAnswerAttrib('remark')}" /> <!-- </div> -->
+								</td>
+							</tr>
+						</table>
+
+						<!-- <div th:if="${iterStat.index == 1}"><br/></div> -->
+
+						<!-- <div class="footer">
+							Page <span class="page"></span>
+						</div> -->
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+	</body>
+	<h3></h3>
+
+
+
+
+	<!-- 
+ <div th:replace="rightship/detail/introduction :: section(${checklist.getSections().get(0)})"></div> 
+ <br/><br/><br/><br/><br/><br/><br/><br/>
+
+  <br/><br/>
+    <div th:replace="rightship/detail/checklist :: section(${checklist.getSections().get(1)})"></div>
+  -->
+
+</div>

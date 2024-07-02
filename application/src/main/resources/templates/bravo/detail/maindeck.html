@@ -1,0 +1,45 @@
+<div th:fragment="section(sec)">
+   <body>
+      <table cellspacing="0">
+         <tr>
+            <td bgcolor="#CCCCCC" style="width: 80%;">
+               <p class="s1"><b><u>Main Deck</u></b></p>
+            </td>
+         </tr>
+      </table>
+         <div th:each="question, iterStat : ${sec.getQuestions()}">
+         <!-- To remove question of 1st index and table questions-->
+         <div th:if="${iterStat.index == 0}">
+            <p class="s2"><b><u></u></b></p>
+            <p class="s3"> <span th:text="${question.getAnswerAttrib('remark')}"> </span> </p>
+         </div>
+         <div th:unless="${iterStat.index == 0 or (iterStat.index >=31 && iterStat.index <=42)}">
+<!--          	<div th:if="${question.type.name().equals('Option')}">
+         		<p class="s2"><b><u><span th:text="${question.questionText}"> </span></u></b></p>
+            	<p class="s3"> <span th:text="${question.getAnswerAttrib('answer')}"> </span> </p>        	
+         	</div> -->
+         	<div th:unless="${question.type.name().equals('Option')}">
+          		<p class="s2"><b><u><span th:text="${question.questionText}"> </span></u></b></p>
+            	<p class="s3"> <span th:text="${question.getAnswerAttrib('remark')}"> </span> </p>
+            </div>
+            	<!-- table 1 -->
+            <div th:if="${iterStat.index == 28}">
+            	<table>
+            	<tr><th><p>Deck Crane Number</p></th><th><p>Running Hrs</p></th><th><p>Luffing wire renewed</p></th><th><p>Hoisting wire Renewed</p></th></tr>
+            	<tr><td><p>#1 Deck Crane</p></td><td><p><span th:text="${sec.getQuestions().get(29).getAnswerAttrib('remark')}"/></p></td><td><p><span th:text="${sec.getQuestions().get(30).getAnswerAttrib('remark')}"/></p></td><td><p><span th:text="${sec.getQuestions().get(31).getAnswerAttrib('remark')}"/></p></td></tr>
+            	<tr><td><p>#2 Deck Crane</p></td><td><p><span th:text="${sec.getQuestions().get(32).getAnswerAttrib('remark')}"/></p></td><td><p><span th:text="${sec.getQuestions().get(33).getAnswerAttrib('remark')}"/></p></td><td><p><span th:text="${sec.getQuestions().get(34).getAnswerAttrib('remark')}"/></p></td></tr>
+            	<tr><td><p>#3 Deck Crane</p></td><td><p><span th:text="${sec.getQuestions().get(35).getAnswerAttrib('remark')}"/></p></td><td><p><span th:text="${sec.getQuestions().get(36).getAnswerAttrib('remark')}"/></p></td><td><p><span th:text="${sec.getQuestions().get(37).getAnswerAttrib('remark')}"/></p></td></tr>
+            	<tr><td><p>#4 Deck Crane</p></td><td><p><span th:text="${sec.getQuestions().get(38).getAnswerAttrib('remark')}"/></p></td><td><p><span th:text="${sec.getQuestions().get(39).getAnswerAttrib('remark')}"/></p></td><td><p><span th:text="${sec.getQuestions().get(40).getAnswerAttrib('remark')}"/></p></td></tr>
+            	</table>         	
+         	</div>      
+         </div>
+         <!-- attachments come here, give index of sections which contain images -->
+         <div th:if="${iterStat.index == 4 or iterStat.index == 16 or iterStat.index == 44}">
+            <th:block th:with="question=${sec.getQuestions().get(iterStat.index)}">
+               <br/>
+               <th:block th:replace="bravo/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+            </th:block>
+         </div>
+      </div>	
+   </body>
+</div>

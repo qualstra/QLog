@@ -1,0 +1,211 @@
+<div th:fragment="section(sec)">
+<table cellspacing="0">
+		<tr>
+			<td bgcolor="#CCCCCC" style="width: 80%;">
+				<p class="s1">
+					<b><u>6. CONDITION REPORT</u></b>
+				</p>
+			</td>
+		</tr>
+	</table>
+	<th:block
+		th:with="score=${summary.get('checklist').get('weightage-applied')}">
+		<p>
+			Score is:<span th:text="${score}"></span>
+		</p>
+		<!-- ${helper.sumarry.getJSONObject('checklist').getInt('weightage-calc')} -->
+
+		<th:block th:if="${score >= 0 && score <=12 }">
+			<center><img th:src="@{piecharts/chart1.png}" width="400" height="auto"
+				alt="ship" /></center>
+		</th:block>
+		<th:block th:if="${score > 12 && score <=25 }">
+			<center><img th:src="@{piecharts/chart2.png}" width="400" height="auto"
+				alt="ship" /></center>
+		</th:block>
+		<th:block th:if="${score > 25 && score <=37 }">
+			<center><img th:src="@{piecharts/chart3.png}" width="400" height="auto"
+				alt="ship" /></center>
+		</th:block>
+		<th:block th:if="${score > 37 && score <=50 }">
+			<center><img th:src="@{piecharts/chart4.png}" width="400" height="auto"
+				alt="ship" /></center>
+		</th:block>
+		<th:block th:if="${score > 50 && score <=62 }">
+			<center><img th:src="@{piecharts/chart5.png}" width="400" height="auto"
+				alt="ship" /></center>
+		</th:block>
+		<th:block th:if="${score > 62 && score <=75 }">
+			<center><img th:src="@{piecharts/chart6.png}" width="400" height="auto"
+				alt="ship" /></center>
+		</th:block>
+		<th:block th:if="${score > 75 && score <=87 }">
+			<center><img th:src="@{piecharts/chart7.png}" width="400" height="auto"
+				alt="ship" /></center>
+		</th:block>
+		<th:block th:if="${score > 87 && score <=100 }">
+		<center><img th:src="@{piecharts/chart8.png}" width="400" height="auto"
+				alt="ship" /></center>
+		</th:block>
+<br/><br/>
+
+		<table style="border-collapse: collapse; border-color: white;">
+			 <col width="27%" />
+			<col width="3%" />
+			<col width="70%" /> 
+			<tr>
+ <td rowspan="8" style="border: 1px solid #fff; padding: 0px; margin: 0px; vertical-align: top;">
+    <span style="line-height: 32px; font-size: 28px; font-weight: bold;">
+Technical Condition Grading</span>
+    <span style="line-height: 10px;"><br/></span>
+    <div class="horizontal-line-blue"></div>
+    <br/>
+    <span style="line-height: 20px; font-size: 14px; align: left;">
+Technical Condition Grading is based on the scope of inspection possible within the limitations prevailing at the time such as access, time available, and ship staff support during the inspection.
+<br/>Rating must be evaluated in conjunction with the report for corrective action.
+    </span>
+</td>
+
+					
+				<td style="border: 0px solid #000;">
+				<center>
+				<div th:if="${score >= 0 && score <=12 }">
+				<img th:src="@{piecharts/legend1marked.png}"
+							alt="conditiongrading" width="55" height="46" />
+				</div>
+				<div th:unless="${score >= 0 && score <=12 }">
+				<img th:src="@{piecharts/legend1.png}"
+							alt="conditiongrading" width="55" height="46" />
+				</div>
+				</center>
+				</td>
+				<td style="border: 0px solid #000; line-height: 14px;"><p><b>Very Poor:</b> Vessel Maintenance and management is below standards; Lacks minimal stores and spares; Vessel not in safe operating condition, extensive work scope in critical areas has to be planned to re-instate the sea-worthiness of the vessel.</p></td>
+			</tr>
+
+			<tr>
+				<td style="border: 0px solid #000;">
+				<center>
+				<div th:if="${score > 12 && score <=25 }">
+				<img th:src="@{piecharts/legend2marked.png}"
+							alt="conditiongrading" width="55" height="46" />
+				</div>
+				<div th:unless="${score > 12 && score <=25 }">
+				<img th:src="@{piecharts/legend2.png}"
+							alt="conditiongrading" width="55" height="46" />
+				</div>
+				</center>
+				</td>
+				<td style="border: 0px solid #000; line-height: 14px;"><p><b>Poor:</b> Vessel condition and maintenance is below acceptable standards, Extensive planned repair required immediately.</p></td>
+			</tr>
+						<tr>
+				<td style="border: 0px solid #000;">
+				<center>
+				<div th:if="${score > 25 && score <=37 }">
+				<img th:src="@{piecharts/legend3marked.png}"
+							alt="conditiongrading" width="55" height="46" />
+				</div>
+				<div th:unless="${score > 25 && score <=37 }">
+				<img th:src="@{piecharts/legend3.png}"
+							alt="conditiongrading" width="55" height="46" />
+				</div>
+				</center>
+				</td>
+				<td style="border: 0px solid #000; line-height: 14px;"><p><b>Below Average:</b> Condition of vessel is marginally below acceptable standards and major areas require immediate corrections and repair as remedy.</p></td>
+			</tr>
+			<tr>
+				<td style="border: 0px solid #000;">
+				<center>
+				<div th:if="${score > 37 && score <=50 }">
+				<img th:src="@{piecharts/legend4marked.png}"
+							alt="conditiongrading" width="55" height="46" />
+				</div>
+				<div th:unless="${score > 37 && score <=50 }">
+				<img th:src="@{piecharts/legend4.png}"
+							alt="conditiongrading" width="55" height="46" />
+				</div>
+				</center>
+				</td>
+				<td style="border: 0px solid #000; line-height: 14px;"><p><b>Average:</b>  Vessel is in average standards, rectifications and repair on immediate basis in pointed out areas is essential to raise the rating.</p></td>
+			</tr>
+				<tr>
+				<td style="border: 0px solid #000;">
+				<center>
+				<div th:if="${score > 50 && score <=62 }">
+				<img th:src="@{piecharts/legend5marked.png}"
+							alt="conditiongrading" width="55" height="46" />
+				</div>
+				<div th:unless="${score > 50 && score <=62 }">
+				<img th:src="@{piecharts/legend5.png}"
+							alt="conditiongrading" width="55" height="46" />
+				</div>
+				</center>
+				</td>
+				<td style="border: 0px solid #000; line-height: 14px;"><p><b>Above Average:</b> Several "usual/routine deficiencies, some of which require immediate corrective action. All highlighted areas need attention.</p></td>
+			</tr>
+				<tr>
+				<td style="border: 0px solid #000;">
+				<center>
+				<div th:if="${score > 62 && score <=75 }">
+				<img th:src="@{piecharts/legend6marked.png}"
+							alt="conditiongrading" width="55" height="46" />
+				</div>
+				<div th:unless="${score > 62 && score <=75 }">
+				<img th:src="@{piecharts/legend6.png}"
+							alt="conditiongrading" width="55" height="46" />
+				</div>
+				</center>
+				</td>
+				<td style="border: 0px solid #000; line-height: 14px;"><p><b>Fair:</b> Vessel requires routine repair and maintenance in a planned fashion to either remain at this state or to improve existing standards.</p></td>
+			</tr>
+				<tr>
+				<td style="border: 0px solid #000;">
+				<center>
+				<div th:if="${score > 75 && score <=87 }">
+				<img th:src="@{piecharts/legend7marked.png}"
+							alt="conditiongrading" width="55" height="46" />
+				</div>
+				<div th:unless="${score > 75 && score <=87 }">
+				<img th:src="@{piecharts/legend7.png}"
+							alt="conditiongrading" width="55" height="46" />
+				</div>
+				</center>
+				</td>
+				<td style="border: 0px solid #000; line-height: 14px;"><p><b>Good:</b> Vessel is well maintained and managed with minor but non-critical deficiencies. Normal planned maintenance and stringent follow-up will ensure vessel standards to be maintained.</p></td>
+			</tr>
+				<tr>
+				<td style="border: 0px solid #000;">
+				<center>
+				<div th:if="${score > 87 && score <=100 }">
+				<img th:src="@{piecharts/legend8marked.png}"
+							alt="conditiongrading" width="55" height="46" />
+				</div>
+				<div th:unless="${score > 87 && score <=100 }">
+				<img th:src="@{piecharts/legend8.png}"
+							alt="conditiongrading" width="55" height="46" />
+				</div>
+				</center>
+				</td>
+				<td style="border: 0px solid #000; line-height: 14px;"><p><b>Excellent:</b> Vessel is in un-impaired condition, with excellent maintenance and management.</p></td>
+			</tr> 
+		</table>
+
+<br/><br/><br/><br/><br/>
+		<table style="width: 100%;border-style:none;" th:if="${prevSummaryChart  != null}">
+		
+		<tr style=" text-align: center; vertical-align: middle;">
+			<td  style="color:white;" colspan="2" >
+			
+				<img th:src="${prevSummaryChart.getAbsolutePath()}"
+						style="width: 600px; height: 250px;" />
+			</td>
+		</tr>
+	</table>
+	<br/><br/><br/>
+	<h2>WEIGHTAGE</h2>
+  <div th:replace="bravo/detail/6-1summary :: summary(${summary}) "></div>
+		<!--  <span th:text="${summary}"></span> -->
+
+	</th:block>
+
+
+</div>

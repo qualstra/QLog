@@ -1,0 +1,16 @@
+<div th:fragment="section(sec)">
+   
+      <table cellspacing="0">
+         <tr>
+            <td bgcolor="#CCCCCC">
+               <p class="s1"><b><u>4. EXECUTIVE SUMMARY:</u></b></p>
+            </td>
+         </tr>
+      </table>
+      <br/>
+      <div style="height: 900px;">
+				<p><span style="white-space:pre-wrap; word-wrap:break-word;" th:text="${sec.getQuestions().get(0).getAnswerAttrib('remark')}"></span></p>
+   
+   </div>
+  
+</div>

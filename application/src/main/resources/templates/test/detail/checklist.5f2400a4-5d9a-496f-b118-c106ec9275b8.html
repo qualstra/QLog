@@ -1,0 +1,16 @@
+<div th:fragment="checkList(checklist)">
+
+<div th:replace="deflt/fragments/CasHeader :: header(${checklist})"></div>
+<div style="text-align:center">
+<div><h3><b><u>PRE-ENTRY CHECK INTO 500m ZONE</u></b></h3></div>
+</div>
+<div style="margin-top:10px">
+
+<div th:replace="test/detail/pre_entry/pre_entry :: section(${checklist.getSections().get(0)})"></div>
+<br/>
+<div th:replace="test/detail/pre_entry/prevessel_drift :: section(${checklist.getSections().get(1)})"></div>
+<br/>
+<div th:replace="test/detail/pre_entry/safety_zone :: section(${checklist.getSections().get(2)})"></div>
+</div>
+
+</div>

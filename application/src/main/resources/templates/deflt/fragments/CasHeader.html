@@ -1,0 +1,41 @@
+<div th:fragment="header(checklist)">
+	<table style="margin-top:10px;border:solid black 2px;width:100%">
+<tr>
+
+<td style="width:75%" colspan="5">
+<span style="font-size:20px"><b>Greatship (India) Limited</b></span><br/>
+<span style="font-size:15px">Manual Title: </span><span style="font-size:18px">CheckListManual </span><br/>
+<span style="font-size:15px">Document Title:</span><span style="font-size:18px"><b>Safety Checklists(Critical)</b></span><br/>
+<span style="font-size:15px">Document No.:</span><b><span style="font-size:18px" th:text="${helper.getDockletNo(checklist)}"><b>CL:OS/S/05-D</b></span></b>
+</td>
+<td rowspan="2">
+<div style="margin-left:20px" th:if="${logo != null}">
+		
+            <img th:src="${logo.getLocation()}" style="width: 120px; height: 120px;" /> 
+        
+   </div>
+</td>
+</tr>
+
+<tr>
+
+<td>
+<span>Effective Date</span><br/><br/><span th:text="${helper.getAttrValue('effdate')}"></span><br/>
+</td>
+<td>
+<span>Revision No.</span><br/><br/><span th:text="${helper.getAttrValue('revno')}">V4.5</span>
+<br/>
+</td>
+<td>
+<span>Prepared</span><br/><br/><span>By:
+</span><span th:text="${helper.getAttrValue('preby')}"></span><br/>
+</td>
+<td>
+<span>Approved</span><br/><br/><span>By:</span><span th:text="${helper.getAttrValue('appby')}"></span><br/>
+</td>
+<td>
+<span>Page | 1</span><br/><br/><span></span><br/>
+</td>
+</tr>
+</table>
+	</div>

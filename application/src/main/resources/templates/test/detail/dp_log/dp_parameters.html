@@ -1,0 +1,181 @@
+<div th:fragment="section(sec)">
+<table style="width:100%">
+
+<tr>
+<td style="width:8.33%"><b><span th:text="${sec.getQuestions().get(0).questionText}"></span></b></td>
+<td><span th:text="${#strings.replace(sec.getQuestions().get(0).getAnswerAttrib('answer'),'T','  ')}"></span></td>
+<td style="width:8.33%"></td>
+<td colspan="6"><span style="font-size:16px"><b>DP PARAMETERS</b></span></td>
+<td colspan="3"></td>
+</tr>
+
+<tr>
+<td style="width:8.33%"><b>TIME</b></td>
+
+<td style="width:8.33%"><b><span th:text="${sec.getQuestions().get(1).questionText}"></span></b></td>
+<td style="width:8.33%"><b><span th:text="${sec.getQuestions().get(2).questionText}"></span></b></td>
+<td style="width:8.33%"><b><span th:text="${sec.getQuestions().get(3).questionText}"></span></b></td>
+<td style="width:8.33%"><b><span th:text="${sec.getQuestions().get(4).questionText}"></span></b></td>
+<td style="width:8.33%"><b><span th:text="${sec.getQuestions().get(5).questionText}"></span></b></td>
+<td style="width:8.33%"><b><span th:text="${sec.getQuestions().get(6).questionText}"></span></b></td>
+<td style="width:8.33%"><b><span th:text="${sec.getQuestions().get(7).questionText}"></span></b></td>
+<td style="width:8.33%"><b><span th:text="${sec.getQuestions().get(8).questionText}"></span></b></td>
+<td style="width:8.33%"><b><span th:text="${sec.getQuestions().get(9).questionText}"></span></b></td>
+<td style="width:8.33%"><b><span th:text="${sec.getQuestions().get(10).questionText}"></span></b></td>
+<td style="width:8.33%"><b><span th:text="${sec.getQuestions().get(11).questionText}"></span></b></td>
+</tr>
+
+<tr>
+<td style="width:8.33%">0200</td>
+
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(1).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(2).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(3).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(4).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(5).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(6).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(7).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(8).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(9).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(10).getAnswerAttrib('remark')}"></span></td>
+<td><th:block th:replace="test/detail/dp_attachment.html :: attach(${sec.getQuestions().get(11).getAttachments()})"></th:block></td>
+</tr>
+
+
+<tr>
+<td style="width:8.33%">0400</td>
+
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(1).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(2).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(3).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(4).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(5).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(6).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(7).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(8).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(9).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(10).getAnswerAttrib('remark')}"></span></td>
+<td><th:block th:replace="test/detail/dp_attachment.html :: attach(${sec.getQuestions().get(11).getAttachments()})"></th:block></td>
+</tr>
+
+<tr>
+<td style="width:8.33%">0600</td>
+<td style="text-align:center" colspan="11"><span style="font-size:16px">6 HR DP CHECKLIST</span></td>
+</tr>
+
+<tr>
+<td style="width:8.33%">0800</td>
+
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(1).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(2).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(3).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(4).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(5).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(6).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(7).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(8).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(9).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(10).getAnswerAttrib('remark')}"></span></td>
+<td><th:block th:replace="test/detail/dp_attachment.html :: attach(${sec.getQuestions().get(11).getAttachments()})"></th:block></td>
+</tr>
+
+
+<tr>
+<td style="width:8.33%">1000</td>
+
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(1).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(2).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(3).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(4).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(5).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(6).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(7).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(8).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(9).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(10).getAnswerAttrib('remark')}"></span></td>
+<td><th:block th:replace="test/detail/dp_attachment.html :: attach(${sec.getQuestions().get(11).getAttachments()})"></th:block></td>
+</tr>
+
+<tr>
+<td style="width:8.33%">1200</td>
+<td style="text-align:center" colspan="11"><span style="font-size:16px">6 HR DP CHECKLIST</span></td>
+</tr>
+
+<tr>
+<td style="width:8.33%">1400</td>
+
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(1).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(2).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(3).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(4).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(5).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(6).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(7).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(8).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(9).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(10).getAnswerAttrib('remark')}"></span></td>
+<td><th:block th:replace="test/detail/dp_attachment.html :: attach(${sec.getQuestions().get(11).getAttachments()})"></th:block></td>
+</tr>
+
+
+<tr>
+<td style="width:8.33%">1600</td>
+
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(1).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(2).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(3).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(4).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(5).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(6).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(7).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(8).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(9).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(10).getAnswerAttrib('remark')}"></span></td>
+<td><th:block th:replace="test/detail/dp_attachment.html :: attach(${sec.getQuestions().get(11).getAttachments()})"></th:block></td>
+</tr>
+
+<tr>
+<td style="width:8.33%">1800</td>
+<td style="text-align:center" colspan="11"><span style="font-size:16px">6 HR DP CHECKLIST</span></td>
+</tr>
+
+<tr>
+<td style="width:8.33%">2000</td>
+
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(1).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(2).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(3).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(4).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(5).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(6).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(7).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(8).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(9).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(10).getAnswerAttrib('remark')}"></span></td>
+<td><th:block th:replace="test/detail/dp_attachment.html :: attach(${sec.getQuestions().get(11).getAttachments()})"></th:block></td>
+</tr>
+
+
+<tr>
+<td style="width:8.33%">2200</td>
+
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(1).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(2).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(3).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(4).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(5).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(6).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(7).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(8).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(9).getAnswerAttrib('remark')}"></span></td>
+<td style="width:8.33%"><span th:text="${sec.getQuestions().get(10).getAnswerAttrib('remark')}"></span></td>
+<td><th:block th:replace="test/detail/dp_attachment.html :: attach(${sec.getQuestions().get(11).getAttachments()})"></th:block></td>
+</tr>
+
+<tr>
+<td style="width:8.33%">2400</td>
+<td colspan="11" style="text-align:center"><span style="font-size:16px">6 HR DP CHECKLIST</span></td>
+</tr>
+
+</table>
+</div>

@@ -1,0 +1,86 @@
+
+<div th:fragment="checkList(checklist)">
+<div th:replace="deflt/fragments/defhead :: header(${checklist})"></div>
+
+<br/>
+<br/>
+
+<table style="width:100%;height:100%">
+
+<tr>
+<td>
+<b><span style="font-size:14px">Vessel Name</span></b>
+<span th:text="${checklist.getVessel().getName()}" style="font-size:12px;margin-left:10px"></span>
+<b><span style="font-size:14px;margin-left:350px">Voyage</span></b>
+</td>
+</tr>
+
+<tr>
+<td>
+<b><span style="font-size:14px">From</span></b>
+
+<b><span style="font-size:14px;margin-left:432px">To</span></b>
+</td>
+</tr>
+
+<tr>
+<td>
+<b><span style="font-size:14px">Checklist Name</span></b>
+
+<b><span style="font-size:14px;margin-left:362px">Checklist Status</span></b>
+</td>
+</tr>
+
+<tr>
+<td>
+<b><span style="font-size:14px">Initiated</span></b>
+
+<b><span style="font-size:14px;margin-left:412px">Completed</span></b>
+</td>
+</tr>
+
+<tr>
+<td>
+<b><span style="font-size:14px">NC Reported During Progress</span></b>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<b><span style="font-size:14px">NCs In Open Status</span></b>
+</td>
+</tr>
+
+</table>
+
+<div style="font-size:14px;color:red;margin-top:10px;margin-left:10px"><b><u>SUMMARY OF NON-CONFORMANCES</u></b></div>
+
+<div th:replace="test/detail/ncsummary :: ncsummary(checklist)"></div>
+
+<div style="page-break-before:always">&nbsp;</div>
+<div style="text-align:center"><b><u>CHECKLIST DETAILS</u></b></div>
+<br/>
+<br/>
+<span style="margin-top:10px"><u><b>DOCUMENTATION</b></u></span>
+<div th:replace="test/detail/psc_checklist/psc_documentation :: section(${checklist.getSections().get(0)})"></div>
+<div style="page-break-before:always">&nbsp;</div>
+<span style="margin-top:10px"><u><b>NAVIGATION</b></u></span>
+<div th:replace="test/detail/psc_checklist/psc_navigation :: section(${checklist.getSections().get(1)})"></div>
+<div style="page-break-before:always">&nbsp;</div>
+<span style="margin-top:10px"><u><b>LSA/FFA</b></u></span>
+<div th:replace="test/detail/psc_checklist/psc_lsa :: section(${checklist.getSections().get(2)})"></div>
+<div style="page-break-before:always">&nbsp;</div>
+<span style="margin-top:10px"><u><b>HULL</b></u></span>
+<div th:replace="test/detail/psc_checklist/psc_hull :: section(${checklist.getSections().get(3)})"></div>
+<div style="page-break-before:always">&nbsp;</div>
+<span style="margin-top:10px"><u><b>ENGINE ROOM</b></u></span>
+<div th:replace="test/detail/psc_checklist/psc_engine :: section(${checklist.getSections().get(4)})"></div>
+<div style="page-break-before:always">&nbsp;</div>
+<span style="margin-top:10px"><u><b>ENVIRONMENT MATTERS</b></u></span>
+<div th:replace="test/detail/psc_checklist/psc_Environment :: section(${checklist.getSections().get(5)})"></div>
+<div style="page-break-before:always">&nbsp;</div>
+<span style="margin-top:10px"><u><b>MLC</b></u></span>
+<div th:replace="test/detail/psc_checklist/psc_mlc :: section(${checklist.getSections().get(6)})"></div>
+
+</div>

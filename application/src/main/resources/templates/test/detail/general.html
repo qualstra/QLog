@@ -1,0 +1,289 @@
+
+
+<div th:fragment="general(attribute)">
+<!-- <div th:replace="test/detail/section_introduction :: section(${checklist.getSections().get(0)})"></div> -->
+<div style="page-break-before:always">&nbsp;</div>  
+<span><h1><b>WEIGHTAGE</b></h1></span>
+ <div th:replace="test/detail/summary :: summary(${summary}) "></div>
+ 
+ 
+ <div style="page-break-before:always">&nbsp;</div>
+ <div><span><h3><b>VESSEL SPECIFICATIONS:</b></h3></span></div>
+ <div style="padding-left:10px;height:100%;border:solid">
+ <span><b>1.GENERAL</b></span>
+ <div style="padding-top:10px">
+ <span>
+ Date: 
+ 
+ <input th:value="${helper.getAttrValue('Dateg')}" style="border: 2px solid black;color:black;width:100px;height:30px ;margin-left:8.1%;font-size:9px" type="text"/>
+ </span>
+ 
+  <span style="margin-left:0%">
+ Place: 
+ <input th:value="${helper.getAttrValue('Placeg')}" style="border: 2px solid black;color:black;width:223px;height:30px;font-size:9px" type="text"/>
+ </span>
+ 
+    <span style="margin-left:5.7%">
+ Job no: 
+ 
+ <input th:value="${helper.getAttrValue('JNo')}" style="border: 2px solid black;color:black;width:100px;height:30px;font-size:9px" type="text"/>
+ 
+ </span>
+ </div>
+ <div>
+ <span>
+ Attendees: 
+ 
+ <input th:value="${helper.getAttrValue('Attn')}" style="border: 2px solid black;color:black;width:374px;height:30px;margin-left:3.1%;font-size:9px" type="text"/>
+ </span>
+ 
+ <span style="margin-left:37.8px">
+ Client: 
+ 
+ <input th:value="${helper.getAttrValue('Clnt')}" style="border: 2px solid black;color:black;width:100px;height:30px;margin-left:3px;font-size:9px" type="text"/>
+ </span>
+ </div>
+ 
+ <div>
+ <span>
+ Vessel Name: 
+ 
+ <input th:value="${helper.getAttrValue('Vess_Name')}" style="border: 2px solid black;color:black;width:300px;height:20px;font-size:9px" type="text"/>
+ </span>
+ 
+ <span style="margin-left:69.8px">
+ IMO number: 
+ 
+ <input th:value="${helper.getAttrValue('IMO')}" style="border: 2px solid black;color:black;width:100px;height:20px;font-size:9px" type="text"/>
+ </span>
+ </div>
+ 
+ <div>
+ <span>
+ Type: 
+ 
+ <input th:value="${helper.getAttrValue('Type')}" style="border: 2px solid black;color:black;width:300px;height:20px;margin-left:51.8px;font-size:9px" type="text"/>
+ </span>
+ 
+ <span style="margin-left:51.8px">
+ Port of Registry: 
+ 
+ <input th:value="${helper.getAttrValue('POG')}" style="border: 2px solid black;color:black;width:100px;height:20px;font-size:9px" type="text"/>
+ </span>
+ </div>
+ 
+ <div>
+ <span>
+ Operator: 
+ 
+ <input th:value="${helper.getAttrValue('Oprt')}" style="border: 2px solid black;color:black;width:300px;height:20px;margin-left:27.8px;font-size:9px" type="text"/>
+ </span>
+ 
+ <span style="margin-left:58.2px">
+ Master's Name: 
+ 
+ <input th:value="${helper.getAttrValue('MName')}"  style="border: 2px solid black;color:black;width:100px;height:20px;font-size:9px" type="text"/>
+ </span>
+ </div>
+ 
+ <div>
+ <span>
+ Total crew: 
+ 
+ <input style="border: 2px solid black;color:black;width:100px;height:20px ;margin-left:2.4%;font-size:9px" type="text"/>
+ </span>
+ 
+  <span style="margin-left:41%">
+ Year of Built 
+ <input th:value="${helper.getAttrValue('YOB')}" style="border: 2px solid black;color:black;width:100px;height:20px;font-size:9px" type="text"/>
+ </span>
+ </div>
+ 
+ <div>
+ <span>
+ Total LSA: 
+ 
+ <input th:value="${helper.getAttrValue('TLSA')}" style="border: 2px solid black;color:black;width:100px;height:20px ;margin-left:2.5%;font-size:9px" type="text"/>
+ persons
+ </span>
+ 
+  <span style="margin-left:26%">
+ Total Accomodation 
+ <input th:value="${helper.getAttrValue('TACC')}" style="border: 2px solid black;color:black;width:100px;height:20px;font-size:9px" type="text"/>
+ </span>
+ </div>
+ 
+ <div>
+ <span>
+ Length OA: 
+ 
+ <input th:value="${helper.getAttrValue('LOA')}" style="border: 2px solid black;color:black;width:100px;height:30px ;margin-left:1.8%;font-size:9px" type="text"/>
+
+ </span>
+ 
+  <span style="margin-left:0%">
+ Summer Draft 
+ <input th:value="${helper.getAttrValue('SD')}" style="border: 2px solid black;color:black;width:100px;height:30px;margin-left:1%;font-size:9px" type="text"/>
+ </span>
+ 
+ <span style="margin-left:11.45%">
+ Clear Desk 
+ <input th:value="${helper.getAttrValue('CDS')}" style="border: 2px solid black;color:black;width:100px;height:30px;font-size:9px" type="text"/>
+ </span>
+ 
+ </div>
+ 
+  <div>
+ <span>
+ Length BP: 
+ 
+ <input th:value="${helper.getAttrValue('LBP')}" style="border: 2px solid black;color:black;width:100px;height:30px ;margin-left:2.4%;font-size:9px" type="text"/>
+
+ </span>
+ 
+  <span style="margin-left:0.1%">
+ Summer Displt 
+ <input th:value="${helper.getAttrValue('SDisp')}" style="border: 2px solid black;color:black;width:100px;height:30px;font-size:9px" type="text"/>
+ </span>
+ 
+ <span style="margin-left:18.92%">
+ GT 
+ <input th:value="${helper.getAttrValue('GT')}" style="border: 2px solid black;color:black;width:100px;height:30px;font-size:9px" type="text"/>
+ </span>
+ 
+ </div>
+ 
+ 
+ <div>
+ <span>
+ Breadth Mld: 
+ 
+ <input th:value="${helper.getAttrValue('BMld')}" style="border: 2px solid black;color:black;width:100px;height:30px ;margin-left:0.5%;font-size:9px" type="text"/>
+
+ </span>
+ 
+  <span>
+ Max 
+ Dead Wgt
+ 
+ <input th:value="${helper.getAttrValue('MDW')}" style="border: 2px solid black;color:black;width:100px;height:30px;font-size:9px" type="text"/>
+ </span>
+ 
+ <span style="margin-left:18.92691%">
+ NT 
+ <input th:value="${helper.getAttrValue('NT')}" style="border: 2px solid black;color:black;width:100px;height:30px;font-size:9px" type="text"/>
+ </span>
+ 
+ </div>
+ 
+ 
+ <div>
+ <span>
+ Depth Mld: 
+ 
+ <input th:value="${helper.getAttrValue('DMld')}" style="border: 2px solid black;color:black;width:100px;height:30px ;margin-left:2.2%;font-size:9px" type="text"/>
+
+ </span>
+ 
+  <span>
+ 
+ <input style="border: 2px solid black;color:black;width:100px;height:30px;margin-left:15.4%;font-size:9px" type="text"/>
+ </span>
+ 
+ <span style="margin-left:5.15%">
+ Raised Forecastle 
+ <input th:value="${helper.getAttrValue('RFC')}" style="border: 2px solid black;color:black;width:100px;height:30px;font-size:9px" type="text"/>
+ </span>
+ 
+ </div>
+ 
+ <div style="float:left">
+ <span>
+ Built By: 
+ 
+ <input th:value="${helper.getAttrValue('BBy')}" style="border: 2px solid black;color:black;width:570.5px;height:20px ;margin-left:4.5%;font-size:9px" type="text"/>
+
+ </span>
+ </div>
+ 
+ <div>
+ <span>endurance</span>
+ <input th:value="${helper.getAttrValue('End')}" style="border: 2px solid black;color:black;width:100px;height:20px ;margin-left:3.5%;font-size:9px" type="text"/>
+ <span>endurance</span>
+ <input th:value="${helper.getAttrValue('End1')}" style="border: 2px solid black;color:black;width:100px;height:20px ;margin-left:5%;font-size:9px" type="text"/>
+ </div>
+ 
+ <div style="margin-top:30px">
+ <table>
+ 
+ <th style="color:black;width:100px; text-align:center">Bunkers</th>
+ <th style="color:black;width:100px; text-align:center">
+ Marine Diesel oil
+ <pre>(MGO)(M<sup style=" vertical-align: super;font-size: smaller;">3</sup>)</pre>
+ </th> 
+ <th style="color:black;width:100px; text-align:center">Potable Water(M<sup style=" vertical-align: super;
+    font-size: smaller;">3</sup>)</th>   
+ 
+ <tr>
+ <td style="text-align:center;color:black">Capacity</td>
+ <td style="text-align:center;color:black">
+ <span th:text="${helper.getAttrValue('MDC')}" style="font-size:9px"></span>
+ </td>
+ <td style="text-align:center;color:black">
+ <span th:text="${helper.getAttrValue('PWC')}" style="font-size:9px"></span>
+ </td>
+ </tr>
+ 
+  <tr>
+ <td style="text-align:center;color:black">On board</td>
+ <td style="text-align:center;color:black">
+ <span th:text="${helper.getAttrValue('DONB')}" style="font-size:9px"></span>
+ </td>
+ <td style="text-align:center;color:black">
+ <span th:text="${helper.getAttrValue('WONB')}" style="font-size:9px"></span>
+ </td>
+ </tr>
+ 
+  <tr>
+ <td style="text-align:center;color:black;height:20px">
+ <pre>
+ Consumption / 
+ 24 hours.Full
+ </pre>
+ </td>
+ <td style="text-align:center;color:black">
+ <span th:text="${helper.getAttrValue('CF24hF')}" style="font-size:9px"></span>
+ </td>
+ <td style="text-align:center;color:black">
+ <span th:text="${helper.getAttrValue('WCF24hF')}" style="font-size:9px"></span>
+ </td>
+ </tr>
+ 
+  <tr>
+ <td style="text-align:center;color:black">
+ <pre>
+ Consumption / 
+ 24 hours.Econ
+ </pre>
+ </td>
+ <td style="text-align:center;color:black">
+ <span th:text="${helper.getAttrValue('CF24hE')}" style="font-size:9px"></span>
+ </td>
+ <td style="text-align:center;color:black">
+ <span th:text="${helper.getAttrValue('WCF24hE')}" style="font-size:9px"></span>
+ </td>
+ </tr>
+ 
+ 
+ 
+ </table>
+ 
+ 
+ </div>
+ 
+ 
+ 
+
+
+ </div>
+ </div>

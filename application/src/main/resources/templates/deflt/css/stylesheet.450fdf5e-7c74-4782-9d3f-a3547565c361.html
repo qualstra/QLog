@@ -1,0 +1,88 @@
+<head th:fragment="css">
+<style>
+/*for styling table data*/
+.curved-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.curved-table th,
+.curved-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  background-color: #fff;
+ /*  background-color: #f2f2f2; */
+}
+
+
+.curved-table tr:first-child td:first-child {
+  border-top-left-radius: 10px;
+}
+
+.curved-table tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+}
+
+.curved-table tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.curved-table tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+
+	
+    .container {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Styling for the image (optional) */
+img {
+        max-width: 100%;
+        height: auto;
+    }
+    @page {
+            margin-bottom: 70px;
+        }
+        .footer {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+/* This is styling for tables */    
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #000; /* Black border around the table */
+  page-break-inside: avoid;
+  table-layout: fixed;
+  page-break-inside: avoid;
+  keep-together: always;
+}
+
+th, td {
+  border: 1px solid #000; /* Black border around cells */
+  padding: 8px
+  padding-left: 5px;
+  text-align: left; /* Left-align text */
+  font-family: Calibri, Arial, sans-serif;
+  font-size: 13px; /* Font size */
+  page-break-before: avoid;
+  page-break-after: avoid;
+}
+
+th {
+  background-color: #f2f2f2; /* Light gray background for header cells */
+}
+
+
+
+.rm-bottom-borders{border-bottom: none;border-top: none;border: 1px solid white;}
+</style>
+</head>

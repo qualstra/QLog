@@ -1,0 +1,153 @@
+<div th:fragment="summary(sum)">
+
+<table style="width:100%">
+
+<tr>
+<th style="color:black">S.NO</th>
+<th></th>
+<th style="color:black">Weightage</th>
+<th style="color:black">Score</th>
+</tr>
+<tr>
+<td><span>1</span></td>
+ <td><span th:text="${summary.get('sections').get(0).get('name').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(0).get('weightage').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(0).get('weightage-applied').toString()}"></span></td>  
+</tr>
+
+<tr>
+<td><span>2</span></td>
+ <td><span th:text="${summary.get('sections').get(1).get('name').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(1).get('weightage').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(1).get('weightage-applied').toString()}"></span></td>  
+</tr>
+
+<tr>
+<td><span>3</span></td>
+ <td><span th:text="${summary.get('sections').get(2).get('name').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(2).get('weightage').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(2).get('weightage-applied').toString()}"></span></td>  
+</tr>
+
+<tr>
+<td><span>4</span></td>
+ <td><span th:text="${summary.get('sections').get(3).get('name').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(3).get('weightage').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(3).get('weightage-applied').toString()}"></span></td>  
+</tr>
+
+<tr>
+<td><span>5</span></td>
+ <td><span th:text="${summary.get('sections').get(4).get('name').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(4).get('weightage').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(4).get('weightage-applied').toString()}"></span></td>  
+</tr>
+
+<tr>
+<td><span>6</span></td>
+ <td><span th:text="${summary.get('sections').get(5).get('name').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(5).get('weightage').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(5).get('weightage-applied').toString()}"></span></td>  
+</tr>
+
+<tr>
+<td><span>7</span></td>
+ <td><span th:text="${summary.get('sections').get(6).get('name').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(6).get('weightage').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(6).get('weightage-applied').toString()}"></span></td>  
+</tr>
+
+<tr>
+<td><span>8</span></td>
+ <td><span th:text="${summary.get('sections').get(7).get('name').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(7).get('weightage').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(7).get('weightage-applied').toString()}"></span></td>  
+</tr>
+
+<tr>
+<td><span>9</span></td>
+ <td><span th:text="${summary.get('sections').get(8).get('name').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(8).get('weightage').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(8).get('weightage-applied').toString()}"></span></td>  
+</tr>
+
+<tr>
+<td><span>10</span></td>
+ <td><span th:text="${summary.get('sections').get(9).get('name').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(9).get('weightage').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(9).get('weightage-applied').toString()}"></span></td>  
+</tr>
+
+<tr>
+<td><span>11</span></td>
+ <td><span th:text="${summary.get('sections').get(10).get('name').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(10).get('weightage').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(10).get('weightage-applied').toString()}"></span></td>  
+</tr>
+
+<tr>
+<td><span>12</span></td>
+ <td><span th:text="${summary.get('sections').get(11).get('name').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(11).get('weightage').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(11).get('weightage-applied').toString()}"></span></td>  
+</tr>
+
+<tr>
+<td><span>13</span></td>
+ <td><span th:text="${summary.get('sections').get(12).get('name').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(12).get('weightage').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(12).get('weightage-applied').toString()}"></span></td>  
+</tr>
+
+<tr>
+<td><span>14</span></td>
+ <td><span th:text="${summary.get('sections').get(13).get('name').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(13).get('weightage').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(13).get('weightage-applied').toString()}"></span></td>  
+</tr>
+
+<tr>
+<td><span>15</span></td>
+ <td><span th:text="${summary.get('sections').get(14).get('name').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(14).get('weightage').toString()}"></span></td>
+ <td><span th:text="${summary.get('sections').get(14).get('weightage-applied').toString()}"></span></td>  
+</tr>
+
+<tr>
+<td></td>
+ <td style="font-size:15px"><b><span>Total</span></b></td>
+ <td><span th:text="${summary.get('checklist').get('weightage')}" style="text-align:center;font-size:20px"></span></td>
+ <td><span th:text="${summary.get('checklist').get('weightage-applied')}" style="text-align:center;font-size:20px"></span></td>
+</tr>
+
+
+			
+
+</table>
+
+<br/>
+
+
+<table style="width: 100%;" th:if="${chkReport  != null}">
+
+<tr style=" text-align: center; vertical-align: middle;">
+
+			<td  style="color:white; border-style:none;">
+			
+				<img src="score.jpeg" alt="vijay" style="width: 250px; height: 200px;"/>
+
+			</td>
+		</tr>
+
+		<tr style=" text-align: center; vertical-align: middle;">
+			<td  style="color:white;" colspan="2" >
+			
+				<img th:src="${chkReport.getAbsolutePath()}"
+						style="width: 600px; height: 250px;" />
+
+			</td>
+		</tr>
+	</table>
+
+
+</div>

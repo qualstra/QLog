@@ -1,0 +1,85 @@
+<div th:fragment="engine(checklist)">
+
+<div style="border:solid;margin-top:10%">
+
+<div style="margin-top:10px; padding-left:10px">
+<span><b>3.MAIN ENGINES and THRUSTERS</b></span>
+</div>
+<div>
+
+<table style="margin-top:10px;border:solid black 2px;width:100%">
+<tr>
+<td style="width:25%">Make and Type</td>
+<td style="width:25%" colspan="3">
+<span th:text="${helper.getAttrValue('MAT')}" style="font-size:9px"></span>
+</td>
+<td style="width:25%" colspan="2">Total No.</td>
+<td style="width:25%" colspan="2">
+<span th:text="${helper.getAttrValue('TNo')}" style="font-size:9px"></span>
+</td>
+</tr>
+
+<tr>
+<td>Total continuous KW</td>
+<td>
+<span th:text="${helper.getAttrValue('TCKW')}" style="font-size:9px"></span>
+</td>
+<td style="width:9.3%;text-align:center">@</td>
+<td style="width:9.3%">
+<span th:text="${helper.getAttrValue('TCKWAT')}" style="font-size:9px"></span>
+</td>
+<td>Rpm</td>
+<td style="width:13.5%">Max Speed</td>
+<td>
+<span th:text="${helper.getAttrValue('MS')}" style="font-size:9px"></span>
+</td>
+<td style="width:13.5%">Knots</td>
+</tr>
+</table>
+<table style="border:solid black 2px;width:100%">
+<tr>
+<td style="width:25%">Thruster(s)</td>
+<td style="width:25%">
+<span th:text="${helper.getAttrValue('Thrus')}" style="font-size:9px"></span>
+</td>
+<td style="width:25%">Total Thrust</td>
+<td style="width:25%">
+<span th:text="${helper.getAttrValue('TThrus')}" style="font-size:9px"></span>
+</td>
+</tr>
+<tr>
+<td>Main Generator</td>
+<td>
+<span th:text="${helper.getAttrValue('MGs')}" style="font-size:9px"></span>
+</td>
+<td>Output</td>
+<td>
+<span th:text="${helper.getAttrValue('MGsO')}" style="font-size:9px"></span>
+</td>
+</tr>
+<tr>
+<td>Emergency Generator</td>
+<td>
+<span th:text="${helper.getAttrValue('EGs')}" style="font-size:9px"></span>
+</td>
+<td>Output</td>
+<td>
+<span th:text="${helper.getAttrValue('EGsO')}" style="font-size:9px"></span>
+</td>
+</tr>
+<tr>
+<td>Shaft Generator</td>
+<td>
+<span th:text="${helper.getAttrValue('SGs')}" style="font-size:9px"></span>
+</td>
+<td>Output</td>
+<td>
+<span th:text="${helper.getAttrValue('SGsO')}" style="font-size:9px"></span>
+</td>
+</tr>
+</table>
+
+</div>
+
+
+</div></div>

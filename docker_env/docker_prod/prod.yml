@@ -1,0 +1,122 @@
+version: '3.7'
+networks:
+  default:
+    external:
+      name: prod
+services:
+    prod_mongodbinfra:
+        image: 'bitnami/mongodb:4.2'
+        container_name: ${MONGO_DBHOST}
+        ports:
+            - '${MONGO_EXT_PORT}:${MONGO_PORT}'
+        volumes:
+            - 'prod_mongodbinfra_data:/bitnami'
+        environment:
+            - MONGODB_ENABLE_DIRECTORY_PER_DB=${MONGO_ENABLE_DIRECTORY_PER_DB}
+            - MONGODB_ROOT_PASSWORD=${MONGO_ROOT_PASSWORD}
+            - MONGODB_USERNAME=${MONGO_USER}
+            - MONGODB_PASSWORD=${MONGO_PASSWORD}
+            - MONGODB_DATABASE=${MONGO_DB}
+    prod_eureka:
+        image: 'dev/eureka'
+        container_name: ${EUREKA_HOST}
+        hostname: ${EUREKA_HOST}
+        volumes:
+            - 'prod_eureka_data:/eureka'
+        ports:
+            - '${EUREKA_EXT_PORT}:${EUREKA_PORT}'
+        environment:
+            - EUREKA_PORT=${EUREKA_PORT}
+    prod_gateway:
+        image: 'dev/gateway'
+        container_name: prodgateway
+        volumes:
+            - 'prod_gateway_data:/eureka'
+        ports:
+            - '${GATEWAY_EXT_PORT}:${GATEWAY_PORT}'
+        environment:
+            - GATEWAY_PORT=${GATEWAY_PORT}
+            - EUREKA_HOST=${EUREKA_HOST}
+            - EUREKA_PORT=${EUREKA_PORT}
+            - UI_HOST=${UI_HOST}
+        depends_on:
+            - prod_eureka
+    prod_db:
+        image: "dev/devqualstrah2db"
+        ports:
+          - "9024:9024"
+          - "9025:9025"
+        container_name: prodqualstrah2db
+    
+    prod_ui:
+        image: 'dev/q2ui'
+        container_name: produi
+        volumes:
+            - 'prod_ui_data:/prod_ui_data'
+        ports:
+            - '${UI_EXT_PORT}:${UI_PORT}'
+        environment:
+            - EUREKA_HOST=${EUREKA_HOST}
+            - EUREKA_PORT=${EUREKA_PORT}
+            
+    prod_app:
+        image: 'dev/qualstra'
+        container_name: prodapp
+        volumes:
+            - 'prod_ui_data:/APP'
+            - '/home/devserver/qualstra/uatresdir:/home/devserver/qualstra/prodresdir'
+        ports:
+            - '${APP_EXT_PORT}:${APP_PORT}'
+        environment:
+            - EUREKA_HOST=${EUREKA_HOST}
+            - EUREKA_PORT=${EUREKA_PORT}
+            - APP_PORT=${APP_PORT}
+            - APP_RESDIR=${APP_RESDIR}
+            - POSTGRESQL_DBHOST=${POSTGRESQL_DBHOST}
+            - POSTGRESQL_PORT=${POSTGRESQL_PORT}
+            - POSTGRESQL_USER=${POSTGRESQL_USER}
+            - POSTGRESQL_PASSWORD=${POSTGRESQL_PASSWORD}
+            - POSTGRESQL_DB=${POSTGRESQL_DB}
+            
+    prod_attribute:
+        image: 'dev/attrservice'
+        container_name: prodattribute
+        volumes:
+            - 'prod_attribute_data:/attribute'
+        environment:
+            - EUREKA_HOST=${EUREKA_HOST}
+            - EUREKA_PORT=${EUREKA_PORT}
+            - MONGO_HOST=${MONGO_DBHOST}
+            - MONGO_PORT=${MONGO_PORT}
+            
+    prod_postgres:
+        image: postgres:16-alpine
+        container_name: ${POSTGRESQL_DBHOST}
+        volumes:
+            - postgres_data:/var/lib/postgresql/data
+        ports:
+            - "${POSTGRESQL_EXT_PORT}:${POSTGRESQL_PORT}"
+        environment:
+            - POSTGRES_DB=${POSTGRESQL_DB}
+            - POSTGRES_USER=${POSTGRESQL_USER}
+            - POSTGRES_PASSWORD=${POSTGRESQL_PASSWORD}
+        healthcheck:
+            test: "pg_isready -U postgres"
+
+
+volumes:
+    prod_eureka_data:
+        driver: local
+    prod_gateway_data:
+        driver: local
+    prod_mongodbinfra_data:
+        driver: local
+    prod_ui_data:
+        driver: local
+    prod_APP_data:
+        driver: local
+    prod_attribute_data:
+        driver: local
+    postgres_data:
+        driver: local
+

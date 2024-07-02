@@ -1,0 +1,124 @@
+version: '3.7'
+networks:
+  default:
+    external:
+      name: dev
+services:
+    dev_mongodbinfra:
+        image: 'bitnami/mongodb:4.2'
+        container_name: ${MONGO_DBHOST}
+        ports:
+            - '${MONGO_EXT_PORT}:${MONGO_PORT}'
+        volumes:
+            - 'dev_mongodbinfra_data:/bitnami'
+        environment:
+            - MONGODB_ENABLE_DIRECTORY_PER_DB=${MONGO_ENABLE_DIRECTORY_PER_DB}
+            - MONGODB_ROOT_PASSWORD=${MONGO_ROOT_PASSWORD}
+            - MONGODB_USERNAME=${MONGO_USER}
+            - MONGODB_PASSWORD=${MONGO_PASSWORD}
+            - MONGODB_DATABASE=${MONGO_DB}
+    dev_eureka:
+        image: 'dev/eureka'
+        container_name: ${EUREKA_HOST}
+        hostname: ${EUREKA_HOST}
+        volumes:
+            - 'dev_eureka_data:/eureka'
+        ports:
+            - '${EUREKA_EXT_PORT}:${EUREKA_PORT}'
+        environment:
+            - EUREKA_PORT=${EUREKA_PORT}
+    dev_gateway:
+        image: 'dev/gateway'
+        container_name: devgateway
+        volumes:
+            - 'dev_gateway_data:/eureka'
+        ports:
+            - '${GATEWAY_EXT_PORT}:${GATEWAY_PORT}'
+        environment:
+            - GATEWAY_PORT=${GATEWAY_PORT}
+            - EUREKA_HOST=${EUREKA_HOST}
+            - EUREKA_PORT=${EUREKA_PORT}
+            - UI_HOST=${UI_HOST}
+        depends_on:
+            - dev_eureka
+    dev_db:
+        image: "dev/devqualstrah2db"
+        ports:
+          - "8085:8085"
+          - "8095:8095"
+        container_name: devqualstrah2db
+    
+    dev_ui:
+        image: 'dev/q2ui'
+        container_name: devui
+        volumes:
+            - 'dev_ui_data:/dev_ui_data'
+        ports:
+            - '${UI_EXT_PORT}:${UI_PORT}'
+        environment:
+            - EUREKA_HOST=${EUREKA_HOST}
+            - EUREKA_PORT=${EUREKA_PORT}
+            
+    dev_app:
+        image: 'dev/qualstra'
+        container_name: devapp
+        volumes:
+            - 'dev_ui_data:/APP'
+            - '/home/devserver/qualstra/devresdir:/home/devserver/qualstra/devresdir'
+        ports:
+            - '${APP_EXT_PORT}:${APP_PORT}'
+        environment:
+            - EUREKA_HOST=${EUREKA_HOST}
+            - EUREKA_PORT=${EUREKA_PORT}
+            - APP_PORT=${APP_PORT}
+            - APP_RESDIR=${APP_RESDIR}
+            - POSTGRESQL_DBHOST=${POSTGRESQL_DBHOST}
+            - POSTGRESQL_PORT=${POSTGRESQL_PORT}
+            - POSTGRESQL_USER=${POSTGRESQL_USER}
+            - POSTGRESQL_PASSWORD=${POSTGRESQL_PASSWORD}
+            - POSTGRESQL_DB=${POSTGRESQL_DB}
+
+            
+    dev_attribute:
+        image: 'dev/attrservice'
+        container_name: devattribute
+        volumes:
+            - 'dev_attribute_data:/attribute'
+        environment:
+            - EUREKA_HOST=${EUREKA_HOST}
+            - EUREKA_PORT=${EUREKA_PORT}
+            - MONGO_HOST=${MONGO_DBHOST}
+            - MONGO_PORT=${MONGO_PORT}
+            
+    dev_postgres:
+        image: postgres:16-alpine
+        container_name: ${POSTGRESQL_DBHOST}
+        volumes:
+            - postgres_data:/var/lib/postgresql/data
+        ports:
+            - "${POSTGRESQL_EXT_PORT}:${POSTGRESQL_PORT}"
+        environment:
+            - POSTGRES_DB=${POSTGRESQL_DB}
+            - POSTGRES_USER=${POSTGRESQL_USER}
+            - POSTGRES_PASSWORD=${POSTGRESQL_PASSWORD}
+        healthcheck:
+            test: "pg_isready -U postgres"
+
+
+volumes:
+    dev_eureka_data:
+        driver: local
+    dev_gateway_data:
+        driver: local
+    dev_mongodbinfra_data:
+        driver: local
+    dev_ui_data:
+        driver: local
+    dev_APP_data:
+        driver: local
+    dev_attribute_data:
+        driver: local
+    postgres_data:
+        driver: local
+
+    

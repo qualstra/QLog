@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+
+<table style = "border-collapse: collapse;border-spacing: 0;">
+    <tr style = "width : 110%">
+<td style="width: 25%;height : 10%;text-align : center;border: 0.1px solid gray;"></td>
+   
+<td style="width: 50%;height : 10%;font-size : 14px;text-align : center;border: 0.1px solid gray;">
+Greatship Rohini – Condition Assessment, SMS Review, Inspection &amp; Training Report
+</td>
+   
+<td style="width: 25%;height : 10%;text-align : center;border: 0.1px solid gray;font-size : 10px;">
+<p>
+GIL-02-2020-CAS ROHINI-001a
+</p>
+<p>
+Revision : B | Date : <span th:text = "${todayDate}"></span>
+</p>
+<p>Page : 3 of 41</p>
+</td>
+  </tr>
+</table>
+
+<p ><span th:text = "${title.get(0).getSlNo()}"></span><u th:text="${title.get(0).getName()}">Introduction</u></p>
+
+<p > <b th:text="${personOne}"></b> <b th:text="${personTwo}"></b> boarded Greatship Rohini on <span th:text = "${todayDate}"></span> for the purpose of
+        <br/>
+        <br/>
+        a)<span th:text = "${purposeOne}"></span>
+        <br/>
+        b)<span th:text = "${purposeTwo}"></span>
+        <br/>
+        c)<span th:text = "${purposeThree}"></span>
+        <br/>
+        <br/>
+        <span th:text = "${purposeFour}">Greatship Rohini was operating as a Platform Supply Vessel with ONGC performing Platform Supply &amp; support duties for
+        its rigs and platforms on the West Coast of Mumbai.</span>
+        <br/><br/>
+       <span th:text = "${introductionSection }">This inspection &amp; condition assessment is based on IMCA CMID (IMCA M I 49 Issue 10) with additional check points
+        undertaken with reference to the Greatship (India) Ltd. internal operating standards and policy documents. Objective
+        of the exercise is also to ensure that the maintenance &amp; management system onboard the vessel is effective for her
+        to keep performing well with zero incidents and meet the Organizations ’s business objectives. It is also to ensure
+        that the maintenance system followed on board is adequate and satisfactory to provide good condition of the vessel
+        on a sustainable basis. The final objective is to remain the fore runner in the Offshore Industry and meet entire
+        expectations of our clients.</span>
+        </p>
+        
+<p>2<span>Executive Summary</span></p>
+
+<p th:text = "${executiveSummary}">        
+This is the forth CAS Inspection for Greatship Rohini. Vessel begun operations with ONGC as PSV from end of Apr
+2018. The Last CAS inspection was carried out in the month of March 2019. The vessel’s general condition was found
+to good and good maintenance standard was being followed. Given below is a comparison of the CAS scores.</p>
+
+
+<table style = "height : 160px;width: 100%;">
+     <tr>
+    <td style = "border: 0.1px solid gray;text-align : center;">
+    <span style = "color : #4d4dbf;">Rohini CAS Scores</span>
+    <span th:text = "${graphImg}"></span>
+    </td>
+  </tr>
+</table>
+
+<p>
+    Vessels staff seemed well aware of the company’s SMS and noticeable efforts could be seen in the maintenance carried
+    out onboard. Machinery spaces were found in satisfactory condition. It was quite impressive to see the space around
+    the Main Engine, CPP, Gearbox in dry and clean condition indicating no leaks from the running machinery. We hope
+    that the vessel staff will continue with the regular maintenance to sustain the condition witnessed.
+    <br/><br/>
+    However, some observations were made during the inspection which are recommended to be attended to for closure. All
+    the observations listed are not necessarily considered as deficiencies but scope for improvement.
+    <br/><br/>
+    The Vessel Master &amp; Chief Engineer must ensure that the vessel staff should remain motivated and continue doing the
+    good work. Standards in the vessel upkeep should not be compromised and all shore based support to be continued to
+    be provided in order to fulfil this goal.
+</p>
+
+
+</body>
+</html>

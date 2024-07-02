@@ -1,0 +1,21 @@
+<div th:fragment="checkList(checklist)">
+
+<div th:replace="deflt/fragments/CasHeader :: header(${checklist})"></div>
+<div style="text-align:center"><h3><b><u>DP WATCHKEEPING / HANDOVER CHECKLIST</u></b></h3></div>
+
+<div th:replace="test/detail/dp_watchkeeping/dp_platform :: section(${checklist.getSections().get(0)})"></div> 
+<div th:replace="test/detail/dp_watchkeeping/dp_printer :: section(${checklist.getSections().get(1)})"></div> 
+<div th:replace="test/detail/dp_watchkeeping/dp_references :: section(${checklist.getSections().get(2)})"></div> 
+<div th:replace="test/detail/dp_watchkeeping/dp_power :: section(${checklist.getSections().get(3)})"></div> 
+<div th:replace="test/detail/dp_watchkeeping/dp_environment :: section(${checklist.getSections().get(4)})"></div>
+<div th:replace="test/detail/dp_watchkeeping/dp_sensors :: section(${checklist.getSections().get(5)})"></div>
+<div th:replace="test/detail/dp_watchkeeping/dp_thrusters :: section(${checklist.getSections().get(6)})"></div>
+<div th:replace="test/detail/dp_watchkeeping/dp_engine :: section(${checklist.getSections().get(7)})"></div>
+<div th:replace="test/detail/dp_watchkeeping/dp_rudders :: section(${checklist.getSections().get(8)})"></div>
+<div th:replace="test/detail/dp_watchkeeping/dp_control :: section(${checklist.getSections().get(9)})"></div>
+<div th:replace="test/detail/dp_watchkeeping/dp_alarm :: section(${checklist.getSections().get(10)})"></div>
+<div th:replace="test/detail/dp_watchkeeping/dp_communication :: section(${checklist.getSections().get(11)})"></div>
+<div th:replace="test/detail/dp_watchkeeping/dp_position :: section(${checklist.getSections().get(12)})"></div>
+<div th:replace="test/detail/dp_watchkeeping/dp_watchkeeper :: section(${checklist.getSections().get(13)})"></div>
+</div>
+

@@ -1,0 +1,56 @@
+version: '3.7'
+networks:
+  default:
+    external:
+      name: infra
+services:
+    mongodbinfra:
+        image: 'bitnami/mongodb:4.2'
+        container_name: mongodbinfra
+        ports:
+            - '${MONGO_PORT}:8008'
+        volumes:
+            - 'mongodbinfra_data:/bitnami'
+        environment:
+            - MONGODB_ENABLE_DIRECTORY_PER_DB=${MONGODB_ENABLE_DIRECTORY_PER_DB}
+            - MONGODB_ROOT_PASSWORD=${MONGODB_ROOT_PASSWORD}
+            - MONGODB_USERNAME=${MONGODB_USERNAME}
+            - MONGODB_PASSWORD=${MONGODB_PASSWORD}
+            - MONGODB_DATABASE=${MONGODB_DATABASE}
+            - MONGODB_PORT_NUMBER=${MONGODB_PORT_NUMBER}
+    eureka:
+        image: 'infra/eureka'
+        container_name: eureka
+        volumes:
+            - 'eureka_data:/eureka'
+        ports:
+            - '${EUREKA_PORT}:${EUREKA_PORT}'
+        environment:
+            - EUREKA_PORT=${EUREKA_PORT}
+    gateway:
+        image: 'infra/gateway'
+        container_name: gateway
+        volumes:
+            - 'gateway_data:/eureka'
+        ports:
+            - '${GATEWAY_PORT}:${GATEWAY_PORT}'
+        environment:
+            - GATEWAY_PORT=${GATEWAY_PORT}
+            - EUREKA_HOST=${EUREKA_HOST}
+            - EUREKA_PORT=${EUREKA_PORT}
+        depends_on:
+            - eureka
+    db:
+        image: "qualstradbqa:2.0"
+        ports:
+          - "8081:8082"
+          - "9091:9092"
+        container_name: qualstraqadb
+volumes:
+    eureka_data:
+        driver: local
+    gateway_data:
+        driver: local
+    mongodbinfra_data:
+        driver: local
+    

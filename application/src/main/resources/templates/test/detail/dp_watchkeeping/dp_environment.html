@@ -1,0 +1,242 @@
+<div th:fragment="section(sec)">
+<table style="width:100%">
+<tr>
+<td style="width:23%"><span style="color: black;font-weight: bold" th:text="${sec.getName()}"></span></td>
+<td colspan="4"></td>
+</tr>
+
+<tr>
+<td  style="width:23%"><span
+							th:text="${sec.getQuestions().get(0).questionText}"></span></td>
+<td>
+<table class="fixed" style="width:100%">
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+     <col width="25%" />
+    <tr>
+        <td><span th:text="${sec.getQuestions().get(0).getChildQuestions().get(0).getAnswerAttrib('remark')}"></span></td>
+        <td>Deg</td>
+        <td><span th:text="${sec.getQuestions().get(0).getChildQuestions().get(1).getAnswerAttrib('remark')}"></span></td>
+        <td>Kts</td>
+    </tr>
+</table>
+
+</td>
+
+
+<td>
+<table class="fixed" style="width:100%">
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+     <col width="25%" />
+    <tr>
+         <td><span th:text="${sec.getQuestions().get(0).getChildQuestions().get(0).getAnswerAttrib('remark')}"></span></td>
+        <td>Deg</td>
+        <td><span th:text="${sec.getQuestions().get(0).getChildQuestions().get(1).getAnswerAttrib('remark')}"></span></td>
+        <td>Kts</td>
+    </tr>
+</table>
+
+</td>
+
+<td>
+<table class="fixed" style="width:100%">
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+     <col width="25%" />
+    <tr>
+         <td><span th:text="${sec.getQuestions().get(0).getChildQuestions().get(0).getAnswerAttrib('remark')}"></span></td>
+        <td>Deg</td>
+        <td><span th:text="${sec.getQuestions().get(0).getChildQuestions().get(1).getAnswerAttrib('remark')}"></span></td>
+        <td>Kts</td>
+    </tr>
+</table>
+
+</td>
+
+<td>
+<table class="fixed" style="width:100%">
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+     <col width="25%" />
+    <tr>
+         <td><span th:text="${sec.getQuestions().get(0).getChildQuestions().get(0).getAnswerAttrib('remark')}"></span></td>
+        <td>Deg</td>
+        <td><span th:text="${sec.getQuestions().get(0).getChildQuestions().get(1).getAnswerAttrib('remark')}"></span></td>
+        <td>Kts</td>
+    </tr>
+</table>
+
+</td>
+
+
+
+</tr>
+
+
+<tr>
+<td  style="width:23%"><span
+							th:text="${sec.getQuestions().get(1).questionText}"></span></td>
+<td>
+<table class="fixed" style="width:100%">
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+     <col width="25%" />
+    <tr>
+         <td><span th:text="${sec.getQuestions().get(1).getChildQuestions().get(0).getAnswerAttrib('remark')}"></span></td>
+        <td>Deg</td>
+        <td><span th:text="${sec.getQuestions().get(1).getChildQuestions().get(1).getAnswerAttrib('remark')}"></span></td>
+        <td>Kts</td>
+    </tr>
+</table>
+
+</td>
+
+
+<td>
+<table class="fixed" style="width:100%">
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+     <col width="25%" />
+    <tr>
+         <td><span th:text="${sec.getQuestions().get(1).getChildQuestions().get(0).getAnswerAttrib('remark')}"></span></td>
+        <td>Deg</td>
+         <td><span th:text="${sec.getQuestions().get(1).getChildQuestions().get(1).getAnswerAttrib('remark')}"></span></td>
+        <td>Kts</td>
+    </tr>
+</table>
+
+</td>
+
+<td>
+<table class="fixed" style="width:100%">
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+     <col width="25%" />
+    <tr>
+         <td><span th:text="${sec.getQuestions().get(1).getChildQuestions().get(0).getAnswerAttrib('remark')}"></span></td>
+        <td>Deg</td>
+        <td><span th:text="${sec.getQuestions().get(1).getChildQuestions().get(1).getAnswerAttrib('remark')}"></span></td>
+        <td>Kts</td>
+    </tr>
+</table>
+
+</td>
+
+<td>
+<table class="fixed" style="width:100%">
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+     <col width="25%" />
+    <tr>
+          <td><span th:text="${sec.getQuestions().get(1).getChildQuestions().get(0).getAnswerAttrib('remark')}"></span></td>
+        <td>Deg</td>
+         <td><span th:text="${sec.getQuestions().get(1).getChildQuestions().get(1).getAnswerAttrib('remark')}"></span></td>
+        <td>Kts</td>
+    </tr>
+</table>
+
+</td>
+
+
+
+</tr>
+
+<tr>
+<td  style="width:23%"><span
+							th:text="${sec.getQuestions().get(2).questionText}"></span></td>
+<td>
+<table class="fixed" style="width:100%">
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+     <col width="25%" />
+    <tr>
+          <td><span th:text="${sec.getQuestions().get(2).getChildQuestions().get(0).getAnswerAttrib('remark')}"></span></td>
+        <td>Deg</td>
+         <td><span th:text="${sec.getQuestions().get(2).getChildQuestions().get(1).getAnswerAttrib('remark')}"></span></td>
+        <td>T</td>
+    </tr>
+</table>
+
+</td>
+
+
+<td>
+<table class="fixed" style="width:100%">
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+     <col width="25%" />
+    <tr>
+        <td><span th:text="${sec.getQuestions().get(2).getChildQuestions().get(0).getAnswerAttrib('remark')}"></span></td>
+        <td>Deg</td>
+        <td><span th:text="${sec.getQuestions().get(2).getChildQuestions().get(1).getAnswerAttrib('remark')}"></span></td>
+        <td>T</td>
+    </tr>
+</table>
+
+</td>
+
+<td>
+<table class="fixed" style="width:100%">
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+     <col width="25%" />
+    <tr>
+        <td><span th:text="${sec.getQuestions().get(2).getChildQuestions().get(0).getAnswerAttrib('remark')}"></span></td>
+        <td>Deg</td>
+        <td><span th:text="${sec.getQuestions().get(2).getChildQuestions().get(1).getAnswerAttrib('remark')}"></span></td>
+        <td>T</td>
+    </tr>
+</table>
+
+</td>
+
+<td>
+<table class="fixed" style="width:100%">
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+     <col width="25%" />
+    <tr>
+         <td><span th:text="${sec.getQuestions().get(2).getChildQuestions().get(0).getAnswerAttrib('remark')}"></span></td>
+        <td>Deg</td>
+        <td><span th:text="${sec.getQuestions().get(2).getChildQuestions().get(1).getAnswerAttrib('remark')}"></span></td>
+        <td>T</td>
+    </tr>
+</table>
+
+</td>
+
+
+
+</tr>
+
+<tr>
+<td  style="width:23%"><span
+							th:text="${sec.getQuestions().get(3).questionText}"></span></td>
+<td><span th:text="${sec.getQuestions().get(3).getAnswerAttrib('remark')}"></span><span>m</span></td>
+
+<td><span th:text="${sec.getQuestions().get(3).getAnswerAttrib('remark')}"></span><span>m</span></td>
+
+<td><span th:text="${sec.getQuestions().get(3).getAnswerAttrib('remark')}"></span><span>m</span></td>
+
+<td><span th:text="${sec.getQuestions().get(3).getAnswerAttrib('remark')}"></span><span>m</span></td>
+
+
+
+</tr>
+
+
+</table>
+</div>

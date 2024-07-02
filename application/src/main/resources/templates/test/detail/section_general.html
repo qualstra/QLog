@@ -1,0 +1,842 @@
+<div th:fragment="section(sec)">
+<link href="/home/disney/git/Qualstra-2.0/application/src/main/resources/static/assets/css/span.css"/>
+	<table style="width: 100%;">
+		<tr>
+			<td colspan="2" style="border-style:none"><b><span style="color: black;font-size:16px;"></span></b><u><b><span style="color: black;font-size:16px;font-family: Arial Bold;" th:text="${sec.getName()}"></span></b></u>
+		<br/>
+		<br/>
+		
+		
+			<th:block th:with="question=${sec.getQuestions().get(0)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(0).questionText}"></span></u>:
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(0))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${#strings.replace(sec.getQuestions().get(0).getAnswerAttrib('remark'),'[NA]','')}"> Name</span></span><br/>
+				<br/>		
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+</th:block>
+			
+			</td></tr>
+			
+			<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(1)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(1).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(1))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(1).getAnswerAttrib('answer')}"> Name</span><br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(1).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				<br/>		
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+</th:block>
+			
+			</td></tr>
+			
+			<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(2)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(2).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(2))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(2).getAnswerAttrib('answer')}"> Name</span><br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(2).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				<br/>		
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+				</th:block>
+			</td></tr>
+			
+			<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(3)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(3).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(3))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(3).getAnswerAttrib('answer')}"> Name</span><br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(3).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				
+			<br/>		
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+  </th:block>
+			</td></tr>
+			
+			<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(4)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(4).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(4))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(4).getAnswerAttrib('answer')}"> Name</span><br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(4).getAnswerAttrib('remark')}"> Name</span></span><br/>
+					<br/>		
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+				</th:block>
+			</td></tr>
+			
+			<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(5)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(5).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(5))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(5).getAnswerAttrib('answer')}"> Name</span><br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(5).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				
+				<br/>		
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+				</th:block>
+			</td></tr>
+			
+			<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(6)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(6).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(6))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(6).getAnswerAttrib('answer')}"> Name</span><br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(6).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				
+				<br/>		
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+				</th:block>
+			</td></tr>
+			
+			<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(7)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(7).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(7))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(7).getAnswerAttrib('answer')}"> Name</span><br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(7).getAnswerAttrib('remark')}"> Name</span></span><br/>
+					<br/>		
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+				</th:block>
+			
+			
+		 <!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(7).getChildQuestions().get(0).questionText}"></span></u>
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(7).getChildQuestions().get(0))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(7).getChildQuestions().get(0).getAnswerAttrib('answer')}"> Name</span><br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(7).getChildQuestions().get(0).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${sec.getQuestions().get(7).getChildQuestions().get(0).getAttachments()})"></th:block>
+				
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(7).getChildQuestions().get(1).questionText}">:</span></u>
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(7).getChildQuestions().get(1))} == FALSE ? 'color: black' : 'color: red'"> 
+                <span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(7).getChildQuestions().get(1).getAnswerAttrib('answer')}"> Name</span><br/>
+                <span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(7).getChildQuestions().get(1).getAnswerAttrib('remark')}"> Name</span></span><br/>
+                
+                
+                <br/><th:block th:replace="test/detail/attachment.html :: attach(${sec.getQuestions().get(7).getChildQuestions().get(1).getAttachments()})"></th:block>
+                <u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(7).getChildQuestions().get(2).questionText}">:</span></u>
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(7).getChildQuestions().get(2))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(7).getChildQuestions().get(2).getAnswerAttrib('answer')}"> Name</span><br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(7).getChildQuestions().get(2).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${sec.getQuestions().get(7).getChildQuestions().get(2).getAttachments()})"></th:block>
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(7).getChildQuestions().get(3).questionText}">:</span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(7).getChildQuestions().get(3))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(7).getChildQuestions().get(3).getAnswerAttrib('answer')}"> Name</span><br/>
+                <span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(7).getChildQuestions().get(3).getAnswerAttrib('remark')}"> Name</span></span><br/>
+                
+                <br/><th:block th:replace="test/detail/attachment.html :: attach(${sec.getQuestions().get(7).getChildQuestions().get(3).getAttachments()})"></th:block>
+                <u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(7).getChildQuestions().get(4).questionText}">:</span></u>
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(7).getChildQuestions().get(4))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(7).getChildQuestions().get(4).getAnswerAttrib('answer')}"> Name</span><br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(7).getChildQuestions().get(4).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${sec.getQuestions().get(7).getChildQuestions().get(4).getAttachments()})"></th:block>
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(7).getChildQuestions().get(5).questionText}">:</span></u>
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(7).getChildQuestions().get(5))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(7).getChildQuestions().get(5).getAnswerAttrib('answer')}"> Name</span><br/>
+                <span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(7).getChildQuestions().get(5).getAnswerAttrib('remark')}"> Name</span></span><br/>
+                
+                <br/><th:block th:replace="test/detail/attachment.html :: attach(${sec.getQuestions().get(7).getChildQuestions().get(5).getAttachments()})"></th:block>
+               		
+			
+			</td></tr>
+					</td></tr>
+					<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(8)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(8).questionText}"></span></u>
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(8))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(8).getAnswerAttrib('answer')}"> Name</span><br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(8).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+			
+			</th:block>
+			
+			</td></tr>
+				
+				
+				<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(9)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(9).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(9))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(9).getAnswerAttrib('answer')}"> Name</span><br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(9).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+				</th:block>
+			
+			</td></tr><br/>
+			
+			
+			<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(10)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(10).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(10))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(10).getAnswerAttrib('answer')}"> Name</span><br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(10).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+				</th:block>
+			
+			
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(11)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(11).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(11))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(11).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+				</th:block>
+			
+			
+			
+		 <!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<div style="page-break-inside: avoid;">
+				<u><span  style='font-size: 12px'
+				th:text="${sec.getQuestions().get(11).getChildQuestions().get(0).questionText}"></span></u>
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(11).getChildQuestions().get(0))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(11).getChildQuestions().get(0).getAnswerAttrib('answer')}"> Name</span><br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(11).getChildQuestions().get(0).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				<br/>
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${sec.getQuestions().get(11).getChildQuestions().get(0).getAttachments()})"></th:block>
+						</div>
+						
+						<div style="page-break-inside: avoid;">
+				<u><span  style='font-size: 12px'
+				th:text="${sec.getQuestions().get(11).getChildQuestions().get(1).questionText}">:</span></u>
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(11).getChildQuestions().get(1))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(11).getChildQuestions().get(1).getAnswerAttrib('answer')}"> Name</span><br/>
+                <span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(11).getChildQuestions().get(1).getAnswerAttrib('remark')}"> Name</span></span><br/>
+                <br/>
+						<br/><th:block th:replace="test/detail/attachment.html :: attach(${sec.getQuestions().get(11).getChildQuestions().get(1).getAttachments()})"></th:block>
+						</div>
+						
+						<div style="page-break-inside: avoid;">
+                <u><span  style='font-size: 12px'
+				th:text="${sec.getQuestions().get(11).getChildQuestions().get(2).questionText}">:</span></u>
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(11).getChildQuestions().get(2))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(11).getChildQuestions().get(2).getAnswerAttrib('answer')}"> Name</span><br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(11).getChildQuestions().get(2).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				<br/>
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${sec.getQuestions().get(11).getChildQuestions().get(2).getAttachments()})"></th:block>
+						</div>
+						
+						<div style="page-break-inside: avoid;">
+				<u><span  style='font-size: 12px'
+				th:text="${sec.getQuestions().get(11).getChildQuestions().get(3).questionText}">:</span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(11).getChildQuestions().get(3))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(11).getChildQuestions().get(3).getAnswerAttrib('answer')}"> Name</span><br/>
+                <span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(11).getChildQuestions().get(3).getAnswerAttrib('remark')}"> Name</span></span><br/>
+                <br/>
+                	<br/><th:block th:replace="test/detail/attachment.html :: attach(${sec.getQuestions().get(11).getChildQuestions().get(3).getAttachments()})"></th:block>
+						</div>
+						
+						<div style="page-break-inside: avoid;">
+                <u><span  style='font-size: 12px'
+				th:text="${sec.getQuestions().get(11).getChildQuestions().get(4).questionText}">:</span></u>
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(11).getChildQuestions().get(4))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(11).getChildQuestions().get(4).getAnswerAttrib('answer')}"> Name</span><br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(11).getChildQuestions().get(4).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				<br/>
+					<br/><th:block th:replace="test/detail/attachment.html :: attach(${sec.getQuestions().get(11).getChildQuestions().get(4).getAttachments()})"></th:block>
+						</div>
+						
+						<div style="page-break-inside: avoid;">
+				<u><span  style='font-size: 12px'
+				th:text="${sec.getQuestions().get(11).getChildQuestions().get(5).questionText}">:</span></u>
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(11).getChildQuestions().get(5))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(11).getChildQuestions().get(5).getAnswerAttrib('answer')}"> Name</span><br/>
+                <span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(11).getChildQuestions().get(5).getAnswerAttrib('remark')}"> Name</span></span><br/>
+                <br/>
+                	<br/><th:block th:replace="test/detail/attachment.html :: attach(${sec.getQuestions().get(11).getChildQuestions().get(5).getAttachments()})"></th:block>
+						</div>
+						
+						<div style="page-break-inside: avoid;">
+                <u><span  style='font-size: 12px'
+				th:text="${sec.getQuestions().get(11).getChildQuestions().get(6).questionText}">:</span></u>
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(11).getChildQuestions().get(6))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(11).getChildQuestions().get(6).getAnswerAttrib('answer')}"> Name</span><br/>
+                <span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(11).getChildQuestions().get(6).getAnswerAttrib('remark')}"> Name</span></span><br/>
+                <br/>
+                	<br/><th:block th:replace="test/detail/attachment.html :: attach(${sec.getQuestions().get(11).getChildQuestions().get(6).getAttachments()})"></th:block>
+               		</div>
+               		<br/>
+			</td></tr>
+			</td></tr>
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(12)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(12).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(12))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${#strings.replace(sec.getQuestions().get(12).getAnswerAttrib('remark'),'[NC]','')}"> Name</span></span><br/>
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+				</th:block>
+			
+			</td></tr>
+</td></tr>
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(13)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(13).questionText}"></span></u>
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(13))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${#strings.replace(sec.getQuestions().get(13).getAnswerAttrib('remark'),'[NC]','')}"> Name</span></span><br/>
+				
+			<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+			</th:block>
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(14)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(14).questionText}"></span></u>
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(14))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${#strings.replace(sec.getQuestions().get(14).getAnswerAttrib('remark'),'[NC]','')}"> Name</span></span><br/>
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+				</th:block>
+			
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(15)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(15).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(15))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${#strings.replace(sec.getQuestions().get(15).getAnswerAttrib('remark'),'[NC]','')}"> Name</span></span><br/>
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+				</th:block>
+			
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(16)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(16).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(16))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${#strings.replace(sec.getQuestions().get(16).getAnswerAttrib('remark'),'[NC]','')}"> Name</span></span><br/>
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+				</th:block>
+			
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(17)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(17).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(17))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(17).getAnswerAttrib('answer')}"> Name</span><br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(17).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				
+			<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+			</th:block>
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(18)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(18).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(18))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(18).getAnswerAttrib('answer')}"> Name</span><br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(18).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+				</th:block>
+			
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(19)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(19).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(19))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(19).getAnswerAttrib('answer')}"> Name</span>
+                <br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(19).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				
+			<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+			</th:block>
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(20)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(20).questionText}"></span></u>
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(20))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(20).getAnswerAttrib('answer')}"> Name</span><br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(20).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+				</th:block>
+			
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(21)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(21).questionText}"></span></u>
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(21))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(21).getAnswerAttrib('answer')}"> Name</span><br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(21).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+				</th:block>
+			
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(22)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(22).questionText}"></span></u>
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(22))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(22).getAnswerAttrib('answer')}"> Name</span>
+                <br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(22).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+				</th:block>
+			
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(23)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(23).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(23))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(23).getAnswerAttrib('answer')}"> Name</span><br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(23).getAnswerAttrib('remark')}"> Name</span></span><br/>
+			
+			<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>	
+			</th:block>
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(24)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(24).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(24))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(24).getAnswerAttrib('answer')}"> Name</span><br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(24).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+				</th:block>
+			
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(25)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(25).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(25))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${#strings.replace(sec.getQuestions().get(25).getAnswerAttrib('remark'),'[NC]','')}"> Name</span></span><br/>
+				
+			<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+			</th:block>
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(26)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(26).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(26))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${#strings.replace(sec.getQuestions().get(26).getAnswerAttrib('remark'),'[NC]','')}"> Name</span></span><br/>
+				
+			<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+			</th:block>
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(27)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(27).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(27))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${#strings.replace(sec.getQuestions().get(27).getAnswerAttrib('remark'),'[NC]','')}"> Name</span></span><br/>
+				
+			<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+			</th:block>
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(28)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(28).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(28))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${#strings.replace(sec.getQuestions().get(28).getAnswerAttrib('remark'),'[NC]','')}"> Name</span></span><br/>
+				
+			<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+			</th:block>
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(29)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(29).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(29))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${#strings.replace(sec.getQuestions().get(29).getAnswerAttrib('remark'),'[NC]','')}"> Name</span></span><br/>
+				
+			<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+			</th:block>
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(30)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(30).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(30))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${#strings.replace(sec.getQuestions().get(30).getAnswerAttrib('remark'),'[NA]','')}"> Name</span></span><br/>
+				
+			<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+			</th:block>
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(31)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(31).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(31))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(31).getAnswerAttrib('answer')}"> Name</span><br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(31).getAnswerAttrib('remark')}"> Name</span></span><br/>
+                <br/>
+			<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+			</th:block>
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(32)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(32).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(32))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(32).getAnswerAttrib('answer')}"> Name</span>
+                <br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(32).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				
+			<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+			</th:block>
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(33)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(33).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(33))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${#strings.replace(sec.getQuestions().get(33).getAnswerAttrib('remark'),'[NA]','')}"> Name</span></span><br/>
+				
+			<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+			</th:block>
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(34)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(34).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(34))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(34).getAnswerAttrib('answer')}"> Name</span>
+                <br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(34).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+				</th:block>
+			
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(35)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(35).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(35))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(35).getAnswerAttrib('answer')}"> Name</span>
+                <br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(35).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+				</th:block>
+			
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(36)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(36).questionText}"></span></u>
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(36))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(36).getAnswerAttrib('answer')}"> Name</span>
+                <br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(36).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+				</th:block>
+			
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(37)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(37).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(37))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${#strings.replace(sec.getQuestions().get(37).getAnswerAttrib('remark'),'[NA]','')}"> Name</span></span><br/>
+				
+			<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+			</th:block>
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(38)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(38).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(38))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(38).getAnswerAttrib('answer')}"> Name</span>
+                <br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(38).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+				</th:block>
+			
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(39)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(39).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(39))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(39).getAnswerAttrib('answer')}"> Name</span>
+                <br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(39).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				
+			<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+			</th:block>
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(40)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(40).questionText}"></span></u>
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(40))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(40).getAnswerAttrib('answer')}"> Name</span>
+                <br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(40).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				
+			<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+			</th:block>
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(41)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(41).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(41))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(41).getAnswerAttrib('answer')}"> Name</span>
+                <br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(41).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+				</th:block>
+			
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(42)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(42).questionText}"></span></u>
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(42))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(42).getAnswerAttrib('answer')}"> Name</span>
+                <br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(42).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				
+			<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+			</th:block>
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(43)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(43).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(43))} == FALSE ? 'color: black' : 'color: red'"> 
+                
+                <span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(43).getAnswerAttrib('answer')}"> Name</span>
+                <br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(43).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				
+			<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+			</th:block>
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(44)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(44).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(44))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(44).getAnswerAttrib('answer')}"> Name</span><br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(44).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				
+			<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+			</th:block>
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(45)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(45).questionText}"></span></u>
+				
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(45))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${#strings.replace(sec.getQuestions().get(45).getAnswerAttrib('remark'),'[NA]','')}"> Name</span></span><br/>
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+				</th:block>
+			
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(46)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(46).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(46))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(46).getAnswerAttrib('answer')}"> Name</span><br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(46).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+				</th:block>
+			
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(47)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(47).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(47))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(47).getAnswerAttrib('answer')}"> Name</span><br/>
+				<span  style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(47).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				
+			<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+			</th:block>
+			</td></tr>
+
+<!--<tr style="page-break-inside: avoid;">--><tr>
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			<th:block th:with="question=${sec.getQuestions().get(48)}">
+				<u><span style='font-size: 12px'
+				th:text="${sec.getQuestions().get(48).questionText}"></span></u> 
+				<span style="font-size: 12px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(48))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(48).getAnswerAttrib('answer')}"> Name</span><br/>
+				<span style='font-size: 12px;font-family: Times New Roman, Helvetica, sans-serif;' th:text="${sec.getQuestions().get(48).getAnswerAttrib('remark')}"> Name</span></span><br/>
+				
+			<br/><th:block th:replace="test/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+			</th:block>
+			</td></tr>
+
+
+
+	</table>
+
+</div>

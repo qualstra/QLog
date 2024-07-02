@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+  db:
+    image: "qualstradbqa:2.0"
+    ports:
+      - "8081:8082"
+      - "9091:9092"
+    container_name: qualstraqadb

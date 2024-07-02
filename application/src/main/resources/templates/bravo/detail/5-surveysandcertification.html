@@ -1,0 +1,641 @@
+<div th:fragment="section(sec)">
+      <table cellspacing="0">
+         <tr>
+            <td bgcolor="#CCCCCC" style="width: 80%;">
+               <p class="s1"><b><u>5. SURVEYS AND CERTIFICATIONS</u></b></p>
+            </td>
+         </tr>
+      </table>
+      <br/>
+      Below is the status of Statutory Certificates <br/><br/>
+<table>
+<col style="width: 2%;"/>
+        <col style="width: 48%;"/>
+        <col style="width: 25%;"/>
+        <col style="width: 25%;"/>
+<tbody>
+<tr>
+<th><p>Sn.</p></th>
+<th><p>Certificate</p></th>
+<th><p>Issued date</p></th>
+<th><p>Expiry dates</p></th>
+</tr>
+   <tr>
+      <td>
+         <p>1.</p>
+      </td>
+      <td>
+         <p>Load line certificate</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('LL_ByOn')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('LL_ByOn_Val')}"></span></p>
+      </td>
+   </tr>
+   <tr>
+      <td>
+         <p>2.</p>
+      </td>
+      <td>
+         <p>Safety Construction Certificate</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('SC_ByOn')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('SC_ByOnVal')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>3.</p>
+      </td>
+      <td>
+         <p>Safety Equipment Certificate</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('SE_ByOn')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('SE_ByOn_Val')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>4.</p>
+      </td>
+      <td>
+         <p> Safety Radio Certificate</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('SR_ByOn')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('SR_ByOn_Val')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>5.</p>
+      </td>
+      <td>
+         <p>Dangerous goods fitness certificate</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('DGF_ByOn')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('DGF_ByOn_Val')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>6.</p>
+      </td>
+      <td>
+         <p>IOPP Certificate</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('IOP_ByOn')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('IOP_ByOn_Val')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>7.</p>
+      </td>
+      <td>
+         <p>ISPP Certificate</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('ISPP_ByOn')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('ISPP_ByOn_Val')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>8.</p>
+      </td>
+      <td>
+         <p>IAPP Certificate</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('IAPP_ByOn')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('IAPP_ByOn_Val')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>9.</p>
+      </td>
+      <td>
+         <p>International Tonnage Certificate</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('ITon_ByOn')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('ITon_ByOn_Val ')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>10.</p>
+      </td>
+      <td>
+         <p>Document of Compliance</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('DOC_ByOn')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('DOC_ByOn_Val')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>11.</p>
+      </td>
+      <td>
+         <p>Safety Management Certificate </p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('SMAN_ByOn')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('SMAN_ByOn_Val')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>12.</p>
+      </td>
+      <td>
+         <p>International Ship Security Certificate </p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('ISSC_ByOn')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('ISSC_ByOn_Val')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>13.</p>
+      </td>
+      <td>
+         <p>Maritime Labour Certificate (MLC)</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('MLC_ByOn')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('MLC_ByOn_Val')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>14.</p>
+      </td>
+      <td>
+         <p>Continuous Synopsis Record</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('CSYR_ByOn')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('CSYR_ByOn_Val')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>15.</p>
+      </td>
+      <td>
+         <p>Anti-Fouling Certificate </p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('AFOU_ByOn')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('AFOU_ByOn_Val')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>16.</p>
+      </td>
+      <td>
+         <p>International Energy Efficiency Certificate</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('IEE_ByOn')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('IEE_ByOn_Val')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>17.</p>
+      </td>
+      <td style=
+      "  border: 1px solid #000; /* Black border around cells */
+         padding: 0px; /* Padding inside cells */
+         padding-left: 5px;
+         text-align: left; /* Left-align text */
+         font-family: Calibri, Arial, sans-serif;
+         font-size: 13px; /* Font size */
+         white-space: pre-wrap;
+         line-height: 4px;">
+         <p>Document of authorization for the carriage of grain<br/><br/><br/><br/>and grain loading manual</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('DOACG_ByOn')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('DOACG_ByOn_Val')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>18.</p>
+      </td>
+      <td>
+         <p>CLC</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('CLC_ByOn')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('CLC_ByOn_Val')}"></span></p>
+      </td>
+   </tr>
+   
+</tbody>
+</table>
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+ Below is the status of Class Surveys  <br/><br/>
+ <table>
+<col style="width: 2%;"/>
+        <col style="width: 48%;"/>
+        <col style="width: 25%;"/>
+        <col style="width: 25%;"/>
+<tbody>
+<tr>
+<th><p>Sn.</p></th>
+<th><p>Certificate</p></th>
+<th><p>Issued date</p></th>
+<th><p>Expiry dates</p></th>
+</tr>
+   <tr>
+      <td>
+         <p>1.</p>
+      </td>
+      <td>
+         <p>Special Survey</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('SS_Due')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('SS_LD')}"></span></p>
+      </td>
+   </tr>
+   <tr>
+      <td>
+         <p>2.</p>
+      </td>
+      <td>
+         <p>Annual Survey</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('AS_Due')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('AS_LD')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>3.</p>
+      </td>
+      <td>
+         <p>Boiler Survey</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('BS_Due')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('BS_LD')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>4.</p>
+      </td>
+      <td>
+         <p> Intermediate survey</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('IS_Due')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('IS_LD')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>5.</p>
+      </td>
+      <td>
+         <p>LL Renewal Survey</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('LLR_Due')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('LLR_LD')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>6.</p>
+      </td>
+      <td>
+         <p>LL Annual Survey</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('LLA_Due')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('LLA_LD')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>7.</p>
+      </td>
+      <td>
+         <p>SC Renewal Survey</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('SCR_Due')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('SCR_LD')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>8.</p>
+      </td>
+      <td>
+         <p>SC Intermediate Survey </p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('SCI_Due')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('SCI_LD')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>9.</p>
+      </td>
+      <td>
+         <p>SC Annual Survey</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('SCA_Due')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('SCA_LD')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>10.</p>
+      </td>
+      <td>
+         <p>SEQ Renewal Survey</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('SEQR_Due')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('SEQR_LD')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>11.</p>
+      </td>
+      <td>
+         <p>SEQ Periodical Survey </p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('SEQP_Due')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('SEQP_LD')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>12.</p>
+      </td>
+      <td>
+         <p>SEQ Annual Survey</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('SEQA_Due')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('SEQA_LD')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>13.</p>
+      </td>
+      <td>
+         <p>Radio Renewal Survey</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('RRS_Due')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('RRS_LD')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>14.</p>
+      </td>
+      <td>
+         <p>Radio Periodical Survey </p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('RPS_Due')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('RPS_LD')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>15.</p>
+      </td>
+      <td>
+         <p>IOPP Renewal Survey</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('IOPPR_Due')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('IOPPR_LD')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>16.</p>
+      </td>
+      <td>
+         <p>IOPP Intermediate Survey </p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('IOPPI_Due')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('IOPPI_LD')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>17.</p>
+      </td>
+      <td>
+         <p>IOPP Annual Survey</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('IOPPA_Due')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('IOPPA_LD')}"></span></p>
+      </td>
+   </tr>
+      <tr>
+      <td>
+         <p>18.</p>
+      </td>
+      <td>
+         <p>ISPP Renewal Survey</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('ISPPR_Due')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('ISPPR_LD')}"></span></p>
+      </td>
+   </tr>
+         <tr>
+      <td>
+         <p>19.</p>
+      </td>
+      <td>
+         <p>IAPP Renewal Survey</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('IAPPR_Due')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('IAPPR_LD')}"></span></p>
+      </td>
+   </tr>
+         <tr>
+      <td>
+         <p>20.</p>
+      </td>
+      <td>
+         <p>IAPP Intermediate Survey </p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('IAPPI_Due')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('IAPPI_LD')}"></span></p>
+      </td>
+   </tr>
+         <tr>
+      <td>
+         <p>21.</p>
+      </td>
+      <td>
+         <p>IAPP Annual Survey</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('IAPPA_Due')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('IAPPA_LD')}"></span></p>
+      </td>
+   </tr>
+         <tr>
+      <td>
+         <p>22.</p>
+      </td>
+      <td>
+         <p>Ballast Water Renewal Survey</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('BWRS_Due')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('BWRS_LD')}"></span></p>
+      </td>
+   </tr>
+         <tr>
+      <td>
+         <p>23.</p>
+      </td>
+      <td>
+         <p>Ballast Water Intermediate Survey </p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('BWIS_Due')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('BWIS_LD')}"></span></p>
+      </td>
+   </tr>
+         <tr>
+      <td>
+         <p>24.</p>
+      </td>
+      <td>
+         <p>Ballast Water Annual Survey</p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('BWAS_Due')}"></span></p>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('BWAS_LD')}"></span></p>
+      </td>
+   </tr>
+   
+</tbody>
+</table>
+</div>

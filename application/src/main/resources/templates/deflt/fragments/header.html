@@ -1,0 +1,51 @@
+<div th:fragment="header(checklist)">
+	<table style="margin-top: 38px; width: 100%">
+		<tr>
+			<th style="text-align: center; vertical-align: middle; width: 30%;"
+				rowspan="6" class="thborder">
+				
+				
+	<div th:if="${logo != null}">
+		
+            <img th:src="${logo.getLocation()}" style="width: 120px; height: 120px;" /> 
+        
+   </div>
+				
+				
+				</th>
+			<th style="text-align: left; width: 40%;" rowspan="6"
+				class="thborder">
+				<div style="text-align: center;" class="title">
+					<div th:text="${checklist.getVessel().getName()}">GreatShip Rohini</div>
+					<br/>
+					<div th:text="${checklist.getShortDesc() + ' Report'}">GreatShip Rohini</div>
+				</div>
+			</th>
+			<th rowspan="1" colspan="2" style="width: 30%;color:black" class="thborder">Document
+				NO.</th>
+		</tr>
+		<tr class="thborder docdetail">
+			
+			<td colspan="2" th:text="${helper.getDockletNo(checklist)}">GIL-27102020-CAS XXXXXX -001a</td>
+		</tr>
+		<tr class="thborder docdetail">
+			<td rowspan="1">Approved</td>
+			<td rowspan="2" style="width:15%"><span th:text="${helper.getAttrValue('appdate')}"></span><br/></td>
+		</tr>
+		<tr class="thborder docdetail">
+			<td rowspan="1"><span th:text="${helper.getAttrValue('appby')}"></span></td>
+			
+		</tr>
+		<tr class="thborder docdetail">
+			<td rowspan="1">Prepared by</td>
+			<td rowspan="2"><span th:text="${helper.getAttrValue('predate')}"></span><br/></td>
+		</tr>
+		<tr class="thborder docdetail">
+			<td rowspan="1"><span th:text="${helper.getAttrValue('preby')}"></span><br/></td>
+			
+		</tr>
+		
+		
+		
+	</table>
+</div>

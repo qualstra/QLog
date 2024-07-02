@@ -1,0 +1,56 @@
+<div th:fragment="section(sec)">
+	<body>
+		<table cellspacing="0">
+			<tr>
+				<td bgcolor="#CCCCCC" style="width: 80%;">
+					<p class="s1">
+						<b><u>CARGO HOLD AND HATCH COVERS:</u></b>
+					</p>
+				</td>
+			</tr>
+		</table>
+		<div th:each="question, iterStat : ${sec.getQuestions()}">
+			<!-- To remove question of 1st index -->
+			<div th:if="${iterStat.index == 0}">
+				<p class="s2">
+					<b><u></u></b>
+				</p>
+				<p class="s3">
+					<span th:text="${question.getAnswerAttrib('remark')}"> </span>
+				</p>
+			</div>
+			<div th:unless="${iterStat.index == 0}">
+				<div th:if="${question.type.name().equals('Date')}">
+					<p class="s2">
+						<b><u><span th:text="${question.questionText}"> </span></u></b>
+					</p>
+					<p class="s3">
+						<span th:text="${question.getAnswerAttrib('answer')}"> </span>
+					</p>
+				</div>
+<!-- 				<div th:if="${question.type.name().equals('Option')}">
+					 <p class="s2"><b><u><span th:text="${question.questionText}"> </span></u></b></p>
+            	<p class="s3"> <span th:text="${question.getAnswerAttrib('answer')}"> </span> </p>  
+				</div> -->
+				<div
+					th:unless="${question.type.name().equals('Option') or question.type.name().equals('Date')}">
+					<p class="s2">
+						<b><u><span th:text="${question.questionText}"> </span></u></b>
+					</p>
+					<p class="s3">
+						<span th:text="${question.getAnswerAttrib('remark')}"> </span>
+					</p>
+				</div>
+			</div>
+			<!-- attachments come here, give index of sections which contain images -->
+			<div th:if="${iterStat.index == 26 or iterStat.index == 29}">
+				<th:block
+					th:with="question=${sec.getQuestions().get(iterStat.index)}">
+					<br />
+					<th:block
+						th:replace="bravo/detail/attachment.html :: attach(${question.getAttachments()})"></th:block>
+				</th:block>
+			</div>
+		</div>
+	</body>
+</div>

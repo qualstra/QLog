@@ -1,0 +1,243 @@
+
+<div th:fragment="checkList(checklist)">
+<div th:replace="deflt/fragments/header :: header(${checklist})"></div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<table style="width:100%;height:100%">
+<tr>
+<td style="height: 100px;text-align:center">
+<span th:text="${checklist.getVessel().getName() + ','}" style="text-align:center;font-size:20px"></span><span th:text="${checklist.getShortDesc() + ' Report'}"  style="text-align:center;font-size:20px">GreatShip Rohini</span>
+<br/>
+<span th:text="${helper.getAttrValue('inrdate')}" style="font-size:20px"></span>
+
+
+<br/>
+<br/>
+</td>
+</tr>
+</table>
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+
+
+
+
+
+<table style="width:100%">
+
+<tr>
+<td></td>
+<td></td>
+<td colspan="3"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td colspan="3"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td colspan="3"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td colspan="3"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td colspan="3"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td colspan="3"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td colspan="3"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td colspan="3"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td colspan="3"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>B</td>
+<td><span th:text="${helper.getAttrValue('ivd')}"></span></td>
+<td colspan="3">Issued for the vessel</td>
+<td><span th:text="${helper.getAttrValue('ivorig')}"></span></td>
+<td><span th:text="${helper.getAttrValue('ivchk')}"></span></td>
+<td><span th:text="${helper.getAttrValue('ivapp')}"></span></td>
+</tr>
+
+<tr>
+<td>A</td>
+<td><span th:text="${helper.getAttrValue('irdate')}"></span></td>
+<td colspan="3">Issued for internal review</td>
+<td><span th:text="${helper.getAttrValue('irorig')}"></span></td>
+<td><span th:text="${helper.getAttrValue('irchk')}"></span></td>
+<td><span th:text="${helper.getAttrValue('irapp')}"></span></td>
+</tr>
+
+<tr>
+<th style="color:black">Rev</th>
+<th style="color:black">Date</th>
+<th style="color:black" colspan="3">Reason for Revision</th>
+<th style="color:black">Orig</th>
+<th style="color:black">Chk</th>
+<th style="color:black">App</th>
+</tr>
+
+</table>
+<div style="page-break-before:always">&nbsp;</div>
+		<u><span>CONTENTS</span></u><br/><br/>
+		    
+			<span>1. </span><span th:text= "${checklist.getSections().get(0).getName()}" style="margin-left:7px"></span><br/>
+			<span>2. </span><span style="margin-left:7px">Weightage</span><br/>
+			<span>3. </span><span th:text="${checklist.getSections().get(1).getName()}" style="margin-left:7px"></span><br/>
+			
+			<span>4. </span><span th:text="${checklist.getSections().get(2).getName()}" style="margin-left:7px"></span><br/>
+			<span>5. </span><span th:text="${checklist.getSections().get(3).getName()}" style="margin-left:7px"></span><br/>
+			<span>6. </span><span th:text="${checklist.getSections().get(4).getName()}" style="margin-left:7px"></span><br/>
+			<span>7. </span><span th:text="${checklist.getSections().get(5).getName()}" style="margin-left:7px"></span><br/>
+			<span>8. </span><span th:text="${checklist.getSections().get(6).getName()}" style="margin-left:7px"></span><br/>
+			<span>9. </span><span th:text="${checklist.getSections().get(7).getName()}" style="margin-left:7px"></span><br/>
+			<span>10. </span><span th:text="${checklist.getSections().get(8).getName()}"></span><br/>
+			<span>11. </span><span th:text="${checklist.getSections().get(9).getName()}"></span><br/>
+			<span>12. </span><span th:text="${checklist.getSections().get(10).getName()}"></span><br/>
+			<span>13. </span><span th:text="${checklist.getSections().get(11).getName()}"></span><br/>
+			<span>14. </span><span th:text="${checklist.getSections().get(12).getName()}"></span><br/>
+			<span>15. </span><span th:text="${checklist.getSections().get(13).getName()}"></span><br/>
+			<span>16. </span><span th:text="${checklist.getSections().get(14).getName()}"></span><br/>
+			<span>17. </span><span th:text="${checklist.getSections().get(15).getName()}"></span><br/>
+			<span>18. </span><span th:text="${checklist.getSections().get(16).getName()}"></span><br/>
+			<span>19. </span><span th:text="${checklist.getSections().get(17).getName()}"></span><br/>
+			<span>20. </span><span th:text="${checklist.getSections().get(18).getName()}"></span><br/>
+
+
+<div style="page-break-before:always">&nbsp;</div>
+<div th:replace="test/detail/section_introduction :: section(${checklist.getSections().get(0)})"></div>
+ 
+
+<div style="page-break-before:always">&nbsp;</div>
+ 
+ <div th:replace="test/detail/general :: general(${attribute})"></div>
+ 
+ <div style="page-break-before:always">&nbsp;</div>
+ <div th:replace="test/detail/vessel_certification :: certification(checklist)"></div>
+ <div th:replace="test/detail/main_engines :: engine(checklist)"></div>
+ 
+ <div style="page-break-before:always">&nbsp;</div>
+ <div th:replace="test/detail/navigation_equipment :: navigation(checklist)"></div>
+ 
+ <div th:replace="test/detail/communication_equipment :: communication(checklist)"></div>
+ 
+ <div style="page-break-before:always">&nbsp;</div>
+ <div th:replace="test/detail/additional_equipment :: additional(checklist)"></div>
+ 
+ 
+ 
+<div style="page-break-before:always">&nbsp;</div>
+ <div th:replace="test/detail/section_certification :: section(${checklist.getSections().get(1)})"></div> 
+ <!-- <div style="page-break-before:always">&nbsp;</div> -->
+ <div th:replace="test/detail/section_ism :: section(${checklist.getSections().get(2)})"></div>
+ <!-- <div style="page-break-before:always">&nbsp;</div>  --> 
+<div th:replace="test/detail/section_isps :: section(${checklist.getSections().get(3)})"></div>
+  <!-- <div style="page-break-before:always">&nbsp;</div> -->
+<div th:replace="test/detail/section_crew :: section(${checklist.getSections().get(4)})"></div>
+  <!-- <div style="page-break-before:always">&nbsp;</div> -->
+<div th:replace="test/detail/section_lsa :: section(${checklist.getSections().get(5)})"></div>
+ <!-- <div style="page-break-before:always">&nbsp;</div> -->
+<div th:replace="test/detail/section_general :: section(${checklist.getSections().get(6)})"></div>
+ <!-- <div style="page-break-before:always">&nbsp;</div>-->
+<div th:replace="test/detail/section_bridge :: section(${checklist.getSections().get(7)})"></div>
+ <!-- <div style="page-break-before:always">&nbsp;</div>-->
+<div th:replace="test/detail/section_machinery :: section(${checklist.getSections().get(8)})"></div>
+ <!-- <div style="page-break-before:always">&nbsp;</div> -->
+<div th:replace="test/detail/section_deck :: section(${checklist.getSections().get(9)})"></div>
+ <!-- <div style="page-break-before:always">&nbsp;</div> -->
+<div th:replace="test/detail/section_dynamic :: section(${checklist.getSections().get(10)})"></div>
+ <!-- <div style="page-break-before:always">&nbsp;</div> -->
+<div th:replace="test/detail/section_Construction :: section(${checklist.getSections().get(11)})"></div>
+<!--  <div style="page-break-before:always">&nbsp;</div>  -->
+<div th:replace="test/detail/section_competence :: section(${checklist.getSections().get(12)})"></div>
+<!--<div style="page-break-before:always">&nbsp;</div> -->
+<div th:replace="test/detail/section_master :: section(${checklist.getSections().get(13)})"></div>
+ <!-- <div style="page-break-inside: avoid;">&nbsp;</div> -->
+<div th:replace="test/detail/section_ce :: section(${checklist.getSections().get(14)})"></div>
+ <!-- <div style="page-break-inside: avoid;">&nbsp;</div> -->
+<div th:replace="test/detail/section_co :: section(${checklist.getSections().get(15)})"></div>
+<!--<div style="page-break-before:always">&nbsp;</div> -->
+<div th:replace="test/detail/section_pms :: section(${checklist.getSections().get(16)})"></div>
+<!--<div style="page-break-before:always">&nbsp;</div> -->
+<div th:replace="test/detail/section_trainee :: section(${checklist.getSections().get(17)})"></div>
+<!-- <div style="page-break-before:always">&nbsp;</div> -->
+<div th:replace="test/detail/section_inspector :: section(${checklist.getSections().get(18)})"></div>
+<!-- <div style="page-break-before:always">&nbsp;</div>  -->
+
+</div>

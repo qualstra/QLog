@@ -1,0 +1,22 @@
+<th:block th:fragment="attach(attachments)">
+   <table style="border-width: 0px;border-style:none;">
+      <div style="text-align:'center'">
+         <th:block th:each="attachmentSplit, rowStat : ${helper.split(attachments,2)}">
+            <tr>
+               <!-- iterstat.index will be 0 or 1,0 is first data, 1 is second data -->
+               <th:block th:each="attachment,iterStat : ${attachmentSplit}">
+                  <!-- <td><p><span th:text="${iterStat.index}"/></p></td>-->
+            <td style="margin-left:0%;padding: 1px;padding-left: 25px;border-style:none;">
+            <img th:src="${attachment.getLocation()}" style="width: 300px; height: 225px" />
+            <p style="line-height: 20px;"><b><span th:if="${not #strings.isEmpty(attachment.getHeader())}" th:text="${attachment.getHeader() + ': '}"></span></b><span th:text="${attachment.getDesc()}"></span></p>
+            <!--<br/>
+               <span th:text="${helper.getFormatedDatetime(attachment.auditTrail.createdDate)}"></span> -->
+            </td>
+           
+            </th:block>	
+            </tr>		
+         </th:block>
+      </div>
+   </table>
+</th:block>
+<!-- border-style:none; -->

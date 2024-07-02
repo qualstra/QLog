@@ -1,0 +1,104 @@
+<div th:fragment="section(sec)">
+<table>
+<col style="width: 38%;"/>
+        <col style="width: 2%;"/>
+        <col style="width: 60%;"/>
+<tbody>
+   <tr>
+      <td>
+         <p class="s1">IMO Number</p>
+      </td>
+      <td>
+         <center>:</center>
+      </td>
+      <td>
+         <p><span th:text="${helper.getAttrValue('IMO')}"></span></p>
+      </td>
+   </tr>
+
+
+   <tr>
+      <td>
+         <p class="s1">Port of Registry</p>
+      </td>
+      <td>
+         <center>:</center>
+      </td>
+      <td>
+         <p class="s1"><span th:text="${helper.getAttrValue('POG')}"></span></p>
+      </td>
+   </tr>
+   <tr>
+      <td>
+         <p class="s1">Classification</p>
+      </td>
+      <td>
+         <center>:</center>
+      </td>
+      <td>
+         <p class="s1"><span th:text="${helper.getAttrValue('C')}"></span></p>
+      </td>
+   </tr>
+   
+ 
+   
+   
+   <tr>
+      <td>
+         <p class="s1">Length Overall</p>
+      </td>
+      <td>
+         <center>:</center>
+      </td>
+      <td>
+         <p class="s1"><span th:text="${helper.getAttrValue('LOA')}"></span></p>
+      </td>
+   </tr>
+   <tr>
+      <td>
+         <p class="s1">Depth Moulded</p>
+      </td>
+      <td>
+         <center>:</center>
+      </td>
+      <td>
+         <p class="s1"><span th:text="${helper.getAttrValue('DMld')}"></span></p>
+      </td>
+   </tr>
+   <tr>
+      <td>
+         <p class="s1">Summer Deadweight</p>
+      </td>
+      <td>
+         <center>:</center>
+      </td>
+      <td>
+         <p class="s1"><span th:text="${helper.getAttrValue('SD')}"></span></p>
+      </td>
+   </tr>
+   <tr>
+      <td>
+         <p class="s1">LSA Capacity</p>
+      </td>
+      <td>
+         <center>:</center>
+      </td>
+      <td>
+         <p class="s1"><span th:text="${helper.getAttrValue('TLSA')}"></span></p>
+      </td>
+   </tr>
+   <tr>
+      <td>
+         <p class="s1">Date delivered Yard</p>
+      </td>
+      <td>
+         <center>:</center>
+      </td>
+      <td>
+         <p class="s1"><span th:text="${helper.getAttrValue('YOB')}"></span></p>
+      </td>
+   </tr>
+   
+</tbody>
+</table>
+</div>

@@ -1,0 +1,54 @@
+<div th:fragment="section(sec)">
+<table style="width:40%">
+<br/>
+		<tr>
+			<td style="border-style:none;text-align:center"><b><span style="color: black;font-size:16px;"></span>
+			</b><u><b><span style="color: black;font-size:16px" th:text="${sec.getName()}"></span></b></u>
+</td>
+</tr>
+
+
+<tr>
+<td  style="border-style:none;width:50%">
+<pre>
+- Drift off test to be performed prior to entering 500 mtr safety zone.
+- Drift test is to be done out of DP, down current from the rig for a minimum of ten minutes.
+- Vessel is set up with bow into environment for the drift off test.
+</pre>
+</td>
+</tr>
+</table>
+<div style="margin-top:10px">
+<span style="font-size:12px" th:text="${sec.getQuestions().get(0).questionText}"><span>:</span></span><span style="font-size:12px" th:text="${helper.getFormatedDate(sec.getQuestions().get(0).getAnswerAttrib('answer'))}"></span>
+<span style="margin-left:10%;font-size:12px" th:text="${sec.getQuestions().get(1).questionText}"><span>:</span></span><span style="font-size:12px" th:text="${sec.getQuestions().get(1).getAnswerAttrib('remark')}"></span>
+</div>
+<div style="margin-top:10px">
+<span style="font-size:12px" th:text="${sec.getQuestions().get(2).questionText}"><span>:</span></span><span style="font-size:12px" th:text="${sec.getQuestions().get(2).getAnswerAttrib('remark')}"></span>
+<span style="margin-left:10%;font-size:12px" th:text="${sec.getQuestions().get(3).getChildQuestions().get(0).questionText}"><span>:</span></span><span style="font-size:12px" th:text="${sec.getQuestions().get(3).getChildQuestions().get(0).getAnswerAttrib('remark')}"></span>
+<span style="margin-left:10%;font-size:12px" th:text="${sec.getQuestions().get(3).getChildQuestions().get(1).questionText}"><span>:</span></span><span style="font-size:12px" th:text="${sec.getQuestions().get(3).getChildQuestions().get(1).getAnswerAttrib('remark')}"></span>
+</div>
+<div style="margin-top:10px">
+<span style="font-size:12px" th:text="${sec.getQuestions().get(4).questionText}"><span>:</span></span><span style="font-size:12px" th:text="${sec.getQuestions().get(4).getAnswerAttrib('remark')}"></span>
+<span style="margin-left:10%;font-size:12px" th:text="${sec.getQuestions().get(5).questionText}"><span>:</span></span><span style="font-size:12px" th:text="${sec.getQuestions().get(5).getAnswerAttrib('remark')}"></span>
+</div>
+<div style="margin-top:10px">
+<span style="font-size:12px" th:text="${sec.getQuestions().get(6).questionText}"><span>:</span></span><span style="font-size:12px" th:text="${sec.getQuestions().get(6).getAnswerAttrib('remark')}"></span>
+<span style="margin-left:10%;font-size:12px" th:text="${sec.getQuestions().get(7).questionText}"><span>:</span></span><span style="font-size:12px" th:text="${sec.getQuestions().get(7).getAnswerAttrib('remark')}"></span>
+</div>
+<div style="margin-top:10px">
+<span style="font-size:12px" th:text="${sec.getQuestions().get(8).questionText}"><span>:</span></span><span style="font-size:12px" th:text="${sec.getQuestions().get(8).getAnswerAttrib('remark')}"></span>
+<span style="margin-left:10%;font-size:12px" th:text="${sec.getQuestions().get(9).questionText}"><span>:</span></span><span style="font-size:12px" th:text="${sec.getQuestions().get(9).getAnswerAttrib('remark')}"></span>
+</div>
+<div style="margin-top:10px">
+<span style="font-size:12px" th:text="${sec.getQuestions().get(10).questionText}"><span>:</span></span><span style="font-size:12px" th:text="${sec.getQuestions().get(10).getAnswerAttrib('remark')}"></span>
+<span style="margin-left:10%;font-size:12px" th:text="${sec.getQuestions().get(11).questionText}"><span>:</span></span><span style="font-size:12px" th:text="${sec.getQuestions().get(11).getAnswerAttrib('remark')}"></span>
+</div>
+<div style="margin-top:10px">
+<span style="font-size:12px" th:text="${sec.getQuestions().get(12).questionText}"><span>:</span></span><span th:text="${#strings.replace(sec.getQuestions().get(12).getAnswerAttrib('answer'),'T','  ')}"></span>
+
+</div>
+
+
+
+
+</div>

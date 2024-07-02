@@ -1,0 +1,178 @@
+<div th:fragment="section(sec)">
+<table style="width:100%">
+<tr>
+<td style="width:30%"><b>Vessel</b></td>
+<td style="width:70%"><b><span th:text="${checklist.getVessel().getName()}"></span></b></td>
+</tr>
+<tr>
+<td style="width:30%"><b>Facility - Client Name</b></td>
+<td style="width:70%"><span th:text="${sec.getQuestions().get(0).getAnswerAttrib('remark')}"></span></td>
+</tr>
+<tr>
+<td style="width:30%"><b>Date and Time</b></td>
+<td style="width:70%"><span th:text="${#strings.replace(sec.getQuestions().get(1).getAnswerAttrib('answer'),'T','  ')}"></span></td>
+</tr>
+</table>
+<table style="width:100%">
+<tr>
+<th style="width:5%;color:black"><b>No.</b></th>
+<th style="width:50%;color:black"><b>Function</b></th>
+<th style="width:9%;color:black"><b>Y / No / N/A</b></th>
+<th style="width:36%;color:black"><b>Comments</b></th>
+</tr>
+
+<tr>
+<td style="width:5%;color:black">1</td>
+<td style="width:50%;color:black"><span th:text="${sec.getQuestions().get(2).questionText}"></span></td>
+<td style="width:9%;color:black"><span th:text="${sec.getQuestions().get(2).getAnswerAttrib('answer')}"></span></td>
+<td style="width:36%;color:black"><span th:text="${sec.getQuestions().get(2).getAnswerAttrib('remark')}"></span></td>
+</tr>
+<tr>
+<td style="width:5%;color:black">2</td>
+<td style="width:50%;color:black"><span th:text="${sec.getQuestions().get(3).questionText}"></span></td>
+<td style="width:9%;color:black"><span th:text="${sec.getQuestions().get(3).getAnswerAttrib('answer')}"></span></td>
+<td style="width:36%;color:black"><span th:text="${sec.getQuestions().get(3).getAnswerAttrib('remark')}"></span></td>
+</tr>
+<tr>
+<td style="width:5%;color:black">3</td>
+<td style="width:50%;color:black"><span th:text="${sec.getQuestions().get(4).questionText}"></span></td>
+<td style="width:9%;color:black"><span th:text="${sec.getQuestions().get(4).getAnswerAttrib('answer')}"></span></td>
+<td style="width:36%;color:black"><span th:text="${sec.getQuestions().get(4).getAnswerAttrib('remark')}"></span></td>
+</tr>
+<tr>
+<td style="width:5%;color:black">4</td>
+<td style="width:50%;color:black"><span th:text="${sec.getQuestions().get(5).questionText}"></span></td>
+<td style="width:9%;color:black"><span th:text="${sec.getQuestions().get(5).getAnswerAttrib('answer')}"></span></td>
+<td style="width:36%;color:black"><span th:text="${sec.getQuestions().get(5).getAnswerAttrib('remark')}"></span></td>
+</tr>
+<tr>
+<td style="width:5%;color:black">5</td>
+<td style="width:50%;color:black"><span th:text="${sec.getQuestions().get(6).questionText}"></span></td>
+<td style="width:9%;color:black"><span th:text="${sec.getQuestions().get(6).getAnswerAttrib('answer')}"></span></td>
+<td style="width:36%;color:black"><span th:text="${sec.getQuestions().get(6).getAnswerAttrib('remark')}"></span></td>
+</tr>
+<tr>
+<td style="width:5%;color:black">6</td>
+<td style="width:50%;color:black"><span th:text="${sec.getQuestions().get(7).questionText}"></span></td>
+<td style="width:9%;color:black"><span th:text="${sec.getQuestions().get(7).getAnswerAttrib('answer')}"></span></td>
+<td style="width:36%;color:black"><span th:text="${sec.getQuestions().get(7).getAnswerAttrib('remark')}"></span></td>
+</tr>
+<tr>
+<td style="width:5%;color:black">7</td>
+<td style="width:50%;color:black"><span th:text="${sec.getQuestions().get(8).questionText}"></span></td>
+<td style="width:9%;color:black"><span th:text="${sec.getQuestions().get(8).getAnswerAttrib('answer')}"></span></td>
+<td style="width:36%;color:black"><span th:text="${sec.getQuestions().get(8).getAnswerAttrib('remark')}"></span></td>
+</tr>
+<tr>
+<td style="width:5%;color:black">8</td>
+<td style="width:50%;color:black"><span th:text="${sec.getQuestions().get(9).questionText}"></span></td>
+<td style="width:9%;color:black"><span th:text="${sec.getQuestions().get(9).getAnswerAttrib('answer')}"></span></td>
+<td style="width:36%;color:black"><span th:text="${sec.getQuestions().get(9).getAnswerAttrib('remark')}"></span></td>
+</tr>
+<tr>
+<td style="width:5%;color:black">9</td>
+<td style="width:50%;color:black"><span th:text="${sec.getQuestions().get(10).questionText}"></span></td>
+<td style="width:9%;color:black"><span th:text="${sec.getQuestions().get(10).getAnswerAttrib('answer')}"></span></td>
+<td style="width:36%;color:black"><span th:text="${sec.getQuestions().get(10).getAnswerAttrib('remark')}"></span></td>
+</tr>
+<tr>
+<td style="width:5%;color:black">10</td>
+<td style="width:50%;color:black"><span th:text="${sec.getQuestions().get(11).questionText}"></span></td>
+<td style="width:9%;color:black"><span th:text="${sec.getQuestions().get(11).getAnswerAttrib('answer')}"></span></td>
+<td style="width:36%;color:black"><span th:text="${sec.getQuestions().get(11).getAnswerAttrib('remark')}"></span></td>
+</tr>
+<tr>
+<td style="width:5%;color:black">11</td>
+<td style="width:50%;color:black"><span th:text="${sec.getQuestions().get(12).questionText}"></span></td>
+<td style="width:9%;color:black"><span th:text="${sec.getQuestions().get(12).getAnswerAttrib('answer')}"></span></td>
+<td style="width:36%;color:black"><span th:text="${sec.getQuestions().get(12).getAnswerAttrib('remark')}"></span></td>
+</tr>
+<tr>
+<td style="width:5%;color:black">12</td>
+<td style="width:50%;color:black"><span th:text="${sec.getQuestions().get(13).questionText}"></span></td>
+<td style="width:9%;color:black"><span th:text="${sec.getQuestions().get(13).getAnswerAttrib('answer')}"></span></td>
+<td style="width:36%;color:black"><span th:text="${sec.getQuestions().get(13).getAnswerAttrib('remark')}"></span></td>
+</tr>
+<tr>
+<td style="width:5%;color:black">13</td>
+<td style="width:50%;color:black"><span th:text="${sec.getQuestions().get(14).questionText}"></span></td>
+<td style="width:9%;color:black"><span th:text="${sec.getQuestions().get(14).getAnswerAttrib('answer')}"></span></td>
+<td style="width:36%;color:black"><span th:text="${sec.getQuestions().get(14).getAnswerAttrib('remark')}"></span></td>
+</tr>
+<tr>
+<td style="width:5%;color:black">14</td>
+<td style="width:50%;color:black"><span th:text="${sec.getQuestions().get(15).questionText}"></span></td>
+<td style="width:9%;color:black"><span th:text="${sec.getQuestions().get(15).getAnswerAttrib('answer')}"></span></td>
+<td style="width:36%;color:black"><span th:text="${sec.getQuestions().get(15).getAnswerAttrib('remark')}"></span></td>
+</tr>
+<tr>
+<td style="width:5%;color:black">15</td>
+<td style="width:50%;color:black"><span th:text="${sec.getQuestions().get(16).questionText}"></span></td>
+<td style="width:9%;color:black"><span th:text="${sec.getQuestions().get(16).getAnswerAttrib('answer')}"></span></td>
+<td style="width:36%;color:black"><span th:text="${sec.getQuestions().get(16).getAnswerAttrib('remark')}"></span></td>
+</tr>
+<tr>
+<td style="width:5%;color:black">16</td>
+<td style="width:50%;color:black"><span th:text="${sec.getQuestions().get(17).questionText}"></span></td>
+<td style="width:9%;color:black"><span th:text="${sec.getQuestions().get(17).getAnswerAttrib('answer')}"></span></td>
+<td style="width:36%;color:black"><span th:text="${sec.getQuestions().get(17).getAnswerAttrib('remark')}"></span></td>
+</tr>
+<tr>
+<td style="width:5%;color:black">17</td>
+<td style="width:50%;color:black"><span th:text="${sec.getQuestions().get(18).questionText}"></span></td>
+<td style="width:9%;color:black"><span th:text="${sec.getQuestions().get(18).getAnswerAttrib('answer')}"></span></td>
+<td style="width:36%;color:black"><span th:text="${sec.getQuestions().get(18).getAnswerAttrib('remark')}"></span></td>
+</tr>
+<tr>
+<td style="width:5%;color:black">18</td>
+<td style="width:50%;color:black"><span th:text="${sec.getQuestions().get(19).questionText}"></span></td>
+<td style="width:9%;color:black"><span th:text="${sec.getQuestions().get(19).getAnswerAttrib('answer')}"></span></td>
+<td style="width:36%;color:black"><span th:text="${sec.getQuestions().get(19).getAnswerAttrib('remark')}"></span></td>
+</tr>
+<tr>
+<td style="width:5%;color:black">19</td>
+<td style="width:50%;color:black"><span th:text="${sec.getQuestions().get(20).questionText}"></span></td>
+<td style="width:9%;color:black"><span th:text="${sec.getQuestions().get(20).getAnswerAttrib('answer')}"></span></td>
+<td style="width:36%;color:black"><span th:text="${sec.getQuestions().get(20).getAnswerAttrib('remark')}"></span></td>
+</tr>
+<tr>
+<td style="width:5%;color:black">20</td>
+<td style="width:50%;color:black"><span th:text="${sec.getQuestions().get(21).questionText}"></span></td>
+<td style="width:9%;color:black"><span th:text="${sec.getQuestions().get(21).getAnswerAttrib('answer')}"></span></td>
+<td style="width:36%;color:black"><span th:text="${sec.getQuestions().get(21).getAnswerAttrib('remark')}"></span></td>
+</tr>
+<tr>
+<td style="width:5%;color:black">21</td>
+<td style="width:50%;color:black"><span th:text="${sec.getQuestions().get(22).questionText}"></span></td>
+<td style="width:9%;color:black"><span th:text="${sec.getQuestions().get(22).getAnswerAttrib('answer')}"></span></td>
+<td style="width:36%;color:black"><span th:text="${sec.getQuestions().get(22).getAnswerAttrib('remark')}"></span></td>
+</tr>
+<tr>
+<td style="width:5%;color:black">22</td>
+<td style="width:50%;color:black"><span th:text="${sec.getQuestions().get(23).questionText}"></span></td>
+<td style="width:9%;color:black"><span th:text="${sec.getQuestions().get(23).getAnswerAttrib('answer')}"></span></td>
+<td style="width:36%;color:black"><span th:text="${sec.getQuestions().get(23).getAnswerAttrib('remark')}"></span></td>
+</tr>
+<tr>
+<td style="width:5%;color:black">23</td>
+<td style="width:50%;color:black"><span th:text="${sec.getQuestions().get(24).questionText}"></span></td>
+<td style="width:9%;color:black"><span th:text="${sec.getQuestions().get(24).getAnswerAttrib('answer')}"></span></td>
+<td style="width:36%;color:black"><span th:text="${sec.getQuestions().get(24).getAnswerAttrib('remark')}"></span></td>
+</tr>
+<tr>
+<td style="width:5%;color:black">24</td>
+<td style="width:50%;color:black"><span th:text="${sec.getQuestions().get(25).questionText}"></span></td>
+<td style="width:9%;color:black"><span th:text="${sec.getQuestions().get(25).getAnswerAttrib('answer')}"></span></td>
+<td style="width:36%;color:black"><span th:text="${sec.getQuestions().get(25).getAnswerAttrib('remark')}"></span></td>
+</tr>
+
+<tr>
+<td style="width:5%;color:black">25</td>
+<td style="width:50%;color:black"><span th:text="${sec.getQuestions().get(26).questionText}"></span></td>
+<td style="width:9%;color:black"><span th:text="${sec.getQuestions().get(26).getAnswerAttrib('answer')}"></span></td>
+<td style="width:36%;color:black"><span th:text="${sec.getQuestions().get(26).getAnswerAttrib('remark')}"></span></td>
+</tr>
+
+
+</table>
+</div>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+	<head th:replace="deflt/css/stylesheet.__${checklist.getMChk()}__ :: css"></head>
+
+
+
+<body>
+	<div th:replace="deflt/detail/checklist.__${checklist.getMChk()}__ :: checkList(${checklist})"></div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<div th:fragment="section(sec)">
+
+<table style="width:100%">
+<tr>
+<td style="border: none;width:30%"><span style="font-size:14px" th:text="${sec.getQuestions().get(0).questionText}"></span></td>
+<td style="border: none;"><span><th:block th:replace="test/detail/dp_attachment.html :: attach(${sec.getQuestions().get(0).getAttachments()})"></th:block></span></td>
+</tr>
+<tr>
+<td style="border: none;width:30%"><span style="font-size:14px" th:text="${sec.getQuestions().get(1).questionText}"></span></td>
+<td style="border: none;"><span><th:block th:replace="test/detail/dp_attachment.html :: attach(${sec.getQuestions().get(1).getAttachments()})"></th:block></span></td>
+</tr>
+</table>
+<div>
+<span>*Note: This checklist /revision may change from vessel to vessel</span>
+</div>
+<table style="width:100%">
+<tr>
+<td colspan="4">PERMISSION RECIEVED TO ENTER SAFETY ZONE</td>
+</tr>
+<tr>
+<td style="width:25%"><b><span th:text="${sec.getQuestions().get(2).questionText}"></span></b></td>
+<td style="width:25%"><b><span style="font-size:12px" th:text="${helper.getFormatedDate(sec.getQuestions().get(2).getAnswerAttrib('answer'))}"></span></b></td>
+<td style="width:25%"><b><span th:text="${sec.getQuestions().get(3).questionText}"></span></b></td>
+<td style="width:25%"><b><span th:text="${sec.getQuestions().get(3).getAnswerAttrib('remark')}"></span></b></td>
+</tr>
+<tr>
+<td style="width:25%"><b><span th:text="${sec.getQuestions().get(4).questionText}"></span></b></td>
+<td style="width:25%"><b><span th:text="${sec.getQuestions().get(4).getAnswerAttrib('remark')}"></span></b></td>
+<td style="width:25%"><b><span th:text="${sec.getQuestions().get(5).questionText}"></span></b></td>
+<td style="width:25%"><b><span th:text="${sec.getQuestions().get(5).getAnswerAttrib('remark')}"></span></b></td>
+</tr>
+<tr>
+<td style="width:25%"><b><span th:text="${sec.getQuestions().get(6).questionText}"></span></b></td>
+<td style="width:25%"><b><span th:text="${sec.getQuestions().get(6).getAnswerAttrib('remark')}"></span></b></td>
+<td style="width:25%"><b><span th:text="${sec.getQuestions().get(8).questionText}"></span></b></td>
+<td style="width:25%"><b><span th:text="${sec.getQuestions().get(8).getAnswerAttrib('remark')}"></span></b></td>
+</tr>
+<tr>
+<td style="width:25%"><b><span th:text="${sec.getQuestions().get(7).questionText}"></span></b></td>
+<td>
+<th:block th:replace="test/detail/dp_attachment.html :: attach(${sec.getQuestions().get(7).getAttachments()})"></th:block>
+</td>
+<td style="width:25%"><b><span th:text="${sec.getQuestions().get(9).questionText}"></span></b></td>
+<td>
+<th:block th:replace="test/detail/dp_attachment.html :: attach(${sec.getQuestions().get(9).getAttachments()})"></th:block>
+</td>
+</tr>
+<tr>
+<td style="width:25%">POSITION/ROLE</td>
+<td style="width:25%">Master</td>
+<td style="width:25%">POSITION/ROLE</td>
+<td style="width:25%">2nd officer</td>
+</tr>
+
+<div><span th:text="${sec.getQuestions().get(10).questionText}"></span><br/><span th:text="${#strings.replace(sec.getQuestions().get(10).getAnswerAttrib('answer'),'T','  ')}"></span></div>
+
+</table>
+</div>

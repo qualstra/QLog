@@ -1,0 +1,94 @@
+<div th:fragment="section(sec)">
+
+	<table style="width: 100%;">
+		<tr >
+			<td colspan="2" style="border-style:none"><b><span style="color: black;font-size:16px;">2.</span></b><u><b><span style="color: black;font-size:16px;font-family: Arial Bold;" th:text="${sec.getName()}"></span></b></u>
+		</td>
+		</tr>
+		<br/>
+		<br/>
+	  
+		<tr style="page-break-inside: avoid;">
+			<td colspan="2" style="border-width: 10px;border-style:none;">
+			
+				<span style="font-size:10px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(0))} == FALSE ? 'color: black' : 'color: red'"> 
+				<span style="font-size:10px"
+				th:text="${#strings.replace(sec.getQuestions().get(0).getAnswerAttrib('remark'),'[NC]','')}"> Name</span>
+				</span><span th:if="${#strings.length(sec.getQuestions().get(1).getAnswerAttrib('remark')) > 0}"> and </span>
+				
+				<span style="font-size:10px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(1))} == FALSE ? 'color: black' : 'color: red'">
+				<span style="font-size:10px"
+				th:text="${#strings.replace(sec.getQuestions().get(1).getAnswerAttrib('remark'),'[NC]','')}"> Name</span></span> attended the vessel on
+				<span style="font-size:10px"
+				th:text="${helper.getFormatedDate(sec.getQuestions().get(2).getAnswerAttrib('answer'))}"> Name</span> for the purpose of
+			
+			</td></tr>
+			<tr style="page-break-inside: avoid;"><td colspan="2" style="border-width: 0px;border-style:none;">
+				<table style="width: 100%;">
+				<tr style="page-break-inside: avoid;">
+				<td colspan="2" style="border-width: 0px;border-style:none;">
+				<span style="font-size:10px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(3))} == FALSE ? 'color: black' : 'color: red'">
+					<span style="font-size:10px"
+					th:text="${#strings.replace(sec.getQuestions().get(3).getAnswerAttrib('remark'),'[NC]','')}"> Name</span> </span>
+					
+				</td></tr>
+				<tr style="page-break-inside: avoid;">
+				<td colspan="2" style="border-width: 0px;border-style:none;">
+					 <span style="font-size:10px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(4))} == FALSE ? 'color: black' : 'color: red'">
+					<span style="font-size:10px"
+					th:text="${#strings.replace(sec.getQuestions().get(4).getAnswerAttrib('remark'),'[NC]','')}"> Name</span></span> 
+				</td></tr>
+				<tr style="page-break-inside: avoid;">
+				<td colspan="2" style="border-width: 0px;border-style:none;">
+				<span style="font-size:10px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(5))} == FALSE ? 'color: black' : 'color: red'">
+					<span style="font-size:10px"
+					th:text="${#strings.replace(sec.getQuestions().get(5).getAnswerAttrib('remark'),'[NC]','')}"> Name</span></span>
+				
+				</td></tr>
+				<tr style="page-break-inside: avoid;">
+				<td colspan="2" style="border-width: 0px;border-style:none;">
+				<span style="font-size:10px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(6))} == FALSE ? 'color: black' : 'color: red'">
+					<span style="font-size:10px"
+					th:text="${#strings.replace(sec.getQuestions().get(6).getAnswerAttrib('remark'),'[NC]','')}"> Name</span>	</span> 
+				
+				</td></tr>
+				<tr style="page-break-inside: avoid;">
+				<td colspan="2" style="border-width: 0px;border-style:none;"></td>
+				</tr>
+			<tr style="page-break-inside: avoid;">
+			<td colspan="2" style="border-width: 0px;border-style:none;">
+			
+			<span style="font-size:12px"><b>Executive Summary:</b></span><br/>
+			<span style="font-size:10px"
+				th:style="${helper.checkNCForOption(sec.getQuestions().get(7))} == FALSE ? 'color: black' : 'color: red'">
+				<span style="font-size:10px"
+						th:text="${#strings.replace(sec.getQuestions().get(7).getAnswerAttrib('remark'),'[NC]','')}"> Name</span> </span>
+			
+		</td></tr>
+		<br/>
+		<br/>
+
+		
+		<table style="width: 100%;border-style:none;" th:if="${prevSummaryChart  != null}">
+		
+		<tr style=" text-align: center; vertical-align: middle;">
+			<td  style="color:white;" colspan="2" >
+			
+				<img th:src="${prevSummaryChart.getAbsolutePath()}"
+						style="width: 600px; height: 250px;" />
+
+			</td>
+		</tr>
+	</table>
+		</table>
+		</td></tr>
+		
+	</table>
+
+</div>

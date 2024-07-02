@@ -1,0 +1,114 @@
+<div th:fragment="checkList(checklist)">
+   <head>
+      <title>Vessel Inspection Report</title>
+      <style>
+         /*for styling table data*/
+         .horizontal-line {
+    width: 100%; /* Set the width to 100% of its container */
+    height: 1px; /* Set the height of the line */
+    background-color: black; /* Set the color of the line */
+}
+         .horizontal-line-blue {
+    width: 100%; /* Set the width to 100% of its container */
+    height: 5px; /* Set the height of the line */
+    background-color: blue; /* Set the color of the line */
+}
+         .s1 {
+         white-space: nowrap; 
+         }
+         .container {
+         position: relative;
+         display: inline-block;
+         }
+         .text-overlay {
+         position: absolute;
+         top: 10%;
+         left: 36%;
+         transform: translate(-50%, -50%);
+         color: Black;
+         font-size: 24px;
+         font-family: Arial, sans-serif;
+         text-align: center;
+         }
+         /* Styling for the image (optional) */
+         img {
+         max-width: 100%;
+         height: auto;
+         }
+         /* This is styling for tables */    
+         table {
+         border-collapse: collapse;
+         width: 100%;
+         border: 1px solid #000; /* Black border around the table */
+         }
+         th, td {
+         border: 1px solid #000; /* Black border around cells */
+         padding: 0px; /* Padding inside cells */
+         padding-left: 5px;
+         text-align: left; /* Left-align text */
+         font-family: Calibri, Arial, sans-serif;
+         font-size: 13px; /* Font size */
+         line-height: 1px;
+         white-space: pre-wrap;
+         }
+         th {
+         background-color: #f2f2f2; /* Light gray background for header cells */
+         }
+         /*for checkbox*/
+         .yes-box { color: green; background-color: green;font-weight: bold;line-height: 3px;padding: 2px; }
+         .no-box { color: red; background-color: red;font-weight: bold;line-height: 3px;padding: 2px; }
+         .na-box { color: yellow; background-color: yellow;font-weight: bold;line-height: 3px;padding: 2px; }
+         .un-box { color: white; background-color: white;font-weight: bold;line-height: 3px;padding: 2px; }
+      </style>
+   </head>
+   <body>
+      <div th:replace="bravo/detail/risqHeader :: header(${checklist})"></div>
+      <br></br><br></br>
+      <img th:src="@{bravoship.jpg}" width="670" height="425" alt="ship"/>
+      <br/><br/><br/><br/>
+      <div th:replace="bravo/detail/1-general :: section(${checklist.getSections().get(0)})"></div>
+      <br/><br/><br/><br/><br/><br/><br/><br/>
+      <div th:replace="bravo/detail/2-inspectionlocation :: section(${checklist.getSections().get(0)})"></div>
+      <br/><br/><br/><br/><br/><br/><br/>
+      <div th:replace="bravo/detail/3-crewparticulars :: section(${checklist.getSections().get(1)})"></div>
+      <br/><br/><br/><br/> 
+      <div th:replace="bravo/detail/4-executivesummary :: section(${checklist.getSections().get(2)})"></div>
+       <br/><br/><br/><br/> 
+       <div th:replace="bravo/detail/5-surveysandcertification :: section(${checklist.getSections().get(2)})"></div>
+      <br/><br/><br/><br/><br/><br/><br/>
+       <div th:replace="bravo/detail/6-conditionreport :: section(${checklist.getSections().get(0)})"></div>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      
+       <!-- Introduction is get(3)-->
+      <div th:replace="bravo/detail/hull :: section(${checklist.getSections().get(4)})"></div>
+    
+      <br/><br/><br/><br/>
+      <div th:replace="bravo/detail/anchorchainandchaillockers :: section(${checklist.getSections().get(5)})"></div>
+      <br/><br/><br/><br/>
+      <div th:replace="bravo/detail/maindeck :: section(${checklist.getSections().get(6)})"></div>
+      <br/><br/><br/><br/>
+      <div th:replace="bravo/detail/cargoholdandhatchcovers :: section(${checklist.getSections().get(7)})"></div>
+      
+      <br/><br/><br/><br/>
+      <div th:replace="bravo/detail/fowvandfwtanks :: section(${checklist.getSections().get(8)})"></div>
+      <br/><br/><br/><br/>
+      <div th:replace="bravo/detail/superstructure :: section(${checklist.getSections().get(9)})"></div>
+      <br/><br/><br/><br/>       
+      <div th:replace="bravo/detail/navigationequipment :: section(${checklist.getSections().get(10)})"></div>
+      <br/><br/><br/><br/>
+      <div th:replace="bravo/detail/radiocommunicationequipment :: section(${checklist.getSections().get(11)})"></div>
+      <br/><br/><br/><br/>
+      <div th:replace="bravo/detail/lsaffa :: section(${checklist.getSections().get(12)})"></div>
+      <br/><br/><br/><br/>
+      <div th:replace="bravo/detail/engineroom :: section(${checklist.getSections().get(13)})"></div>
+      <br/><br/><br/><br/>
+      <div th:replace="bravo/detail/marpolandvecp :: section(${checklist.getSections().get(14)})"></div>
+      <br/><br/><br/><br/>
+      <div th:replace="bravo/detail/7-itemofconcern :: section(${checklist.getSections().get(15)})"></div>
+      <br/><br/><br/><br/>
+      <div th:replace="bravo/detail/8-closingmeeting :: section(${checklist.getSections().get(16)})"></div>
+      <br/><br/><br/><br/>
+      <div th:replace="bravo/detail/9-conclusion :: section(${checklist.getSections().get(17)})"></div>
+
+    </body>
+</div>

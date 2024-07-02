@@ -1,0 +1,68 @@
+
+<div th:fragment="checkList(checklist)">
+<div style="margin-top:50%">
+<div th:replace="deflt/fragments/defhead :: header(${checklist})"></div>
+
+	
+	<table style="width:100%;height:100%;margin-top:50%">
+
+<tr>
+<td>
+<b><span style="font-size:14px">Vessel Name</span></b>
+<span th:text="${checklist.getVessel().getName()}" style="font-size:12px;margin-left:10px; display: inline-block;
+  width: 44.5%;"></span>
+<b><span style="font-size:14px">Voyage</span></b>
+</td>
+</tr>
+
+<tr>
+<td>
+<b><span style="font-size:14px">From</span></b>
+<span style="font-size:12px;margin-left:10px; display: inline-block;
+  width: 52.5%;"></span>
+<b><span style="font-size:14px">To</span></b>
+</td>
+</tr>
+
+<tr>
+<td>
+<b><span style="font-size:14px">Checklist Name</span></b>
+<span th:text="${checklist.getName()}" style="font-size:12px;margin-left:10px; display: inline-block;
+  width: 42.5%;"></span>
+<b><span style="font-size:14px">Checklist Status</span></b>
+</td>
+</tr>
+
+<tr>
+<td>
+<b><span style="font-size:14px">Initiated</span></b>
+<span style="font-size:12px;margin-left:10px; display: inline-block;
+  width: 50%;"></span>
+<b><span style="font-size:14px">Completed</span></b>
+</td>
+</tr>
+
+<tr>
+<td>
+<b><span style="font-size:14px">NC Reported During Progress</span></b>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<b><span style="font-size:14px">NCs In Open Status</span></b>
+</td>
+</tr>
+
+</table>
+
+
+	
+
+ <th:block th:each="section : ${checklist.getSections()}">
+ 	
+ 	<div th:replace="deflt/detail/section.__${section.getMasterUUID()}__ :: section(${section})"></div>
+ </th:block>
+	</div>
+</div>
